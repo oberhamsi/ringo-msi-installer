@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<?define ProductVersion = "0.10.0"?>
+<?define ProductUpgradeCode = "6cb9e338-07ea-4d50-b6b5-b164e25ff29b
+"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+   <Product Id="*" UpgradeCode="$(var.ProductUpgradeCode)"
+            Name="RingoJs" Version="$(var.ProductVersion)" Manufacturer="Simon Oberhammer" Language="1033">
+      <Package InstallerVersion="100" Compressed="yes" Comments="Windows Installer Package"/>
+      <Media Id="1" Cabinet="product.cab" EmbedCab="yes"/>
+      <Upgrade Id="$(var.ProductUpgradeCode)">
+         <UpgradeVersion Minimum="$(var.ProductVersion)" OnlyDetect="yes" Property="NEWERVERSIONDETECTED"/>
+         <UpgradeVersion Minimum="0.0.0" Maximum="$(var.ProductVersion)" IncludeMinimum="yes" IncludeMaximum="no"
+                         Property="OLDERVERSIONBEINGUPGRADED"/>
+      </Upgrade>
+      <Condition Message="A newer version of this software is already installed.">NOT NEWERVERSIONDETECTED</Condition>
+
+      <Directory Id="TARGETDIR" Name="SourceDir">
+         <Directory Id="INSTALLDIR" Name="ringojs-0.10">
+         </Directory>
+         <Component Id ="SetEnvironment" Guid="2bc0b490-afa7-4cfc-ae35-abf8749bb6ba">
+            <CreateFolder />
+             <Environment Id="SET_ENV"
+                                       Action="set"                                                                                          
+                                         Name="PATH"
+                                        Part="last"       
+                                       Permanent="no" 
+                                        System="yes" 
+                         Value="[INSTALLDIR]\bin\" />
+          </Component>
+      </Directory>
+
+    <CustomAction Id="SetInstallRpCmd" Property="InstallRpCmd" Value='"Cmd.exe" /c [INSTALLDIR]\bin\ringo-admin.cmd install --force http://packages.ringojs.org/download/rp/latest'/>
+
+     <CustomAction Id="InstallRpCmd"
+          BinaryKey="WixCA"
+          DllEntry="CAQuietExec"
+          Execute="deferred"
+          Return="check"/>
+
+    <CustomAction Id="SetInstallVirtueCmd" Property="InstallVirtueCmd" Value='"Cmd.exe" /c [INSTALLDIR]\bin\ringo.cmd rp/lib/rp install --global ringo-virtue'/>
+
+     <CustomAction Id="InstallVirtueCmd"
+          BinaryKey="WixCA"
+          DllEntry="CAQuietExec"
+          Execute="deferred"
+          Return="check"/>
+
+      <InstallExecuteSequence>
+         <RemoveExistingProducts After="InstallValidate"/>
+         <Custom Action="SetInstallRpCmd" Before="InstallRpCmd" />
+         <Custom Action="InstallRpCmd" Before="InstallFinalize" />
+         <Custom Action="SetInstallVirtueCmd" Before="InstallVirtueCmd" />
+         <Custom Action="InstallVirtueCmd" Before="InstallFinalize" />
+      </InstallExecuteSequence>
+
+      <Feature Id="DefaultFeature" Level="1">
+         <ComponentGroupRef Id="RingoApplicationFiles"/>
+         <ComponentRef Id='SetEnvironment' />
+      </Feature>
+   </Product>
+</Wix>

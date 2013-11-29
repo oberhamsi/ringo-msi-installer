@@ -1,0 +1,2123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+            <DirectoryRef Id="INSTALLDIR">
+                <Component Id="cmp7162E8AE93C537790DF01CA22153CE26" Guid="{F1839567-6FAF-479A-B55E-7558CC3B3C38}">
+                    <File Id="filDA3808AAB645DCE03DD937F2D4DC5E57" KeyPath="yes" Source="SourceDir\build.xml" />
+                </Component>
+                <Component Id="cmp1314FA7CC11F98A8E4C97CADA7286C9A" Guid="{8D3C1CB7-1398-4BC4-AAF0-2B86678C12FC}">
+                    <File Id="fil1586D402DEFC76EAE26E6E530FAB82E0" KeyPath="yes" Source="SourceDir\ivy.xml" />
+                </Component>
+                <Component Id="cmpB4462F3AE002B72294E3EED9D251C58C" Guid="{5DB48589-8AF7-4C24-90FB-F56C44421AB7}">
+                    <File Id="filE8978041BE79B8E4F8D8C5F86A4E99ED" KeyPath="yes" Source="SourceDir\LICENSE.txt" />
+                </Component>
+                <Component Id="cmp92CA91C828005B155020BFE179EF6F01" Guid="{19E66E98-F95E-4991-A6FE-DDB6BFFD834A}">
+                    <File Id="filF67E0B27863F6D8EB3D8722A6581AB89" KeyPath="yes" Source="SourceDir\pom.xml" />
+                </Component>
+                <Component Id="cmp7687DA7A900502D37096D49DB916ED66" Guid="{EFC1966F-BFE7-44A6-AB29-53BA0EA99385}">
+                    <File Id="filFA634DDC5CAC599CA0C96A39457CA535" KeyPath="yes" Source="SourceDir\README.md" />
+                </Component>
+                <Component Id="cmp3F017CE24437C74CDD4736BA5CC539C4" Guid="{1252311A-8A91-465F-950F-2B5AA1D62F37}">
+                    <File Id="fil7F0354AA48777D0C5B6DF24CE16C004C" KeyPath="yes" Source="SourceDir\run.jar" />
+                </Component>
+                <Directory Id="dir583928D2D4D7CA5C0FEDE3DE95CEC961" Name="bin">
+                    <Component Id="cmpBFA31D981E7F36AAEE5A07A468CFD5E5" Guid="{3146C72C-1273-4CC6-995D-EF66A280DEB7}">
+                        <File Id="fil25F7ACBD3CEE7CD5061C32A3A88F6618" KeyPath="yes" Source="SourceDir\bin\ringo" />
+                    </Component>
+                    <Component Id="cmp805220E4C6F6ECF86903532DCE33C264" Guid="{ABDEBEFC-37BE-4D8A-8D94-A83CF110B757}">
+                        <File Id="fil1728D5C12250C31BEAF0042ED6861681" KeyPath="yes" Source="SourceDir\bin\ringo-admin" />
+                    </Component>
+                    <Component Id="cmpFB9527945BB48C4D7A2F85A58EAA3283" Guid="{F325A679-515C-4700-82AA-BE14D901EDB1}">
+                        <File Id="fil6D372372D257EA04AC7CBA14AF9700BE" KeyPath="yes" Source="SourceDir\bin\ringo-admin.cmd" />
+                    </Component>
+                    <Component Id="cmp19F7B46C9DFB427571C805E664EF9DFC" Guid="{9EFBAFF7-34A9-4C27-9A6B-5DD4F5F01C0A}">
+                        <File Id="fil9B1A18FD3001FC0A1D97466A4DC6A4E9" KeyPath="yes" Source="SourceDir\bin\ringo-doc" />
+                    </Component>
+                    <Component Id="cmp073F047AB7A5A71B873791EAB5C7B30B" Guid="{1E4222C0-CC8D-40A0-96A7-225DE7DD113A}">
+                        <File Id="filC874183A46C9AE3D5BCEE54564062764" KeyPath="yes" Source="SourceDir\bin\ringo-doc.cmd" />
+                    </Component>
+                    <Component Id="cmpBA6E71ACFD99822067D0E2995B2843AB" Guid="{750BEFCD-D7F1-44AC-94C6-57866B54C6F9}">
+                        <File Id="fil6189B970285A6D3A97A59CFC7713A440" KeyPath="yes" Source="SourceDir\bin\ringo-web" />
+                    </Component>
+                    <Component Id="cmpE2F5510DCDB8539269D8694DBC6F5868" Guid="{03269479-CF52-43A2-8748-7F50D23659BD}">
+                        <File Id="fil49B5697F19976E70464FF89C226E041C" KeyPath="yes" Source="SourceDir\bin\ringo.cmd" />
+                    </Component>
+                </Directory>
+                <Directory Id="dir617A0CDF1CD69AB30A44C8C64ECDF7D2" Name="debian">
+                    <Component Id="cmp35540F61C7AD18A86A3D28319C4BFE8D" Guid="{F9A1DDDC-CE92-4449-BC51-6E430385495C}">
+                        <File Id="filAB74323EF700DC16487001B81DE51431" KeyPath="yes" Source="SourceDir\debian\changelog" />
+                    </Component>
+                    <Component Id="cmp8976F308CCFA913E226706B41CC34D8B" Guid="{BD4006BD-F13D-4571-9594-687AF7D3D386}">
+                        <File Id="filBCD9530A1A3FAD3AADA2D566E5994A0A" KeyPath="yes" Source="SourceDir\debian\compat" />
+                    </Component>
+                    <Component Id="cmp54C7E269E33F36A31590CF080B922314" Guid="{E098FAB3-8089-4509-8651-18349A9D9EEB}">
+                        <File Id="filAEACEF183A8CD009D4F590CE11DBEF47" KeyPath="yes" Source="SourceDir\debian\control" />
+                    </Component>
+                    <Component Id="cmp9944E51ADC57DCFAC7DA33A51F047C9B" Guid="{5138A6BC-923E-4793-A45F-48B04938E8C1}">
+                        <File Id="filEFBBB093A5551BA0EF6EC71FCC571B27" KeyPath="yes" Source="SourceDir\debian\copyright" />
+                    </Component>
+                    <Component Id="cmp6093AEE93CB5CF80A8A8E92D5B91EEE3" Guid="{A30747B8-E78B-484A-820A-489DE2B1192F}">
+                        <File Id="filA45A12AB2A19C44190C6E5A52D2B42C5" KeyPath="yes" Source="SourceDir\debian\README.Debian" />
+                    </Component>
+                    <Component Id="cmp791FC28E1475A3B46A3D736B92B3B60F" Guid="{91D5EEC4-F8AC-4EB4-BBB0-D9B80A179726}">
+                        <File Id="fil58A00F51AEA83AAFF94100AF0D1BC91F" KeyPath="yes" Source="SourceDir\debian\ringojs-daemon.dirs" />
+                    </Component>
+                    <Component Id="cmp9F0847A4370398D56D148EC4FADFB704" Guid="{43F09804-4715-4A34-B048-09BB223F9F7F}">
+                        <File Id="filEAE5FA2CD564254ED46136AFBBE7E593" KeyPath="yes" Source="SourceDir\debian\ringojs-daemon.links" />
+                    </Component>
+                    <Component Id="cmpE05AEA4A4357320286DC7BC39870ED53" Guid="{0864B940-07BB-4113-8592-B0F9B47B3352}">
+                        <File Id="filF54FBBB2606AB9251F3924D33A28AD00" KeyPath="yes" Source="SourceDir\debian\ringojs-daemon.postinst" />
+                    </Component>
+                    <Component Id="cmp16AE1F5607B5E7708437C79F99043BF6" Guid="{AF317A22-0C1B-4278-B0F3-4980DE9D7283}">
+                        <File Id="fil17EF94017C91BD821FDA84B9D939CC32" KeyPath="yes" Source="SourceDir\debian\ringojs-daemon.ringojs.default" />
+                    </Component>
+                    <Component Id="cmp1311F7CC02FE1358FC374CA8EE8B1349" Guid="{565CB678-67BD-43A1-B489-8D5DC1D0FF7F}">
+                        <File Id="filDDC3AFCA3C6131FCE82792DBB8C7B10E" KeyPath="yes" Source="SourceDir\debian\ringojs-daemon.ringojs.init" />
+                    </Component>
+                    <Component Id="cmp7AB04FBDF4171A4BB7C434C17218F9F0" Guid="{96AC9218-2740-4A62-BFD8-61736D7199DF}">
+                        <File Id="fil6B808F94E37E2FA22F1F1D94156BC700" KeyPath="yes" Source="SourceDir\debian\ringojs.dirs" />
+                    </Component>
+                    <Component Id="cmp74E55482E0986E855E954765AC15F5FE" Guid="{15352AA0-CC59-4B23-B228-444BAB35E488}">
+                        <File Id="filE099633965E3BE003DEFEB1A9596C59E" KeyPath="yes" Source="SourceDir\debian\ringojs.install" />
+                    </Component>
+                    <Component Id="cmpFE052DAAEE30411B949D8F70B8D9ED9D" Guid="{7F83EA8F-A8AF-42E0-A1DD-2123BF3ECFA1}">
+                        <File Id="fil19FDCF1FFF9F3964AFAAAF0104D2DCCE" KeyPath="yes" Source="SourceDir\debian\rules" />
+                    </Component>
+                    <Directory Id="dirBB824263FF81AB6E9ADEFF721E3304B7" Name="usr">
+                        <Directory Id="dir0838EEEFB5DE9BB2E1699E066C8C6A6D" Name="bin">
+                            <Component Id="cmpAD36F1322A34BB4F59FEBF621EEDAB39" Guid="{96187405-F652-497D-A646-D8D02935F324}">
+                                <File Id="fil461D8F2F4135D0CDA5F17EF4C283D4A8" KeyPath="yes" Source="SourceDir\debian\usr\bin\ringo" />
+                            </Component>
+                            <Component Id="cmp8B9511EBBB685D13B411C44A38B95CDC" Guid="{7BB4573E-9694-47D8-9C8B-B1260684B86A}">
+                                <File Id="fil658805EDF39AAAE57797BF4EF5D8DF30" KeyPath="yes" Source="SourceDir\debian\usr\bin\ringo-admin" />
+                            </Component>
+                            <Component Id="cmpBB572DF7651BAC10A36B3599DFE70F3B" Guid="{0426A4FE-ED4D-43E8-B0BD-3F10E77BDEB5}">
+                                <File Id="filD81BB824B297465F49FBCD2036991940" KeyPath="yes" Source="SourceDir\debian\usr\bin\ringo-doc" />
+                            </Component>
+                            <Component Id="cmpFA2FAC2F12484AC7A970DB12B944EC1B" Guid="{37DF6559-B44A-4335-80F7-14F7FBF9051E}">
+                                <File Id="fil72EAEDF3E96467FEBAF4634C7D11E3E4" KeyPath="yes" Source="SourceDir\debian\usr\bin\ringo-web" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                </Directory>
+                <Directory Id="dir1FB122D0AAA10EC9F7C665414AF48B2E" Name="docs">
+                    <Component Id="cmp9841B398A69922DFE46A26ACB94B5BDB" Guid="{5CE26A6D-1AD4-4209-9A8F-949E5F3BB481}">
+                        <File Id="filE8A88FF4282D06F5014C11FE791BD524" KeyPath="yes" Source="SourceDir\docs\index.html" />
+                    </Component>
+                    <Component Id="cmp482C10C414DA2020F67C73596CC203E3" Guid="{CFCE7D41-FA05-43E8-8F19-677F6801592D}">
+                        <File Id="fil7762640EC415A64A7D065984A6010306" KeyPath="yes" Source="SourceDir\docs\jsgi.md" />
+                    </Component>
+                    <Component Id="cmp1D1D193776AF620886C7A806DBCD2C03" Guid="{3C4E600B-7E01-4B75-8AE5-5CB57107CB28}">
+                        <File Id="fil32BCB654B590E4DA63B5271368DD3FD0" KeyPath="yes" Source="SourceDir\docs\modules.md" />
+                    </Component>
+                    <Directory Id="dirE281808A680685231EB0ACC8F22A83B2" Name="java">
+                        <Component Id="cmp24472844CDAE27A1709E1CA603458386" Guid="{F72A2F03-2C1E-406F-BB3B-3B575721C967}">
+                            <File Id="filC1BA873FC190803F2C174A90367CAACF" KeyPath="yes" Source="SourceDir\docs\java\allclasses-frame.html" />
+                        </Component>
+                        <Component Id="cmpB9F295B54F432A68A96B6593109956F1" Guid="{C4A1495D-64A4-48B2-B8EE-1E22E50E306E}">
+                            <File Id="fil5853FDBCCC317E3EE43DAE1A8F861E19" KeyPath="yes" Source="SourceDir\docs\java\allclasses-noframe.html" />
+                        </Component>
+                        <Component Id="cmp91673C77E913168DDB6A4027BDAA9150" Guid="{6EE3F15F-0011-4819-8BF6-03FFD3354AB6}">
+                            <File Id="filC262CD723B94F61B02BDEE7EAAA9F700" KeyPath="yes" Source="SourceDir\docs\java\constant-values.html" />
+                        </Component>
+                        <Component Id="cmpA26DB9BF42B8E10BF82BAFA83F5EEB84" Guid="{4B6CB88C-BDF4-44A9-A00E-4D502E6775F9}">
+                            <File Id="fil37886C727F4DEB16F196BCFECE56F9A6" KeyPath="yes" Source="SourceDir\docs\java\deprecated-list.html" />
+                        </Component>
+                        <Component Id="cmp13D7788875E1ACA5B8D81E3683DBDBCB" Guid="{507E96A8-C73E-4F0C-B845-B27F7B528C71}">
+                            <File Id="fil49E6E407D2E3EF725FFD676F829B5BE2" KeyPath="yes" Source="SourceDir\docs\java\help-doc.html" />
+                        </Component>
+                        <Component Id="cmp36B810037779CB5B4142F982DBFD8BA6" Guid="{3B30D4F2-D219-4A14-9B83-EAD007DBDC53}">
+                            <File Id="fil127770E1198FDA518435F5FB303AEAAB" KeyPath="yes" Source="SourceDir\docs\java\index-all.html" />
+                        </Component>
+                        <Component Id="cmpE18249D0734C6FCCDC1F039521264D1D" Guid="{0891BEFA-F046-437C-B9A3-089F539A10BD}">
+                            <File Id="fil847C1F658E66281612711C4F4A14C4C3" KeyPath="yes" Source="SourceDir\docs\java\index.html" />
+                        </Component>
+                        <Component Id="cmpBB9B7BE20DA2821D4B67070FD9C95DC2" Guid="{9C39FE98-1ED1-4048-A35B-BAB78D809C11}">
+                            <File Id="filADD19F24D658030D9C93B189358DFAA8" KeyPath="yes" Source="SourceDir\docs\java\overview-frame.html" />
+                        </Component>
+                        <Component Id="cmpC553987203B4CED1DDBFFF0519CA16E3" Guid="{2E7DBD2C-9E7B-4A36-95A5-CF126A3E6666}">
+                            <File Id="filD95FE65071AD8F6FA6DBACDF6347A898" KeyPath="yes" Source="SourceDir\docs\java\overview-summary.html" />
+                        </Component>
+                        <Component Id="cmpCC61A7A6C24DAE596E2186A04BE1DA23" Guid="{F5099D87-13AC-4405-825E-03AAABB482C5}">
+                            <File Id="fil3DAA5584E750E91CD27EEBC9E3EB28BB" KeyPath="yes" Source="SourceDir\docs\java\overview-tree.html" />
+                        </Component>
+                        <Component Id="cmp5C1406D044D8880B2EE22E23FD468203" Guid="{5B3AC2BB-1CC8-4228-9698-F4B69906F867}">
+                            <File Id="filBAF2707B79E345D85091F53FD99D6BB0" KeyPath="yes" Source="SourceDir\docs\java\package-list" />
+                        </Component>
+                        <Component Id="cmp45831B8545F035840BA661907178EF56" Guid="{38BCCFC2-F9C5-41AF-B839-A16FDB13764B}">
+                            <File Id="fil3FA107DAFD8F100AC20410BAC230816A" KeyPath="yes" Source="SourceDir\docs\java\serialized-form.html" />
+                        </Component>
+                        <Component Id="cmp9AACCAC97D1E17F95BBB0B7579629A0A" Guid="{136B6176-4324-46D9-8EC6-22C8E7EE0885}">
+                            <File Id="fil459D095146EDF389A01EFA75BE608C4E" KeyPath="yes" Source="SourceDir\docs\java\stylesheet.css" />
+                        </Component>
+                        <Directory Id="dirB0200E95D046A9F5E68CD0C9D13A1847" Name="org">
+                            <Directory Id="dir27CD1F34C7C79A1A23B705BA3B24FD7D" Name="ringojs">
+                                <Directory Id="dirE24EBA327418E3442A72D1DD84E1737F" Name="engine">
+                                    <Component Id="cmp9A92813E7CB873D7030018FF93600B42" Guid="{2908084D-7DD8-47C1-9D62-49951571C701}">
+                                        <File Id="filCDD6CE8B820813EAC7224D045211D813" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\engine\Callback.html" />
+                                    </Component>
+                                    <Component Id="cmpF2791DE0ED10C7C24830234B6E094DB9" Guid="{68219F9A-8E46-40CB-970A-DC575F813917}">
+                                        <File Id="fil9547AB68A7E8F54DA10A2296264DBDB4" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\engine\ModuleLoader.html" />
+                                    </Component>
+                                    <Component Id="cmp5AEF8A66E2CC038C821BCFD2F759676B" Guid="{4012ECE5-DD8B-409F-8A0F-1C4D94990BC4}">
+                                        <File Id="fil101994ABA9BCE5A63A299B69E4C917F0" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\engine\ModuleObject.html" />
+                                    </Component>
+                                    <Component Id="cmp42ECDDE6DB3761620DBFBE92A114B9AD" Guid="{D4C7D438-FA6E-4B3D-A09B-5E5BB45FEC00}">
+                                        <File Id="fil5D06CE302792DE7E0A411DA538CC7684" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\engine\ModuleScope.html" />
+                                    </Component>
+                                    <Component Id="cmpFBD3F6544DD7D67CE750D18C422B371B" Guid="{23CB205B-F374-4E69-92F0-E3E0476F1C4E}">
+                                        <File Id="fil85425447347F956E895C46DCC2CFEE95" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\engine\package-frame.html" />
+                                    </Component>
+                                    <Component Id="cmpACE8A4BB6BC874FB44803B94042F3299" Guid="{10D0CF9B-B154-4676-A965-BD41AA2324BF}">
+                                        <File Id="fil233EF17D06345DC93C588E76BD51BC2E" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\engine\package-summary.html" />
+                                    </Component>
+                                    <Component Id="cmp2857D4EC6E6407D1495856B5BB9EE988" Guid="{17DB4910-110E-420B-A910-FAE0402447F8}">
+                                        <File Id="filACFA268AA9B423D72FA7AE0D42CE0083" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\engine\package-tree.html" />
+                                    </Component>
+                                    <Component Id="cmp2B52A7A5EC02216C1DD4B094BEC9B41B" Guid="{7C040343-AA03-456D-BB27-56E05CA29E4D}">
+                                        <File Id="filD05A97B92BCD304E3985AB3C0A221E7C" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\engine\ReloadableScript.html" />
+                                    </Component>
+                                    <Component Id="cmp46A38A0C8EA6AF78BE8676494532CE55" Guid="{FB4B335C-4E59-4D4D-85BF-F96F4F3D1532}">
+                                        <File Id="fil9A61A29F5E1FFE5E62ECBA34DD9898BC" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\engine\Require.html" />
+                                    </Component>
+                                    <Component Id="cmp63C10E1DF3CE276DCAE37633FC0657F3" Guid="{2EC92372-0B40-4181-A86D-CFBE7F507D6A}">
+                                        <File Id="filB0DE9EE3E1462C4E68F2A282E1E95F2E" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\engine\RhinoEngine.html" />
+                                    </Component>
+                                    <Component Id="cmpE0FD1FC657FED82C1A65B445EC73AA3E" Guid="{0FEA21BC-8113-44A5-A147-57338665131C}">
+                                        <File Id="fil5805C12161BFB9533197787E900ECFAD" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\engine\RingoConfig.html" />
+                                    </Component>
+                                    <Component Id="cmpF198FC23DE5E444F8924CBA105C3D27F" Guid="{5DC3DCC7-4E94-4A0D-997B-39E1F3C26A89}">
+                                        <File Id="fil143B2C119AB0DCAEF4C566A6F818EA26" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\engine\RingoContextFactory.html" />
+                                    </Component>
+                                    <Component Id="cmp0867798D4761091E1D76F787AF2BA31F" Guid="{CC624D0E-0B74-4E3B-9F23-9709DAA6E205}">
+                                        <File Id="fil14FA4B89ECE00DB2378C0A9E5DB5B155" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\engine\RingoGlobal.html" />
+                                    </Component>
+                                    <Component Id="cmpC29B99DF52DA7E22393F615B16D4B7C3" Guid="{4BE04B30-8E6D-4952-9BDB-959E4B9FFBFE}">
+                                        <File Id="filADAB5CEF3DB473ADB472E2749C03BA1E" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\engine\RingoWorker.html" />
+                                    </Component>
+                                    <Component Id="cmpF0C4B081B0B8A28319EE2CF23DE2738F" Guid="{E9122D96-028E-45E6-AB8B-1F2445F80AF9}">
+                                        <File Id="fil30D2A337AD34252CBB458CD94C3AC0C8" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\engine\RingoWrapFactory.html" />
+                                    </Component>
+                                    <Component Id="cmpDD3C3C9EF518D5D14C34D580242A2C41" Guid="{FAA9E3FE-7E77-430F-993C-6A0E70791DD1}">
+                                        <File Id="fil090E3E3FA603D8DDB288615A5250D975" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\engine\ScriptError.html" />
+                                    </Component>
+                                </Directory>
+                                <Directory Id="dirC167491963D161786D08E3B3C5251817" Name="jsgi">
+                                    <Component Id="cmp4775B6406E930A3DBE1A15EE1C108884" Guid="{3930530F-7315-41D7-88F8-16D2EEFC0BC0}">
+                                        <File Id="fil4B924403867D3B9C7BDB834E6D12826A" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\jsgi\JsgiRequest.html" />
+                                    </Component>
+                                    <Component Id="cmp7448A331C3115D076FD1F00D32D3539E" Guid="{BDF17955-B11C-423D-A531-0F54B7D261AD}">
+                                        <File Id="filA9A64F6EEBB586D980DA5B9F289E311A" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\jsgi\JsgiServlet.html" />
+                                    </Component>
+                                    <Component Id="cmp33A3F411A550EE7FCF0A75DC54319781" Guid="{A615AA3C-D2D2-42B3-B768-F1866E140A01}">
+                                        <File Id="filDC29F90562E1CE924FB9F54668D30EB6" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\jsgi\package-frame.html" />
+                                    </Component>
+                                    <Component Id="cmpED1FD61B0477FB8044F78AA91C18C0BF" Guid="{82CC627D-DDBA-4D3B-9E55-095CD4E16196}">
+                                        <File Id="filA195322317026ECD8AE6C78B2CD93671" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\jsgi\package-summary.html" />
+                                    </Component>
+                                    <Component Id="cmp1BCCF90532CA8672E3D8B0DFC7D39EFC" Guid="{2245E8F4-C4A2-4733-8370-F916F10C6977}">
+                                        <File Id="filC880D535611D1C83A128B21C80A1A1E8" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\jsgi\package-tree.html" />
+                                    </Component>
+                                </Directory>
+                                <Directory Id="dir263234D66799ECC319CEFC1EFFA713C6" Name="repository">
+                                    <Component Id="cmp24A0B99D0F5BFB5515E279BEDB0C4873" Guid="{08D7C41E-2034-41CC-8CD5-5D9674B02AB6}">
+                                        <File Id="filE4D89AECA1E4BA92DCD58B813854EA71" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\repository\AbstractRepository.html" />
+                                    </Component>
+                                    <Component Id="cmp20D1C6EB42A76F62E7DEC11E846CA9A0" Guid="{2A070986-CF32-4506-BF2A-AF5CD8A84247}">
+                                        <File Id="filB26E6AD7710A43C9A9FE9A6B80BF22E9" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\repository\AbstractResource.html" />
+                                    </Component>
+                                    <Component Id="cmpD70D3D3081812D924FC2AA7BEBC318CB" Guid="{502E74A0-420B-4821-8E53-51C825DEC80A}">
+                                        <File Id="fil869949E2060074583BB7EE05F962041D" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\repository\FileRepository.html" />
+                                    </Component>
+                                    <Component Id="cmp9C48EC4C67E4EBF07876691B2A0D6968" Guid="{393297C7-84F9-46DD-AF98-6ACC26B6649F}">
+                                        <File Id="filE3B30B795AE2D59AAFB9631175C9C8EC" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\repository\FileResource.html" />
+                                    </Component>
+                                    <Component Id="cmp30E6406E0508E0C72DF59041D0795811" Guid="{6653AF55-3F11-4059-8755-6C3F87160F57}">
+                                        <File Id="fil675D16A13F717DD3A72030F354BC6F6A" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\repository\package-frame.html" />
+                                    </Component>
+                                    <Component Id="cmp8A1B1F1FDA6A74D5E4DC350E29A9441A" Guid="{FD556D68-3A41-483A-A5C1-1C100E50257A}">
+                                        <File Id="fil7C5001D6A6EE75B4D26B3C7384A25054" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\repository\package-summary.html" />
+                                    </Component>
+                                    <Component Id="cmp2A607D20358F21EF5004CD3581AFC7DC" Guid="{1C758F74-C5A8-411F-AA47-2B406DD22558}">
+                                        <File Id="filB21071B41B9F85AA6A294116CD2947F7" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\repository\package-tree.html" />
+                                    </Component>
+                                    <Component Id="cmpDA75399078107B986B6A4444B88972B7" Guid="{EFA148C3-F8CB-490D-86AC-51D2BE645867}">
+                                        <File Id="fil34BBAEEA786A4A4B01AC54D0E553C27D" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\repository\Repository.html" />
+                                    </Component>
+                                    <Component Id="cmp9B13DC0B060E4909D4D3196D3091EC8A" Guid="{96D7D0FE-6963-45C9-BC38-DE891CF8E91F}">
+                                        <File Id="fil3EA49FF5E03E2274D11511FE60CBA31A" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\repository\Resource.html" />
+                                    </Component>
+                                    <Component Id="cmp391E90B44E1C95B79CDFD77B78670602" Guid="{29B9D04E-6F4F-417E-A51F-207FC9787AEC}">
+                                        <File Id="fil57BDE8C2302F4B68604ACC82C894D88A" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\repository\StringResource.html" />
+                                    </Component>
+                                    <Component Id="cmpF6E71151757A894C580E262BEC613421" Guid="{D5520424-2AD1-42DF-BB2D-82C76EE49E81}">
+                                        <File Id="fil0FE2D5838899003B131851BE8D9551C9" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\repository\Trackable.html" />
+                                    </Component>
+                                    <Component Id="cmp87CA94037EF2C8CD35AA73200D613B09" Guid="{FFB5C53B-42C1-4871-89BC-0BE08FB56054}">
+                                        <File Id="fil638B0F026EEB79A782E0386DECB0103F" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\repository\Tracker.html" />
+                                    </Component>
+                                    <Component Id="cmpDE64F439DEC0C7B100492282969F38DD" Guid="{21A34AD5-AC12-4283-998D-A3E7EB81FBDE}">
+                                        <File Id="fil7C220793FE739A0443CD76DD74B621B8" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\repository\WebappRepository.html" />
+                                    </Component>
+                                    <Component Id="cmp101B254396C045520E48357FB0430617" Guid="{59F62F5E-B4ED-4A66-B2A9-58F778FABE4B}">
+                                        <File Id="fil0B6718498810076F82B2B76ABECB51B7" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\repository\WebappResource.html" />
+                                    </Component>
+                                    <Component Id="cmp41E45E88E0389D60DCA83F9F637025A8" Guid="{FA0B3B01-2A91-46E5-A19B-F6E31A8BDEFC}">
+                                        <File Id="fil25A7BA9AA70CA359D30387583888E26C" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\repository\ZipRepository.html" />
+                                    </Component>
+                                    <Component Id="cmpAD0DECBF588416EFA20505808043D6C9" Guid="{3382334F-5021-4B03-A3F3-351A09A91705}">
+                                        <File Id="fil2002CCF68FC91F0E328659E214C62759" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\repository\ZipResource.html" />
+                                    </Component>
+                                </Directory>
+                                <Directory Id="dir18CF3744E1F100750DFBBF985C557A1D" Name="security">
+                                    <Component Id="cmp0D473BA8F3C833DF5F96483EF874864C" Guid="{A9E09A90-4E9C-4A8C-BA04-CD07879C2265}">
+                                        <File Id="fil89D2B030FA7932176A69A5E4275A7714" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\security\package-frame.html" />
+                                    </Component>
+                                    <Component Id="cmp84B1795A69E094533F4597DC41D5B09B" Guid="{B6912D85-422C-4111-A0F7-2ABBB5AC3291}">
+                                        <File Id="filB3A88879DBF7549BBE54D5F3B236A4FE" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\security\package-summary.html" />
+                                    </Component>
+                                    <Component Id="cmp1A3D56E0D2CCAA1C57594794B29A8644" Guid="{B70882D0-23C6-4F8D-8746-AD1DC420F5A2}">
+                                        <File Id="fil5D1A049303141B5A40733ABEED8D914E" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\security\package-tree.html" />
+                                    </Component>
+                                    <Component Id="cmp4F4A6A109827A918B071AABBBBCFFCFD" Guid="{C33A86AF-372E-46EC-8A70-AB14FB825BAA}">
+                                        <File Id="fil9458EA07819A070133908B4CDFE13F3E" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\security\RingoRuntimePermission.html" />
+                                    </Component>
+                                    <Component Id="cmp889E44DA6841250C5E58F7AD4175D27F" Guid="{FFDB5A86-0059-4DCE-B182-21F75598120C}">
+                                        <File Id="filBA8C2A5060E9AE8BA87AADAB4D06754D" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\security\RingoSecurityManager.html" />
+                                    </Component>
+                                    <Component Id="cmp548278BA2C57755579359C41B4F12108" Guid="{CC5B09BB-74E6-48FA-8F7E-4B52F2CA04ED}">
+                                        <File Id="filDE9467CCC228F73C8FC5D057B56C4635" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\security\SecureWrapFactory.html" />
+                                    </Component>
+                                    <Component Id="cmpEDED6246BA7A03AFFD6414AA966EFD5A" Guid="{672AECCE-EC99-4F02-9D80-5ADEF0CF6619}">
+                                        <File Id="filD5F78398FC4BF9B42B9554EB922FC834" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\security\SecureWrapFactory.SecureClassWrapper.html" />
+                                    </Component>
+                                    <Component Id="cmpBFB82DED42E44022D46078D7652BCA5D" Guid="{13309925-6FC1-4D9C-8C92-F1EF50B64D72}">
+                                        <File Id="filE5C98B2CAE72F17F4028C7AB98413B19" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\security\SecureWrapFactory.SecureObjectWrapper.html" />
+                                    </Component>
+                                </Directory>
+                                <Directory Id="dir237D2C6C6FEBC7142ADEF0A8BE084F8D" Name="test">
+                                    <Component Id="cmpB9648A4D51A11CC9F1D4A1F7A3D051E6" Guid="{8C73FC20-FE97-41F2-A72C-255E05806DE8}">
+                                        <File Id="fil3268CB88C49D122D36E134194E598924" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\test\CaseInsensitiveMapTest.html" />
+                                    </Component>
+                                    <Component Id="cmpF0DF7AC90E242D16294480436A3F60AB" Guid="{009A1E8A-1EF5-4CB7-B3D0-32EE8384D507}">
+                                        <File Id="fil9DBC86CE2441C1244D566056DB477827" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\test\EventAdapterTest.html" />
+                                    </Component>
+                                    <Component Id="cmpA6598C8071F36D382D25AF27B7DB629C" Guid="{139E69C7-3FD3-4FA4-A258-47275C93EDA7}">
+                                        <File Id="fil19BCB199976ADFFEAE864F5EB2D6112A" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\test\NormalizePathTest.html" />
+                                    </Component>
+                                    <Component Id="cmpE1318B2FF2AE6A29934EF9DE30AD81AB" Guid="{75C5237F-6950-4385-9292-033E57C342EF}">
+                                        <File Id="filAA9D5AD6E8E4DB1E2889AF28D85DEBDD" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\test\package-frame.html" />
+                                    </Component>
+                                    <Component Id="cmpAD0E85994BC45CD4E315605C19388A4C" Guid="{A44C679D-1173-4BD8-B673-9466A0BEB366}">
+                                        <File Id="fil8EDA09778226489828FFE97BB66DA68F" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\test\package-summary.html" />
+                                    </Component>
+                                    <Component Id="cmpD6E04053DBAF3455B3B8EBA1C6B15B4B" Guid="{CAFD92C6-E700-4A65-9FF9-D4E1DA9C9AC2}">
+                                        <File Id="filE429D3B3ADE7AEFAD13B68C78FD03CC6" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\test\package-tree.html" />
+                                    </Component>
+                                    <Component Id="cmp6B8A5865510F188B556E4DC94E7738C7" Guid="{27DFE800-FC50-46EE-9DC9-21A2616F6216}">
+                                        <File Id="filA7D41D41DD345DB071A2311A4E5681E4" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\test\StringUtilsTest.html" />
+                                    </Component>
+                                </Directory>
+                                <Directory Id="dirB6EAA22003243F1353C1D3D1FB15EC35" Name="tools">
+                                    <Component Id="cmpBC40ECB4ACF0A473C8B2C8656DB709EB" Guid="{BB7647DF-B720-4C99-A66A-9E257DD0930E}">
+                                        <File Id="fil45C6E1D7E216A2056A97840C8CC0D690" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\tools\package-frame.html" />
+                                    </Component>
+                                    <Component Id="cmp4DAEE238CC086C058055E3D6ED961466" Guid="{87BDC281-8943-4A80-B82E-C6AC82283AC5}">
+                                        <File Id="fil6851DED780237F68E3A6F09D9413004C" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\tools\package-summary.html" />
+                                    </Component>
+                                    <Component Id="cmp6A59EC0EE52DE6B3D871D6D9D7862619" Guid="{DE2A3224-E97F-4402-B873-12CADE58EC02}">
+                                        <File Id="filDA980CEA6CD67440C0B1E126D7D9ACD9" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\tools\package-tree.html" />
+                                    </Component>
+                                    <Component Id="cmp682AE9B183A17B1348829D5180C8A213" Guid="{4F6F99B1-3583-4674-8E52-874EFCDD2EF7}">
+                                        <File Id="filB0CAD619722ECCB22D268A91BCECCE4A" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\tools\RingoDebugger.html" />
+                                    </Component>
+                                    <Component Id="cmp31FDB9B574459D42B6F6457DC19638E9" Guid="{9960021F-A23A-4B1A-84C7-0177C3C27948}">
+                                        <File Id="fil27B1AD7AB06DA1885D5B1C5F33BF4DA1" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\tools\RingoRunner.html" />
+                                    </Component>
+                                    <Component Id="cmpA44A9B23CD93D18F3D86BE77AB499E71" Guid="{C010D47B-1B6A-49CF-B2D4-8E45C81A7346}">
+                                        <File Id="fil8E0D09E1DB4CEDCBAE83E738C6547845" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\tools\RingoShell.html" />
+                                    </Component>
+                                    <Directory Id="dir0F460F069E21A87BEA652D7F29DDBD49" Name="launcher">
+                                        <Component Id="cmp54316778C368B29985FB9D37A14E8B8F" Guid="{545F7291-2876-4D22-80FF-33320B47CA46}">
+                                            <File Id="fil81A7AB907E3B0B97779D2BD14F81C437" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\tools\launcher\Main.html" />
+                                        </Component>
+                                        <Component Id="cmpE4CFCDAC1AB280BAAB917CC8419C90FE" Guid="{8C372313-D9E7-4ACD-B909-96BE2A710B81}">
+                                            <File Id="fil1D2A7772CE037214A4B4458182C94026" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\tools\launcher\package-frame.html" />
+                                        </Component>
+                                        <Component Id="cmpA8F6A3523C1F7B59176190045A6C663C" Guid="{0B332D65-5243-42D7-B6DC-52934E3FDBCB}">
+                                            <File Id="fil069A921D59BAFAEA06A223EFD80960ED" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\tools\launcher\package-summary.html" />
+                                        </Component>
+                                        <Component Id="cmp0ED892FF432557174BC034FA1764AAE1" Guid="{82D57BA1-42E7-4A15-B902-28FE1B8CC25C}">
+                                            <File Id="fil1F1F430F3DE69E61E27168A5C3727D0E" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\tools\launcher\package-tree.html" />
+                                        </Component>
+                                        <Component Id="cmp2589D46B269D01A23FEEE41E20C96C3E" Guid="{47E22011-800D-413B-A9AD-CF576B412FE4}">
+                                            <File Id="fil80A20C658323076A87DA43101FB1CEB4" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\tools\launcher\RingoClassLoader.html" />
+                                        </Component>
+                                    </Directory>
+                                </Directory>
+                                <Directory Id="dir8349A903BEB0A57FF47BF52B6B93643B" Name="util">
+                                    <Component Id="cmp91E2E1D988D109DE0C8B54773BA4DE57" Guid="{F8E596E8-9ACC-4172-B6E4-F1DF6F4D4EA9}">
+                                        <File Id="fil04F50C5F99D5055555F4B65754A22F3D" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\util\CaseInsensitiveMap.html" />
+                                    </Component>
+                                    <Component Id="cmp43189A40A65B5FD54C0CB7BE966B3DE0" Guid="{8586A378-5C58-4D2C-8E41-BCEC8F1FC4C9}">
+                                        <File Id="fil20993363AD3C56DFBB4B6752E4991494" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\util\DebuggerBase.html" />
+                                    </Component>
+                                    <Component Id="cmpEDC388466F1DE2721CB529E4D662A786" Guid="{3BB06507-FF47-4122-B469-BA035C0891DA}">
+                                        <File Id="fil8ED6EC9DED410DDCF8031C0CF22B699A" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\util\MarkdownProcessor.html" />
+                                    </Component>
+                                    <Component Id="cmpD0EDF7A617B0A1266307F4A5102CE23F" Guid="{C1029B74-2973-4BE6-AD71-292564FBB8A9}">
+                                        <File Id="filE458A63662363F4252E7C6F1AB479AE3" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\util\package-frame.html" />
+                                    </Component>
+                                    <Component Id="cmp8CF68DA8B8637BE89FF4B9FE253FFB91" Guid="{47EB4B7C-B8DD-46AC-AC5F-24E51136865F}">
+                                        <File Id="filB9633F89FD3106B687884AB2D3662849" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\util\package-summary.html" />
+                                    </Component>
+                                    <Component Id="cmp5A78EFA5959B914E33E19D1A80FA38CC" Guid="{1C4D9A70-EBA3-43F0-ACD9-0F898B2C0793}">
+                                        <File Id="filF2293A195345FD7BCA5A205CFD5199E0" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\util\package-tree.html" />
+                                    </Component>
+                                    <Component Id="cmpAD3B37A363B8531EE9BED18964F65D3F" Guid="{9AA0C56E-1074-4CF2-8934-2F494ED07836}">
+                                        <File Id="filB529CC81523A2912DAA5594DE5043167" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\util\POSIXSupport.html" />
+                                    </Component>
+                                    <Component Id="cmp7ADC9BC2EED3F6EC6D081AA4645093BA" Guid="{F0ACC095-3F10-4BEA-B783-78A9033E4B38}">
+                                        <File Id="fil95F44D17194591C0392187DB53A04047" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\util\ScriptUtils.html" />
+                                    </Component>
+                                    <Component Id="cmp1CFE42CDDED4F56E07C27EB6956EFA04" Guid="{A8DBCBAD-D173-4C77-9B0D-68E5E54B9157}">
+                                        <File Id="fil930E93035E643FAAED74F993352F7ED7" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\util\StackUtils.html" />
+                                    </Component>
+                                    <Component Id="cmp8BB4BE16511B6A180914D1EE1DD71905" Guid="{B15852DB-935F-4828-859B-090B876B95F5}">
+                                        <File Id="fil9979153C5FC018C276A7CA826C36AC6C" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\util\StringUtils.html" />
+                                    </Component>
+                                </Directory>
+                                <Directory Id="dirEF86D3BEF5397D10D865892C7C2DF600" Name="wrappers">
+                                    <Component Id="cmpF40BB459406B9FA5072AF58162CF6183" Guid="{7AC5E2F6-1F55-440E-A3AA-8C2E406BCA1A}">
+                                        <File Id="fil591786E91E3B3D26D67D5E530093EDBE" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\wrappers\Binary.html" />
+                                    </Component>
+                                    <Component Id="cmp162B16E0AD9030B1479BE59BEFA223EA" Guid="{F3D75AFB-60B0-4671-BA36-DF390D08498D}">
+                                        <File Id="fil0E995020B18FA0429B7E016D5B990B94" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\wrappers\EventAdapter.html" />
+                                    </Component>
+                                    <Component Id="cmp0A32658C44FD13B49DAC0B58EA74AD9D" Guid="{E2A86BE0-6F43-4962-848B-D2A664BCA62F}">
+                                        <File Id="fil6E862609AB922B6B5AF01BCBFAC65A44" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\wrappers\package-frame.html" />
+                                    </Component>
+                                    <Component Id="cmp1B15C366C7F7D5FC5E71672E28551CDF" Guid="{46831798-77B1-42EA-92FB-BA8C42303F9A}">
+                                        <File Id="fil122EA0F32D14DA0828AAAF291F622DA8" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\wrappers\package-summary.html" />
+                                    </Component>
+                                    <Component Id="cmp70FAE367C994D03482A4DB561F5E0916" Guid="{A678666A-3875-4EBB-9D9A-FD0A12CE35B5}">
+                                        <File Id="fil1FFDD846F77F7B2FB4F09853EC71B2DD" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\wrappers\package-tree.html" />
+                                    </Component>
+                                    <Component Id="cmp9B2CAACA15890C962D6CA3E03E12CA87" Guid="{CCE418D3-A61A-4CDF-97AA-ECDDA956D3D8}">
+                                        <File Id="fil3A3BB303321444BA8A1428551B423B3F" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\wrappers\POSIX.html" />
+                                    </Component>
+                                    <Component Id="cmp27D0F1E72ED8DF3A6DB655A9C9ACBF4B" Guid="{911DB272-7D06-49A4-AD25-018A10070EEA}">
+                                        <File Id="fil8C3BB11CC70BBE6ED9CBB0DAC73104A6" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\wrappers\ScriptableList.html" />
+                                    </Component>
+                                    <Component Id="cmp8AAB6E093FC4EA8408B8DCFDAB0C278F" Guid="{B59096AE-6045-420D-AD08-CB0682098F93}">
+                                        <File Id="fil37AB281C2DB1D3E72F4220A08A1486AD" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\wrappers\ScriptableMap.html" />
+                                    </Component>
+                                    <Component Id="cmpE57C464E869BBF54AAF0CA18C53BFC7A" Guid="{D86E831B-C1E4-4561-A8CB-E83FABE89D59}">
+                                        <File Id="filEE9153C322911C61CBFC3B5CD3716CE6" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\wrappers\ScriptableWrapper.html" />
+                                    </Component>
+                                    <Component Id="cmpD7E04614EB510EC115AD6E73A9F8F729" Guid="{0C10817F-0A83-4192-A332-9ABB98AA99B3}">
+                                        <File Id="fil3327625516922C342D855ED0BDB6A40F" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\wrappers\Storable.html" />
+                                    </Component>
+                                    <Component Id="cmp81630DE504BF6C58C509E0C6608513CA" Guid="{A3236C4E-B046-4D1E-ACB5-B79ECEF2E7A1}">
+                                        <File Id="filF33A1B545A0E8C21BE4C49E9904D5A75" KeyPath="yes" Source="SourceDir\docs\java\org\ringojs\wrappers\Stream.html" />
+                                    </Component>
+                                </Directory>
+                            </Directory>
+                        </Directory>
+                        <Directory Id="dir1F4F37ADD5EECF0E53799C5A5C7E34E7" Name="resources">
+                            <Component Id="cmp9F9561CF34D825CEA791AEE81517F4A0" Guid="{40659DE5-633E-4428-8FC6-6ACAB8241E9D}">
+                                <File Id="filF2F5E19B622C0C53F5D0B97930642D34" KeyPath="yes" Source="SourceDir\docs\java\resources\inherit.gif" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                    <Directory Id="dir454CA7547548983E3C227812BBFE90A0" Name="modules">
+                        <Component Id="cmpCB2FC3BF27A782C5D565AB9E9237DABB" Guid="{64B845C6-26B9-4B4A-8A07-92AAB244111D}">
+                            <File Id="fil7173F0267EF0CE4B2EFDEBDF5DEA330B" KeyPath="yes" Source="SourceDir\docs\modules\index.html" />
+                        </Component>
+                        <Component Id="cmpD00A5DD24EC6445820B1791AE19D6F4B" Guid="{3E70423D-B146-438D-9627-04DA2B9174DF}">
+                            <File Id="fil0783732B09F91F176CFF8210B08F3E7C" KeyPath="yes" Source="SourceDir\docs\modules\index_all.html" />
+                        </Component>
+                        <Directory Id="dir45BF64C91C6AFF7C2C6590B713F08235" Name="assert">
+                            <Component Id="cmp093EB5837C1602C76FD797BABBD18E38" Guid="{C8C183DC-DCF5-4AA7-B855-97672C7B8632}">
+                                <File Id="fil43B4677A043D854335B765481C8EBBBD" KeyPath="yes" Source="SourceDir\docs\modules\assert\index.html" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir658FC3D16372EB6EBFF130D019B19755" Name="binary">
+                            <Component Id="cmp2CB4A96047505E8117CA790B4A305E6B" Guid="{068A5FF9-4AF8-4BBC-A1FB-B8B081F020ED}">
+                                <File Id="fil17E66422C741E041A1B7EDDA377C2D5D" KeyPath="yes" Source="SourceDir\docs\modules\binary\index.html" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir71A5987E0C68FC5EBECCD08C293B91EC" Name="console">
+                            <Component Id="cmpDAA35B5338F57989FEAC2A769FC2151A" Guid="{E5D36427-6EE4-43DD-A3AB-377BD2D21F31}">
+                                <File Id="fil69022F0FFFA51C31AF08FB8D191A01FC" KeyPath="yes" Source="SourceDir\docs\modules\console\index.html" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir3130193DF45CE8F0B3740DBCDF06F8B2" Name="fs">
+                            <Component Id="cmp54ACF9E17B3DA22BDA5A75A88115ED47" Guid="{66E066A6-A736-471A-8037-FC3BD597B12D}">
+                                <File Id="fil6CD67F73CB204E1FA58FD9CE420D3B20" KeyPath="yes" Source="SourceDir\docs\modules\fs\index.html" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir6D377AB885132AD45563C4AFBEB18C42" Name="globals">
+                            <Component Id="cmp59EC4D7E253187A4F8E9DDF9B398D540" Guid="{979879D4-E44B-4593-8E30-E6F670F4FF6D}">
+                                <File Id="fil662CBADD374B87B957829BABDA27B0F5" KeyPath="yes" Source="SourceDir\docs\modules\globals\index.html" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dirBED39F680E1FFBFE5E37655ED897C64A" Name="io">
+                            <Component Id="cmp7B137994B490E36670F25ED02D95BD31" Guid="{958E244B-81DC-40AC-A167-1817F606DF75}">
+                                <File Id="filECB8348295630E2A8FE7F2AA6C82FB3A" KeyPath="yes" Source="SourceDir\docs\modules\io\index.html" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dirA61A8331E72D8DD67B11E178B8246BF1" Name="net">
+                            <Component Id="cmp70FD6766A965919532CE0203A5DB6826" Guid="{F15E81A7-93D5-4B13-98C7-4FA23328303C}">
+                                <File Id="fil540863AF271594D8AA6727853969B4F2" KeyPath="yes" Source="SourceDir\docs\modules\net\index.html" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir2042919877467877007E4F0E72A04307" Name="ringo">
+                            <Directory Id="dirD557CFB6BB292C8B50C4656995FD986F" Name="args">
+                                <Component Id="cmpEF5C208B2E3188A1C5CB14D4F81A99F3" Guid="{6CACD842-3946-4D34-9290-FAEFD93AF14A}">
+                                    <File Id="filB878587ACF12CB4674C5AA81D8C67D9B" KeyPath="yes" Source="SourceDir\docs\modules\ringo\args\index.html" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dirCECB99622A3BC0BCB8992994D7E9FE73" Name="base64">
+                                <Component Id="cmp56749FCD5B19DF65ABF94AC704090777" Guid="{220BE417-C396-4DE8-9991-E8C0579409CF}">
+                                    <File Id="fil0017CE386FB8B949D6A82A54111FE7B9" KeyPath="yes" Source="SourceDir\docs\modules\ringo\base64\index.html" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dirA3F0CF7777D261A190EF05B9121DC196" Name="buffer">
+                                <Component Id="cmpD821E61C818DB6F73315278ED47C94FA" Guid="{4C47B3D6-782F-4FB7-85F6-8D683C0F6B32}">
+                                    <File Id="filDE2147E3A448E06475765A9F81B386E5" KeyPath="yes" Source="SourceDir\docs\modules\ringo\buffer\index.html" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dir70889C273C1DD377A442EBBE478F41F8" Name="concurrent">
+                                <Component Id="cmp9CB1F5B4B546F5C00ED72077FB1BF301" Guid="{79F7CCD5-F82A-4CA4-9196-D3DB4B5EBB54}">
+                                    <File Id="filD5E7E65A3CBAE2AD410133C6193F555D" KeyPath="yes" Source="SourceDir\docs\modules\ringo\concurrent\index.html" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dirED2393504030C7D6AB789462E1D8DAD8" Name="daemon">
+                                <Component Id="cmpEB1AE2B483B64F8BA8D30B7E2CDF1203" Guid="{57EA26EC-ABAD-44E6-8F89-FF693EDC29AF}">
+                                    <File Id="filDCAEC595B5C2C2CFF5483078D179859C" KeyPath="yes" Source="SourceDir\docs\modules\ringo\daemon\index.html" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dirA3E6F25BC75F3081F7D12C0FD2D76205" Name="encoding">
+                                <Component Id="cmp14CB63A4A576240EA7D8C6790F23BAE9" Guid="{65EA5E89-DFCE-4361-BD3A-F0FD983BBB58}">
+                                    <File Id="filB2B93F16A80DF794C9613FCFEE35E6F6" KeyPath="yes" Source="SourceDir\docs\modules\ringo\encoding\index.html" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dir29B6BD79011978B383712A0FFB38DEDF" Name="engine">
+                                <Component Id="cmpB15DB14C14C164211BFA7022D8BA9D7F" Guid="{4E232AA1-24D9-4287-BBDD-A177022D6FB7}">
+                                    <File Id="filD659E66CFEF3214E76850EE8FC43D50C" KeyPath="yes" Source="SourceDir\docs\modules\ringo\engine\index.html" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dir9A9D69C9857B2630688ED67E1B91BB29" Name="events">
+                                <Component Id="cmpCEA5BF22D45E52FB503994AAA3D683B9" Guid="{28A88EC9-D27E-4DAE-B5C2-C2AA908ED69B}">
+                                    <File Id="fil1488F65C1E6BC14E3B274E43EB03C22F" KeyPath="yes" Source="SourceDir\docs\modules\ringo\events\index.html" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dir326122D80386D75D6D16F1DC2F0A3CF2" Name="httpclient">
+                                <Component Id="cmp0E3B77B2D25AF744C45CC445EEE976AD" Guid="{F5382AFB-EA2A-479A-956A-A467DBDB0997}">
+                                    <File Id="fil364D7E4CC25F2594CF45D13DB6FD3B3C" KeyPath="yes" Source="SourceDir\docs\modules\ringo\httpclient\index.html" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dir737B5C4629830D15170B1B5ED7C3E641" Name="httpserver">
+                                <Component Id="cmp684A9901D144A1D8F3E60BBDED909AD0" Guid="{63202C52-AE87-4EE0-852E-7DCD30DBCADB}">
+                                    <File Id="fil9DD7A60C0C8DA1A02A1799BA491D0F88" KeyPath="yes" Source="SourceDir\docs\modules\ringo\httpserver\index.html" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dir48D82F508383333BF9521FE60AB11CD7" Name="jsdoc">
+                                <Component Id="cmp522BD7DF6D3169D2D5F48659C11FA5A3" Guid="{39CA467B-2557-46A8-9081-8D472663E789}">
+                                    <File Id="fil1CAA81A1151C68F808AFF97DE6F543D6" KeyPath="yes" Source="SourceDir\docs\modules\ringo\jsdoc\index.html" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dirCAB1DA8CEFC0E5F3BEE6FD44CE236F0A" Name="jsgi">
+                                <Directory Id="dirAA5907319D029C19F2AE9963E259796B" Name="connector">
+                                    <Component Id="cmp1FF153FF36F9E904D7E2D3C4D9504DB1" Guid="{CC4021DA-40BB-473A-A7B3-65D89D8BB1F5}">
+                                        <File Id="filD39D5428858D1841A94B38BD9EE37656" KeyPath="yes" Source="SourceDir\docs\modules\ringo\jsgi\connector\index.html" />
+                                    </Component>
+                                </Directory>
+                                <Directory Id="dirDC24D0D01C412394A1485FC83F722870" Name="response">
+                                    <Component Id="cmp9EB663A2B7330618949C2512F2B7FD05" Guid="{F251471A-874C-40D3-8164-9A0211CA5403}">
+                                        <File Id="filA37B3D9545ED35ACADA581D82A5F28DA" KeyPath="yes" Source="SourceDir\docs\modules\ringo\jsgi\response\index.html" />
+                                    </Component>
+                                </Directory>
+                            </Directory>
+                            <Directory Id="dir3E9694FEF4212E669606B82350AED4B0" Name="logging">
+                                <Component Id="cmp95261FC41AAA0453F8DAABFCCCB53A63" Guid="{E518716C-8542-4878-A660-88568C4A50D9}">
+                                    <File Id="fil409BBB0767628CBEA41DEA83F1115C30" KeyPath="yes" Source="SourceDir\docs\modules\ringo\logging\index.html" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dir677CDFC8B16FD951E1387EEE765C28B1" Name="markdown">
+                                <Component Id="cmpC25AF4AFEE890ABE15015B7D0A68DE10" Guid="{5BF6B903-3B57-4636-B295-6780DF8CC469}">
+                                    <File Id="fil8DF3993CE03CEF23CE685601D5E2948A" KeyPath="yes" Source="SourceDir\docs\modules\ringo\markdown\index.html" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dir7EFF5DCF0375BA69F89F1C2591E9B78F" Name="mime">
+                                <Component Id="cmp64A5B8D8BF15F2055045931DEE306D97" Guid="{997F6392-2586-44F6-B7BF-8AB731306503}">
+                                    <File Id="fil213808BBED85E75AAB48A0D7FC1E9DD2" KeyPath="yes" Source="SourceDir\docs\modules\ringo\mime\index.html" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dir7D8FADD7A75053CCE442014F264F8EDD" Name="mustache">
+                                <Component Id="cmp9D580DD449DF507E050022DC801401DB" Guid="{7ED2AE09-1A86-4528-9A54-22A69BB55F92}">
+                                    <File Id="fil5542FDBB870B1B2F440F1F2EC4EF80FC" KeyPath="yes" Source="SourceDir\docs\modules\ringo\mustache\index.html" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dir3C4198278242B47ED9E22541FD80C4EB" Name="parser">
+                                <Component Id="cmp0F049299FC1F2E40B953455F01F19D40" Guid="{1996B3C1-CD63-4894-A760-CACD1AB2C1A3}">
+                                    <File Id="fil2A5B887E407EE260F4DB91E5697F1C29" KeyPath="yes" Source="SourceDir\docs\modules\ringo\parser\index.html" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dir0F3537A4589919CF9320A0BA162215F9" Name="profiler">
+                                <Component Id="cmp7B43C58E09AA23FBB8DD8171818FBE46" Guid="{A6BC77D4-3015-42BF-A1C0-DDB707D98A24}">
+                                    <File Id="filEC683C568411AA4B4CCB2DE4AB2F62CB" KeyPath="yes" Source="SourceDir\docs\modules\ringo\profiler\index.html" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dir50EA905F8FBF5DEFE7604945AF787595" Name="promise">
+                                <Component Id="cmpF2D5D772842BE9FC982989F71B35DE68" Guid="{F17139AB-A7C9-4D62-AD53-0793FFDCB857}">
+                                    <File Id="fil5DBED367EF37EA7CC20A72EF4B7CE592" KeyPath="yes" Source="SourceDir\docs\modules\ringo\promise\index.html" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dir25473ABE0C3FBEAF7886DDFA8D314E53" Name="shell">
+                                <Component Id="cmp205010917D33B8B44920FC79DF046D3A" Guid="{4CCEBB61-FE7D-4FA8-BD6E-1D4E6C5FD3A6}">
+                                    <File Id="filFB10982693305433D1BEB768EFB6278D" KeyPath="yes" Source="SourceDir\docs\modules\ringo\shell\index.html" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dirC58743E9E2A921B0298644B00A09F540" Name="subprocess">
+                                <Component Id="cmpB3536AAB8C21891A2B0A5D3F33A73212" Guid="{E12EBFF9-A318-429D-AD05-56958B5DB136}">
+                                    <File Id="fil53BC0DCA85F5D61048572E0855B3C0A6" KeyPath="yes" Source="SourceDir\docs\modules\ringo\subprocess\index.html" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dir9C42C142E0B770B079521F41F782487B" Name="term">
+                                <Component Id="cmp8AF5B73AC3190BC18824F18CACFF649E" Guid="{26D04C6D-F3CC-42A9-B339-7D96019F8F97}">
+                                    <File Id="fil3412E9282BBDAF749377109223B6A2D8" KeyPath="yes" Source="SourceDir\docs\modules\ringo\term\index.html" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dir24A71E9291EFAFC38992AC71C3138725" Name="utils">
+                                <Directory Id="dir6DB289EE86C8AA3331689A5B04974DD2" Name="arrays">
+                                    <Component Id="cmpA1532A37BA6767041226E095D2A31618" Guid="{08291D09-9192-4841-B92F-D7EDDB0156FC}">
+                                        <File Id="fil9BAF2CE48222796D78FD39B21B1C7C5B" KeyPath="yes" Source="SourceDir\docs\modules\ringo\utils\arrays\index.html" />
+                                    </Component>
+                                </Directory>
+                                <Directory Id="dirE0FC5C582BBE1D1BA5C942A9B55F64D4" Name="dates">
+                                    <Component Id="cmpB75EFFACB9D01ABDA56990F0D3986E89" Guid="{3BC35DF6-8ACD-4CCD-BA19-529CBA22CA93}">
+                                        <File Id="fil039C9D8A60194755BD36A7A83F68BD0B" KeyPath="yes" Source="SourceDir\docs\modules\ringo\utils\dates\index.html" />
+                                    </Component>
+                                </Directory>
+                                <Directory Id="dir6106EAC2087C767F913C2B779F3B33DC" Name="files">
+                                    <Component Id="cmp9E9BAE8B76F45050B9F5FFF6F0644ECC" Guid="{363C4E12-F9DB-4F93-AF33-D7B6A7F2F2A7}">
+                                        <File Id="fil3A93961CE4AAC757B593BEF9ACE23C23" KeyPath="yes" Source="SourceDir\docs\modules\ringo\utils\files\index.html" />
+                                    </Component>
+                                </Directory>
+                                <Directory Id="dir98058990BD18D8DC96209E79AB079AE3" Name="http">
+                                    <Component Id="cmpDE3E8BADDD1919457714771C17091931" Guid="{6F44C903-4D60-49B3-B435-0D01C51E6222}">
+                                        <File Id="fil410F2E3480D6E0AD12740CCEAB437A8A" KeyPath="yes" Source="SourceDir\docs\modules\ringo\utils\http\index.html" />
+                                    </Component>
+                                </Directory>
+                                <Directory Id="dir0372D4E8DBA848DEC5D4A4F5107D897B" Name="numbers">
+                                    <Component Id="cmpD1A0345FBBA27A3442D68C5F7D84A71C" Guid="{549D52CF-854B-4751-BB58-D8A18FBF1EBE}">
+                                        <File Id="fil9DABE60FBDBE4049220B1349BE2B5D25" KeyPath="yes" Source="SourceDir\docs\modules\ringo\utils\numbers\index.html" />
+                                    </Component>
+                                </Directory>
+                                <Directory Id="dirCD32CC7ECBAA6E56C65F0A6479254A9B" Name="objects">
+                                    <Component Id="cmpC8FB648B5E977D6D491621C7E8A44A4F" Guid="{FCDECD0F-E4AB-484A-B146-D17F9A088EF5}">
+                                        <File Id="filE29FDAA6ED9728AD88D0F48E7073D191" KeyPath="yes" Source="SourceDir\docs\modules\ringo\utils\objects\index.html" />
+                                    </Component>
+                                </Directory>
+                                <Directory Id="dir3EBFDF7A0DA17D5FA4D2BA0151FEA00C" Name="strings">
+                                    <Component Id="cmpE7CE0FA0D6811662FB309685F84CF9A0" Guid="{4FBD4675-69DE-4A79-BCA8-C2FAD040C270}">
+                                        <File Id="fil1B2A8D46AFE29708759079ECAEBD398B" KeyPath="yes" Source="SourceDir\docs\modules\ringo\utils\strings\index.html" />
+                                    </Component>
+                                </Directory>
+                            </Directory>
+                            <Directory Id="dir495EC20944A3699A13D70810D38A4989" Name="worker">
+                                <Component Id="cmp02CFEFD32E71316F4F270C91DC2587C6" Guid="{C50FB702-E7E2-4084-84EA-DF2571E987C7}">
+                                    <File Id="fil0B23B7E42BE4F4D00FC6A97A42F8BCF6" KeyPath="yes" Source="SourceDir\docs\modules\ringo\worker\index.html" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dirF027F639032DB2082D61C68B860EB7FE" Name="zip">
+                                <Component Id="cmp5C625729C3E2A2A1B050C432D62F8AD2" Guid="{5F23CAA1-3893-421A-9390-812DD3BBE1B3}">
+                                    <File Id="fil1049AD820D70A7551AD91E5943315626" KeyPath="yes" Source="SourceDir\docs\modules\ringo\zip\index.html" />
+                                </Component>
+                            </Directory>
+                        </Directory>
+                        <Directory Id="dir0F56EF78771CD67EDAA138BAC74115FE" Name="static">
+                            <Component Id="cmp28AEEBC12DD13BCAB3D55A5F4FD8A6A6" Guid="{616A723D-3893-4AB3-AAD1-D46FABBC9A08}">
+                                <File Id="fil3C24CEE4C1D273F72886043B084D8A0A" KeyPath="yes" Source="SourceDir\docs\modules\static\enterkey.png" />
+                            </Component>
+                            <Component Id="cmp12B85499391836F8C3E5CEFB0B571336" Guid="{9FDE7707-6506-44FF-BEC1-B6CB5F844AA5}">
+                                <File Id="filA6F5BC33121A933AD69633EBCF5C5F88" KeyPath="yes" Source="SourceDir\docs\modules\static\jquery.min.js" />
+                            </Component>
+                            <Component Id="cmp549856506D6D930355E5E0EC7E489B00" Guid="{282117C3-0F37-4323-877E-C49FEF8EE3A7}">
+                                <File Id="fil1FE96D6B535AD02243098C1E2462914B" KeyPath="yes" Source="SourceDir\docs\modules\static\jsdoc.css" />
+                            </Component>
+                            <Component Id="cmp0D293D73D5FC087F16D053E94794942F" Guid="{17CE021A-D5DB-4C78-AFCE-D6ABFF93BC97}">
+                                <File Id="filED1465A761FAB58219478888F88A2E30" KeyPath="yes" Source="SourceDir\docs\modules\static\jsdoc.js" />
+                            </Component>
+                            <Component Id="cmp4AA1D87E4F2BAF0EC8503F95D7A10A51" Guid="{A58AF500-83FC-43D3-A325-67F2CE89BFF5}">
+                                <File Id="fil8BA9FB49C891630B4E507F1215297BCA" KeyPath="yes" Source="SourceDir\docs\modules\static\style.css" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dirFB4CC116E0CB050F7DF5A56F8F082F41" Name="system">
+                            <Component Id="cmp386002F13B930B1E2D473F0777DD7350" Guid="{AA8B0043-210A-46A4-B0C8-8DE1D34C13AD}">
+                                <File Id="fil3217A0BD5DE077596B8308ABFF003EDF" KeyPath="yes" Source="SourceDir\docs\modules\system\index.html" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir5B0FABF8B197F1707FF583C5A1AAB2CB" Name="test">
+                            <Component Id="cmp17DCD805B946E5CC04FEED65DE1C57E8" Guid="{05D5BA9B-21DA-415C-9B30-118DF44BFA4A}">
+                                <File Id="fil00784C37F3A2AAEDE9B3D22264791253" KeyPath="yes" Source="SourceDir\docs\modules\test\index.html" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                </Directory>
+                <Directory Id="dir9AA5CAB493805B39D5AA79C630686EA0" Name="examples">
+                    <Component Id="cmp3C93090C0901B7EC343492101A6A0171" Guid="{EB591376-B07E-4B7D-86F6-9F84CFD36971}">
+                        <File Id="filF0514B544D0167F64C52D149029FD033" KeyPath="yes" Source="SourceDir\examples\file-term.js" />
+                    </Component>
+                    <Component Id="cmpBCE3B79056E5F353E45BC61E99BB25A1" Guid="{46CA64A1-948D-4446-8651-5C4E05FA9151}">
+                        <File Id="fil66C9E0A6C5CE6D13B4388D9613494BAB" KeyPath="yes" Source="SourceDir\examples\httpserver-async.js" />
+                    </Component>
+                    <Component Id="cmpEEAB25D02B30894FFD29102598025F4D" Guid="{C78D10C0-F9C8-4F55-90DC-C36AC07523D6}">
+                        <File Id="fil67BEB6624140CBC23CC1756CFA1D8373" KeyPath="yes" Source="SourceDir\examples\httpserver.js" />
+                    </Component>
+                    <Component Id="cmp668B783A20842E869F549F6D6124A774" Guid="{12583EF2-A2F1-4D72-9E91-C3595A70AD5F}">
+                        <File Id="filE7B0C4CF2C0E911FF30CD1E77CDB2A6A" KeyPath="yes" Source="SourceDir\examples\parse-options.js" />
+                    </Component>
+                    <Component Id="cmpB555A07C0953A4BAF774C9783B5784E0" Guid="{5A8D4521-9621-4CBB-BFC2-22FECC3FF988}">
+                        <File Id="fil8F0EE3CCD54FED0B5C43325E9F5786BC" KeyPath="yes" Source="SourceDir\examples\promise-chain.js" />
+                    </Component>
+                    <Component Id="cmp4F8432CA30FE1307D5C7464C75E26986" Guid="{4842DBB7-2097-4BAC-B46A-630B70C2DEFC}">
+                        <File Id="fil1A6F99679FC25B9CAE26738D16D73FAB" KeyPath="yes" Source="SourceDir\examples\promise-fail.js" />
+                    </Component>
+                    <Component Id="cmp97F69FD5050BBDC4CC01828126F32208" Guid="{2650E107-CDC7-426F-98E5-728DB8DB4519}">
+                        <File Id="filD0CA585222DFB0899657A0471C6A3512" KeyPath="yes" Source="SourceDir\examples\swing.js" />
+                    </Component>
+                    <Component Id="cmp909CD2BDEE1C02D38AA585F83D268077" Guid="{9FF1B2CD-2A73-4961-AB64-E017077DCFA4}">
+                        <File Id="fil1E37FD6326EB181B0B0D617658F7B046" KeyPath="yes" Source="SourceDir\examples\websocket-server-push.js" />
+                    </Component>
+                    <Component Id="cmp9DC129A242C2EAAF8127E3D81415BE49" Guid="{FA3897F7-6E71-4439-BEDB-B8D4611D3F07}">
+                        <File Id="filB8B512250E7EFB5FB6851B68CB19ECC8" KeyPath="yes" Source="SourceDir\examples\websocket-server.js" />
+                    </Component>
+                    <Component Id="cmp6094FDA157ADCF776E8DB553E5F45555" Guid="{A3A3A6F6-C6F7-4AB4-AA64-FE07E2A7F4D4}">
+                        <File Id="fil8CBD28BCDAB86C85AE4777957FFE9661" KeyPath="yes" Source="SourceDir\examples\worker-fanout-semaphore.js" />
+                    </Component>
+                    <Component Id="cmpA61F555E8BF9E3E84BCEFB5879D25F84" Guid="{208732E6-620B-4873-A79E-2860FED51F02}">
+                        <File Id="fil21B25933B932CCC0DC67E714C2928298" KeyPath="yes" Source="SourceDir\examples\worker-fanout.js" />
+                    </Component>
+                    <Component Id="cmpA4CEE22E8BB1FF7C2292FDF9029998D4" Guid="{FB287398-0667-4725-BF78-96D158A66956}">
+                        <File Id="fil7A78FFCA10B1B52FA7C6716EE94CE697" KeyPath="yes" Source="SourceDir\examples\worker-pingpong.js" />
+                    </Component>
+                    <Component Id="cmpEACFFF7BC70DD093FE0947CB2866D07B" Guid="{D729005F-92BC-4B3E-A8C9-472627F13FE5}">
+                        <File Id="fil97E218737D15777BB233C14F66A59432" KeyPath="yes" Source="SourceDir\examples\worker-semaphore.js" />
+                    </Component>
+                    <Component Id="cmp2C262E4491ECCF3B92F6871B91B77A3C" Guid="{1082013E-232A-4B82-B29A-906F4F591DE8}">
+                        <File Id="filFC04C83BAB2705F7E67B754AFBCA1F7E" KeyPath="yes" Source="SourceDir\examples\worker.js" />
+                    </Component>
+                    <Directory Id="dirE85F2DB0EE5A6EBF668FA50FB7CDE005" Name="html">
+                        <Component Id="cmp168A53605EB831F1025AFD2100E043D2" Guid="{508389DB-8ABD-486A-9B4E-325AA24DFF09}">
+                            <File Id="fil14E5BCB38B6B2168D6E3377F58D451D6" KeyPath="yes" Source="SourceDir\examples\html\websocket.html" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="dir25D71DCED18981D11BD84C54075E1DC0" Name="img">
+                        <Component Id="cmpF07274ED915DEC0B490519272149CD1D" Guid="{4395A12C-9146-4B11-AEDD-4BB9EF12D243}">
+                            <File Id="fil8D61E14142397946D8CC7932746717D6" KeyPath="yes" Source="SourceDir\examples\img\ringo-drums.png" />
+                        </Component>
+                    </Directory>
+                </Directory>
+                <Directory Id="dir1D9F7D0A412E95092E725FEF4E7EA2D8" Name="lib">
+                    <Component Id="cmp95970D6171B6486F90249F7218316F2A" Guid="{3DD6ECF3-0152-4AD1-96B9-EF435700FBB9}">
+                        <File Id="fil9A22E77DD2EB4529C7E4081B271FBC68" KeyPath="yes" Source="SourceDir\lib\ringo-core.jar" />
+                    </Component>
+                    <Component Id="cmpDFAEC31C23E595671B236F76D28C35FE" Guid="{6C68DBE4-C639-4C95-81F4-ED59218ABAA8}">
+                        <File Id="fil6D970D21678F996DB2AA0B79EB66AD7A" KeyPath="yes" Source="SourceDir\lib\ringo-modules.jar" />
+                    </Component>
+                    <Component Id="cmp6C54FF227830F5C21CCB90DAD35C5595" Guid="{37BE9EF2-9EF5-46C8-B693-A1BB933E19FA}">
+                        <File Id="filE9030D14A730BF41FBDE8640CBA5C044" KeyPath="yes" Source="SourceDir\lib\ringo.policy" />
+                    </Component>
+                    <Directory Id="dirE52A720540F14E6A898331B0F2BDE39C" Name="ivy">
+                        <Component Id="cmp967756ADB39C04AB37450E27B7ED312F" Guid="{483B8D7D-18D5-4C98-8C5D-86814C627FED}">
+                            <File Id="fil42517EC00557DD39E555C3804DADF83E" KeyPath="yes" Source="SourceDir\lib\ivy\asm-3.2.jar" />
+                        </Component>
+                        <Component Id="cmp4EDBADFE511C28B144C40916628B5795" Guid="{10D568A1-8EC9-4F70-85E7-571B18ED5124}">
+                            <File Id="fil1DB5E53DB05D3F1F7A5D976E694E1919" KeyPath="yes" Source="SourceDir\lib\ivy\asm-commons-3.2.jar" />
+                        </Component>
+                        <Component Id="cmpCB9FEB7EB1E9A7C233E32F8F46C1265A" Guid="{73D9A319-8B2E-49CE-B938-5D014C536D96}">
+                            <File Id="fil0491F3360630E49AC88BC715049070F1" KeyPath="yes" Source="SourceDir\lib\ivy\asm-tree-3.2.jar" />
+                        </Component>
+                        <Component Id="cmp9B1656BA419F6F09132C8540C4161EA8" Guid="{CD04892D-BC18-4F0E-B35E-D1A7A93000A4}">
+                            <File Id="filFB25C9428245BE4CA7CAEE0C0F421DEB" KeyPath="yes" Source="SourceDir\lib\ivy\constantine-0.7.jar" />
+                        </Component>
+                        <Component Id="cmp6599D3174D18E59C4E9CF55ED225FE24" Guid="{120C253F-CAA2-4642-9D18-B37E27BD2652}">
+                            <File Id="filB334CA9303B40DA3090989A2C4708262" KeyPath="yes" Source="SourceDir\lib\ivy\jaffl-0.5.12.jar" />
+                        </Component>
+                        <Component Id="cmp2DAFA01B14266FFEE8830CED311E541F" Guid="{7C8BC5AE-FD63-4E27-8B40-6302E1129CBC}">
+                            <File Id="fil34AC23A472646576C2EE28EB73EF63B3" KeyPath="yes" Source="SourceDir\lib\ivy\jetty-continuation-7.5.4.v20111024.jar" />
+                        </Component>
+                        <Component Id="cmp6E8B3E7F8C3CBB03FA672F9B543CB5D4" Guid="{87F23FF4-4F07-4252-A57A-8E6E7ED1A183}">
+                            <File Id="filF16C5E7D9A9DBB4850785DBA8E2B3D5A" KeyPath="yes" Source="SourceDir\lib\ivy\jetty-http-7.5.4.v20111024.jar" />
+                        </Component>
+                        <Component Id="cmp704A4EECBC0E65BBA616481C87392B8E" Guid="{13B1D67D-A4EF-4233-88CF-A8DD510AE183}">
+                            <File Id="fil1667E9A8D498E4E1DBA7A84991033E7A" KeyPath="yes" Source="SourceDir\lib\ivy\jetty-io-7.5.4.v20111024.jar" />
+                        </Component>
+                        <Component Id="cmpB69FD3C8587665E9C8FF10D3698C0CE4" Guid="{29FABD4E-2DEE-4908-8A9F-CC586EBA3663}">
+                            <File Id="filA35BCE4384A5D065E1FFD4001F14E51A" KeyPath="yes" Source="SourceDir\lib\ivy\jetty-jmx-7.5.4.v20111024.jar" />
+                        </Component>
+                        <Component Id="cmp7431314DC59D25F3F562F0E23A855AB9" Guid="{5342B7D7-EAB1-413E-B692-1B7043FC4AF3}">
+                            <File Id="fil1F3830EB3C9DACF2BC779CEFC9F76454" KeyPath="yes" Source="SourceDir\lib\ivy\jetty-security-7.5.4.v20111024.jar" />
+                        </Component>
+                        <Component Id="cmp242E93AB8489D9C3E0CCCF8A6D5C9D6E" Guid="{FF386925-CCA7-4103-8E68-BB88CDB71BE9}">
+                            <File Id="filAAFADDF5CBE23D2B59593F7E0A6FCBBB" KeyPath="yes" Source="SourceDir\lib\ivy\jetty-server-7.5.4.v20111024.jar" />
+                        </Component>
+                        <Component Id="cmp61EDBF1F790129B2609C9863B4FA6D3E" Guid="{DF4B998C-C0FA-4C10-9CA5-19474631AE73}">
+                            <File Id="fil1C0EC864D4176448EF61A8351B6FF252" KeyPath="yes" Source="SourceDir\lib\ivy\jetty-servlet-7.5.4.v20111024.jar" />
+                        </Component>
+                        <Component Id="cmp5A5A42C048F3F2BA26F9B0C55FAF202A" Guid="{BD331669-2703-4DC8-9194-6EB707C9EF19}">
+                            <File Id="filEA42D74BCEC472EF2F51864944C19005" KeyPath="yes" Source="SourceDir\lib\ivy\jetty-util-7.5.4.v20111024.jar" />
+                        </Component>
+                        <Component Id="cmp611FD3BDC41DF5E5B697F21E4F0610FB" Guid="{785B32F8-7633-4869-9006-C74CD37E81C3}">
+                            <File Id="filEDD9001F5F99AD231230FDE69CC34D82" KeyPath="yes" Source="SourceDir\lib\ivy\jetty-websocket-7.5.4.v20111024.jar" />
+                        </Component>
+                        <Component Id="cmp68FB70C80978EF0505D93A90FED20181" Guid="{AA680742-3C80-4E8A-848F-6F1245BFF0E2}">
+                            <File Id="filBFF509BCCD5A005D9F699026A557B74A" KeyPath="yes" Source="SourceDir\lib\ivy\jetty-xml-7.5.4.v20111024.jar" />
+                        </Component>
+                        <Component Id="cmp8AB1B10440DF7017DC45AB98D0884159" Guid="{90A4119C-2F74-4204-A6B2-02F2BA2F07DA}">
+                            <File Id="fil64F78B0959580F703FDB6F142B0E0A93" KeyPath="yes" Source="SourceDir\lib\ivy\jffi-1.0.10.jar" />
+                        </Component>
+                        <Component Id="cmpF62D4AA47B2DE48EE6F7F681BBDD5E5A" Guid="{8F0830D4-9FFF-45D2-B078-8CD8DBA917FB}">
+                            <File Id="fil2578C4A72ADAA2BF7A16789A14CEAD81" KeyPath="yes" Source="SourceDir\lib\ivy\jline-1.0.jar" />
+                        </Component>
+                        <Component Id="cmp3B85F54DC41A468515A5E26294368C7A" Guid="{7642C991-4292-4CA3-A7C3-392AE1F09370}">
+                            <File Id="fil956551BF01AC45EB33DE016DF2A75B37" KeyPath="yes" Source="SourceDir\lib\ivy\jnr-posix-1.1.9.jar" />
+                        </Component>
+                        <Component Id="cmpACCB26DD355B5EA7E4ED82EC0F625487" Guid="{393CC6F9-2962-4FD9-90A0-0098A0183341}">
+                            <File Id="filDCDECCE1416ACF23CB98FE905F1D8231" KeyPath="yes" Source="SourceDir\lib\ivy\jnr-x86asm-1.0.0.jar" />
+                        </Component>
+                        <Component Id="cmpA705A376072C89B5C281894C4A2A691A" Guid="{3E93853E-0D12-46EA-8921-4C17C5FC5272}">
+                            <File Id="filCE01F4344532805DAE3FF33307BFD9DF" KeyPath="yes" Source="SourceDir\lib\ivy\junit-3.8.2.jar" />
+                        </Component>
+                        <Component Id="cmpEB6C02B054897612C56D2B8130DE55C9" Guid="{A535BBB3-F136-49D9-9F11-B34C4A5FFF5D}">
+                            <File Id="filAE0C5A9BEBD141AA9AC878EBCB29E64F" KeyPath="yes" Source="SourceDir\lib\ivy\log4j-1.2.14.jar" />
+                        </Component>
+                        <Component Id="cmp066F7FAF3FA6EDE15992F1C33D9CCD83" Guid="{BA78AA73-8FFA-49D1-BE16-211B39BA9D81}">
+                            <File Id="fil729E3CEE761442A1818C452C58B19B29" KeyPath="yes" Source="SourceDir\lib\ivy\rhino-1.7R5-SNAPSHOT.jar" />
+                        </Component>
+                        <Component Id="cmp18E59DF1BC47AA7CE90547685FB24F3D" Guid="{972E3CD3-2EDD-4443-9F58-35D67DDCEB29}">
+                            <File Id="filBB5F112D3708F08D507BE14336441F9D" KeyPath="yes" Source="SourceDir\lib\ivy\servlet-api-2.5.jar" />
+                        </Component>
+                        <Component Id="cmpF7396C5FFE2F841FBA0B33D5D5D15150" Guid="{ECF013FB-D647-4D18-B4F3-424B7AB80E72}">
+                            <File Id="filF6BFE69CFB18790106C67CD2F804C821" KeyPath="yes" Source="SourceDir\lib\ivy\slf4j-api-1.6.6.jar" />
+                        </Component>
+                        <Component Id="cmpC06425033787DB6E48C1FE8CDFB7696D" Guid="{064E0F52-DF34-4E25-9137-150FA920A01F}">
+                            <File Id="filCEE3A7832956DA7F8E51681710FA65CC" KeyPath="yes" Source="SourceDir\lib\ivy\slf4j-log4j12-1.6.6.jar" />
+                        </Component>
+                        <Component Id="cmpC5A937CFA38AA9F963FC9305E1417588" Guid="{EF26DF8A-370C-4E3E-BFB5-CC3617BD1E9A}">
+                            <File Id="fil69AB5C18C125ADAED21A22DF01431A79" KeyPath="yes" Source="SourceDir\lib\ivy\[originalname].jar" />
+                        </Component>
+                    </Directory>
+                </Directory>
+                <Directory Id="dir8A83B1AB24F1B4390022CD64B2D65BCA" Name="modules">
+                    <Component Id="cmpA753443DED243A5B61788EEDED481CE2" Guid="{676E947B-092F-45F4-A31A-4A5A8C8D73C8}">
+                        <File Id="fil90E73DC777C688D21DCD08B3C656FDCC" KeyPath="yes" Source="SourceDir\modules\assert.js" />
+                    </Component>
+                    <Component Id="cmp18BDD916570B397C72CE321428D8AB0F" Guid="{4976FCC9-C15A-486C-924A-46C671571E10}">
+                        <File Id="filF3FEB852FC983A7947A9AB341A485449" KeyPath="yes" Source="SourceDir\modules\binary.js" />
+                    </Component>
+                    <Component Id="cmpD5F5213605CA68A8B3AB777DA70D356E" Guid="{CFD23BA1-9DF2-4C99-828E-69E84500D92D}">
+                        <File Id="filBC1A9C69279B4964572DF9EDF2A1340C" KeyPath="yes" Source="SourceDir\modules\console.js" />
+                    </Component>
+                    <Component Id="cmpB98EE7492CFDFD88EE9D597A70E2EE97" Guid="{4F85A2C9-3FC0-47F0-83C6-CF14D663F1E8}">
+                        <File Id="fil4BF873E29136F19502F9FFF210CBDA24" KeyPath="yes" Source="SourceDir\modules\fs.js" />
+                    </Component>
+                    <Component Id="cmp23444619D4D8A71350E6A9E8A18F8213" Guid="{7DEDD9CE-C5F1-480A-A6DF-E6C8CCE5F00B}">
+                        <File Id="fil784D01A9EB40F276B33BC0C5D07FC5E3" KeyPath="yes" Source="SourceDir\modules\globals.js" />
+                    </Component>
+                    <Component Id="cmp21AE5693C161B141FE9F7A1EB7C7F582" Guid="{75B1BE98-D3AE-4412-A3E1-48D10DF894F9}">
+                        <File Id="fil14B89C4DD97FBF8EF748E8C50B9BD5A5" KeyPath="yes" Source="SourceDir\modules\io.js" />
+                    </Component>
+                    <Component Id="cmpCAD49B9CCF34930B741504EC306313EF" Guid="{BA905718-726E-4EC4-94B9-A0AE6EA7DFB8}">
+                        <File Id="fil88EB03DA1F4BBB16169EEC5B1A913BA2" KeyPath="yes" Source="SourceDir\modules\net.js" />
+                    </Component>
+                    <Component Id="cmp070A2A2DEB654D00C818E94C0691CD2C" Guid="{D90214EB-8BD7-4B1C-B3E6-1EC760FAEF94}">
+                        <File Id="filC35189B57CA1423589D7E623FD23E8B4" KeyPath="yes" Source="SourceDir\modules\system.js" />
+                    </Component>
+                    <Component Id="cmp1C9A1CE01A76F500D7CFA42CBE918F4A" Guid="{516735EB-09C3-4ECD-8AE7-BE33B8A78873}">
+                        <File Id="fil0E3E9C74EEA637CB359A2A1D1990B95C" KeyPath="yes" Source="SourceDir\modules\test.js" />
+                    </Component>
+                    <Directory Id="dir6742BCA5581D3D17BAA035B64DAC9CF2" Name="config">
+                        <Component Id="cmpEC0622A31BA954A5646225D04E181D8E" Guid="{B979C5BF-012C-4A10-8D88-FA6BF0B10E6D}">
+                            <File Id="filC7EC31F6ADB29253B6921CFE5F392EE4" KeyPath="yes" Source="SourceDir\modules\config\jetty.xml" />
+                        </Component>
+                        <Component Id="cmp7957987AD68ADBEF943A11E6CE00B48F" Guid="{48F16748-BBBD-4C60-BC66-4D77B06E08B5}">
+                            <File Id="filC109F56B9D931C1DCD0E97940B4717BA" KeyPath="yes" Source="SourceDir\modules\config\log4j.properties" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="dirA48B01F665733515DB50C23505F6C2F8" Name="ringo">
+                        <Component Id="cmp7258745243907B59D9CF8A00CBBEB1A9" Guid="{258EB0CC-B7F0-442F-BF6E-2E24DA93E04C}">
+                            <File Id="fil3C3BC9345808E2852C46A9EE8AFEEB01" KeyPath="yes" Source="SourceDir\modules\ringo\args.js" />
+                        </Component>
+                        <Component Id="cmpFB6DDC9BFEB4AE2E9FE1170FAA654654" Guid="{512BB140-DB2A-4378-88C2-079AA2043B1C}">
+                            <File Id="fil8CE4DABCBD6FF0CF3714B6E0F9ED1177" KeyPath="yes" Source="SourceDir\modules\ringo\base64.js" />
+                        </Component>
+                        <Component Id="cmpF6EC19E1D02D5C06C0EE0BE6B6F2CCDB" Guid="{29726C1A-B684-458C-AAEB-7A0B625482B1}">
+                            <File Id="fil1967BB60AF04DB2C4D71048460905702" KeyPath="yes" Source="SourceDir\modules\ringo\buffer.js" />
+                        </Component>
+                        <Component Id="cmp2F8BC51AE30AE4F5A765FBF79073A54F" Guid="{797F249D-1E70-4075-ABBF-3FA0FF7AA9A1}">
+                            <File Id="fil2AC77E84DD821094E07FA0324BA7EFF2" KeyPath="yes" Source="SourceDir\modules\ringo\concurrent.js" />
+                        </Component>
+                        <Component Id="cmp63FF492F878951894289450163EF5C6F" Guid="{41124E74-7B64-421A-B3C4-069E4C02ED4F}">
+                            <File Id="filE4D8B8E343A7B18C7E5802323A7FFDE8" KeyPath="yes" Source="SourceDir\modules\ringo\daemon.js" />
+                        </Component>
+                        <Component Id="cmpEC1E43ADC2DCB453518EA2A9A18BC0CA" Guid="{A003510C-A348-40A1-98F4-100C88B65FD0}">
+                            <File Id="fil5DEBA556F794B35C68F1B2D51846FCC5" KeyPath="yes" Source="SourceDir\modules\ringo\encoding.js" />
+                        </Component>
+                        <Component Id="cmp42F15C8DD07C9BD9CD7E1B2EE0E92E82" Guid="{A02120A7-D43F-454B-A419-77AD40D24546}">
+                            <File Id="fil7BF368AD7472F28236BD00D379C1AE6F" KeyPath="yes" Source="SourceDir\modules\ringo\engine.js" />
+                        </Component>
+                        <Component Id="cmp2E99325F5735E0FD1EAC111A8B3D64FB" Guid="{3150FDA7-607D-4823-B940-039298384EED}">
+                            <File Id="fil9349936A02F4766A27EB28D3618AA1F3" KeyPath="yes" Source="SourceDir\modules\ringo\events.js" />
+                        </Component>
+                        <Component Id="cmpB9E7C85B2434C305ED209A11AE1641BC" Guid="{2E6B028F-3A03-4F38-A52D-140F5C2A1051}">
+                            <File Id="filACC9B6C3D2FCC912400F141E2E71EF2D" KeyPath="yes" Source="SourceDir\modules\ringo\httpclient.js" />
+                        </Component>
+                        <Component Id="cmp8ABDCC2E161C01B5CFA19F021F64D5A7" Guid="{137F386F-5987-46B9-B154-11FDE9FCE70D}">
+                            <File Id="fil0CB32FAB3AD05EB6214D7F6441FCC2A3" KeyPath="yes" Source="SourceDir\modules\ringo\httpserver.js" />
+                        </Component>
+                        <Component Id="cmpD8C8805F4FD9D8F0B52EBE90E7161322" Guid="{A768AFFD-603E-4C85-B39F-F27A6EE0D29D}">
+                            <File Id="fil0B99A41A47DF99136ECA88984244B58F" KeyPath="yes" Source="SourceDir\modules\ringo\jsdoc.js" />
+                        </Component>
+                        <Component Id="cmpFC2B73ACCD6F8F23DCAEE04A541B20D9" Guid="{19BDE674-5F2E-457F-9FFD-2F84C7ED914E}">
+                            <File Id="filFEEAA13E417DE2526138BAC89C75D47C" KeyPath="yes" Source="SourceDir\modules\ringo\logging.js" />
+                        </Component>
+                        <Component Id="cmp99147A6F4AF6853851C85C7B9B52C4D1" Guid="{065F7C8C-0CD5-4542-A877-9111492F32DA}">
+                            <File Id="fil60F34E6676DD9445A91D852AA72116A2" KeyPath="yes" Source="SourceDir\modules\ringo\markdown.js" />
+                        </Component>
+                        <Component Id="cmpFB253DDAFF2401C2429C77B6E87297B4" Guid="{853D5A88-5806-4E47-9CF7-4FDA8355E165}">
+                            <File Id="fil1D09D051EB480204FDEF7CD566C9B6BF" KeyPath="yes" Source="SourceDir\modules\ringo\mime.js" />
+                        </Component>
+                        <Component Id="cmpD77C599CE7406568A699D4BA1AC31D24" Guid="{9778E84F-17FB-42D1-BC66-D5B69CA80DAA}">
+                            <File Id="filF7661176BAFF74D901C7B4B09B7D31D0" KeyPath="yes" Source="SourceDir\modules\ringo\mustache.js" />
+                        </Component>
+                        <Component Id="cmp3C59EDB92EC5F00D7761E8F578696203" Guid="{583C4B2F-FA13-449E-BEEF-B83086C7557C}">
+                            <File Id="fil81556172CB9CF48628F8B53943EEC114" KeyPath="yes" Source="SourceDir\modules\ringo\parser.js" />
+                        </Component>
+                        <Component Id="cmpEF9C396BE98D5D94B8A3A19A7930623B" Guid="{3442E5C3-3677-4C69-85F6-533E32206272}">
+                            <File Id="filA92CCFFE2D0B49CB240C8596A9521DFE" KeyPath="yes" Source="SourceDir\modules\ringo\profiler.js" />
+                        </Component>
+                        <Component Id="cmp6C8A7E992B84A4BEC0BE4CD550441802" Guid="{DD12F422-023C-45D5-9BF2-6BC1DEE32A18}">
+                            <File Id="fil4B70D6FA87833C62ACEDE65C1D77E43A" KeyPath="yes" Source="SourceDir\modules\ringo\promise.js" />
+                        </Component>
+                        <Component Id="cmp1965CC1B92BD8836D825FD478B9FEB6B" Guid="{5F15D34B-819C-400C-BA37-5ABD4D3FEBC7}">
+                            <File Id="fil4FEF3ED802420BA302BD38DB5D4285C6" KeyPath="yes" Source="SourceDir\modules\ringo\shell.js" />
+                        </Component>
+                        <Component Id="cmpE10D93806D08A9AE3CF6BFA9B5C88522" Guid="{E29CC667-2426-43A8-8AD1-37D4CFFFEE99}">
+                            <File Id="fil915EC9BC484129AC100F694F3F36BE7C" KeyPath="yes" Source="SourceDir\modules\ringo\subprocess.js" />
+                        </Component>
+                        <Component Id="cmpC8CE6C520F593200E68B8717BA23989C" Guid="{FA606E25-40E7-4A20-93D9-F0158358699A}">
+                            <File Id="filA310ECE04FBE2F56C804B2D75B9E289B" KeyPath="yes" Source="SourceDir\modules\ringo\term.js" />
+                        </Component>
+                        <Component Id="cmp96CD10879923F455E576C0139DAA7288" Guid="{E0C3DE94-8F04-491B-A330-A7FCDB7C61C6}">
+                            <File Id="fil8CEBCF5F0D6CDD43F274465F515B647E" KeyPath="yes" Source="SourceDir\modules\ringo\worker.js" />
+                        </Component>
+                        <Component Id="cmp2DEDF37AA20634387795DBCF5E1A111E" Guid="{E9915D80-644D-48D2-B98F-B79AE8448D06}">
+                            <File Id="fil67C3974346E3A677264CE56FC50AA253" KeyPath="yes" Source="SourceDir\modules\ringo\zip.js" />
+                        </Component>
+                        <Directory Id="dir26140A16E9201254D18BC06274DE2E33" Name="jsgi">
+                            <Component Id="cmp4FBE777F2A3FA2E884B754002780BD83" Guid="{CD77CBC7-72E3-422E-9D94-B04087C01B6E}">
+                                <File Id="filDD9356C16449E048D37B23ADBE455B21" KeyPath="yes" Source="SourceDir\modules\ringo\jsgi\connector.js" />
+                            </Component>
+                            <Component Id="cmpB30171EFAC9185BD35FFEBAD59D084EF" Guid="{8A4ABE49-1F15-48DB-9448-7C72B80F75A2}">
+                                <File Id="fil6D2A656D56CF5C685D8B3E8C0B10232F" KeyPath="yes" Source="SourceDir\modules\ringo\jsgi\response.js" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir9D5F8F5CFA26D80D3C1033F56C44627B" Name="utils">
+                            <Component Id="cmp3E353729D87FD49A3E45156C877A2C79" Guid="{C2F5C9C6-DF3C-4480-9B34-C939CCA084ED}">
+                                <File Id="filA28786CB7BC5C6B35DA09F38BE3F4CB5" KeyPath="yes" Source="SourceDir\modules\ringo\utils\arrays.js" />
+                            </Component>
+                            <Component Id="cmp1B7BCE4ED0D0353265F37E61297506B9" Guid="{A7CB8716-324E-4618-B5B7-96C06AA8D137}">
+                                <File Id="filF72377AEEF3AC78019D11136E5936B7A" KeyPath="yes" Source="SourceDir\modules\ringo\utils\dates.js" />
+                            </Component>
+                            <Component Id="cmpDD37D111BCDEB06CF0D46529FE4929CF" Guid="{6AA3B1D6-1F30-44FC-A3D1-E222504A57D3}">
+                                <File Id="filA59FB92B293927F47B19FD7791C348FE" KeyPath="yes" Source="SourceDir\modules\ringo\utils\files.js" />
+                            </Component>
+                            <Component Id="cmp98F7BA41D923F17A730E425B9C422AD6" Guid="{080E8F1C-85B9-4C61-9621-05B9081E2185}">
+                                <File Id="fil21C6A5E5D39AD8D74907115D0CD29041" KeyPath="yes" Source="SourceDir\modules\ringo\utils\http.js" />
+                            </Component>
+                            <Component Id="cmp6791434645804C5136EBE0CC67706CF8" Guid="{E584D677-C94A-4E45-BDDF-80C3BE3307D2}">
+                                <File Id="filD2CF159103B57EA5E329260609B70649" KeyPath="yes" Source="SourceDir\modules\ringo\utils\numbers.js" />
+                            </Component>
+                            <Component Id="cmpD76EFB8064962B8A329551B862CCEE9D" Guid="{7C325531-C51D-453A-AD5C-A05C444DB889}">
+                                <File Id="fil30FB14A792774ACC1BA0285674FCB757" KeyPath="yes" Source="SourceDir\modules\ringo\utils\objects.js" />
+                            </Component>
+                            <Component Id="cmp7909D670F7960A521933405F29C4E664" Guid="{24712632-6EAD-428A-9F99-C8A8F8E1C171}">
+                                <File Id="filD0807C0024C51B8B4A14D3D3854F4806" KeyPath="yes" Source="SourceDir\modules\ringo\utils\strings.js" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                </Directory>
+                <Directory Id="dir1EED2E6113B5B1A22539202DA344A426" Name="packages">
+                    <Component Id="cmpCBACEAE0A425B16D93D4F311FA55017B" Guid="{D81CA24E-391F-4552-942C-357590D66A59}" KeyPath="yes">
+                        <CreateFolder />
+                    </Component>
+                </Directory>
+                <Directory Id="dirAD80BA958150C930D068ACC57D7EB8BB" Name="src">
+                    <Directory Id="dirF63E6D27BB32B6F9508D8C93990C4AE0" Name="org">
+                        <Directory Id="dirD4B38DE9418FE5A8A81EAC7924B5CD75" Name="ringojs">
+                            <Directory Id="dir051018A824013CEA8F63A2E5CDD4FF2C" Name="engine">
+                                <Component Id="cmp1076600D4FEFFDC7D09631FCAB4C720C" Guid="{260F9456-A3AD-4C97-883B-DCB0C22D3558}">
+                                    <File Id="fil8704364C1B545A141CC66245DF4CBAAB" KeyPath="yes" Source="SourceDir\src\org\ringojs\engine\Callback.java" />
+                                </Component>
+                                <Component Id="cmp8D02C2DAF1B7AA87F5798CAB3E2CF3BB" Guid="{EB91C3D2-786A-4550-B1BB-AF27AE424807}">
+                                    <File Id="fil6912B5DB488CDFD5F1B42E57D70B1321" KeyPath="yes" Source="SourceDir\src\org\ringojs\engine\ModuleLoader.java" />
+                                </Component>
+                                <Component Id="cmp32CBE6B324DB1F2150146623ED984E6B" Guid="{38BDB9F5-320E-4482-B75D-F42D52D42DFF}">
+                                    <File Id="filA44E88309EC20E8144268DBA5F731D9B" KeyPath="yes" Source="SourceDir\src\org\ringojs\engine\ModuleObject.java" />
+                                </Component>
+                                <Component Id="cmp2A066FCEDAAD3500381AC33F9028B632" Guid="{49982123-268D-477C-BFCE-485BB3E047AF}">
+                                    <File Id="filAFE38333DB9E68559EF3E71F6F2FB350" KeyPath="yes" Source="SourceDir\src\org\ringojs\engine\ModuleScope.java" />
+                                </Component>
+                                <Component Id="cmp4D0EEC12519B5120CB44DDEFA15E3F91" Guid="{6E447FEE-CD51-4558-B745-020F291C38B1}">
+                                    <File Id="fil9DE030961F067D32EEBFE75E4975EB72" KeyPath="yes" Source="SourceDir\src\org\ringojs\engine\package.html" />
+                                </Component>
+                                <Component Id="cmp48BB96C11F40FA77B911E41D6D7A5170" Guid="{B4C0C823-D3F3-472E-80FA-63AC5999095A}">
+                                    <File Id="fil7BCB6CF3BF10F7D9001662DBE1712973" KeyPath="yes" Source="SourceDir\src\org\ringojs\engine\ReloadableScript.java" />
+                                </Component>
+                                <Component Id="cmpCB02816DCEC70AA8E8C19A5A57253634" Guid="{437C7C21-F2B3-44E8-A8E9-58D8F7944FD9}">
+                                    <File Id="filBA2F193F638B414A551AB837965AA33F" KeyPath="yes" Source="SourceDir\src\org\ringojs\engine\Require.java" />
+                                </Component>
+                                <Component Id="cmpB96BF1C19A2902E4599E7E4B9AC8A92E" Guid="{5C890DC9-FFBB-4A60-A99E-1A0026A6CD48}">
+                                    <File Id="filCCA905040DA6106D47536A78AC534D98" KeyPath="yes" Source="SourceDir\src\org\ringojs\engine\RhinoEngine.java" />
+                                </Component>
+                                <Component Id="cmpEC287A7ECB1C8A3F844F757F8F7E3237" Guid="{BA447526-70DA-47F5-A723-7FECB027405B}">
+                                    <File Id="fil19AAC3B79A996420775FC76E3EC2760D" KeyPath="yes" Source="SourceDir\src\org\ringojs\engine\RingoConfig.java" />
+                                </Component>
+                                <Component Id="cmp1AAEAA81C0262CC0C6820C411CF22AB6" Guid="{D903C8C3-80F8-4D5C-A273-2F3C05BD1F40}">
+                                    <File Id="fil3581BA8542D0905ECA91F7B910283969" KeyPath="yes" Source="SourceDir\src\org\ringojs\engine\RingoContextFactory.java" />
+                                </Component>
+                                <Component Id="cmpB5D3CFC181B567CBE51B9A2BB9BCC03D" Guid="{7F72D353-C67F-470B-8C6C-341E91AF28A1}">
+                                    <File Id="filD86738B025CB99FCCBB2119B35731E16" KeyPath="yes" Source="SourceDir\src\org\ringojs\engine\RingoGlobal.java" />
+                                </Component>
+                                <Component Id="cmp1BE1405DD104F32AB2F853A4BF00B19B" Guid="{04CAF325-49A3-49C3-91A6-4619087B21C6}">
+                                    <File Id="fil895D2694BA33C75523F778F2E8117CE7" KeyPath="yes" Source="SourceDir\src\org\ringojs\engine\RingoWorker.java" />
+                                </Component>
+                                <Component Id="cmp77DDDA19CA3B9026C20F3A6115188E07" Guid="{0666B7FF-6E14-4946-8394-50DAB485EF67}">
+                                    <File Id="fil7F3EC5BA7EBA453736EC3E8D2E3C6F50" KeyPath="yes" Source="SourceDir\src\org\ringojs\engine\RingoWrapFactory.java" />
+                                </Component>
+                                <Component Id="cmpE7BA0957A99B7D08A9F3B2B78B91DF6A" Guid="{7C439E2A-3488-4EFB-838C-B3A832B96A1B}">
+                                    <File Id="fil239758CCE6A823B356C16CC4986A5ED3" KeyPath="yes" Source="SourceDir\src\org\ringojs\engine\ScriptError.java" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dirD1145E99AB9B82BE8F5D6F3001AC6A28" Name="jsgi">
+                                <Component Id="cmp26336F5164782D501A35B20D49B9EFA7" Guid="{06C12A11-CA9B-40E8-8D27-3F2D6F765B84}">
+                                    <File Id="fil1A5F76AA210B390ED7F4B8DF797DD225" KeyPath="yes" Source="SourceDir\src\org\ringojs\jsgi\error.html" />
+                                </Component>
+                                <Component Id="cmp51A47EAB4F81BB03976DFF53B21D192B" Guid="{B758C9B4-D509-4AD4-AB55-985A81C3AE3C}">
+                                    <File Id="filD51B28927037468DF610003F181CD231" KeyPath="yes" Source="SourceDir\src\org\ringojs\jsgi\JsgiRequest.java" />
+                                </Component>
+                                <Component Id="cmp7000C137C4FCC99C21E82397A59AD27B" Guid="{BF2A446E-B45C-4EC0-A0CC-A385FFBAE7FC}">
+                                    <File Id="fil29559383D6F3DCA4B0128307AB0036CC" KeyPath="yes" Source="SourceDir\src\org\ringojs\jsgi\JsgiServlet.java" />
+                                </Component>
+                                <Component Id="cmp70424328DE04B0B009124E7ADF18E498" Guid="{A275B3C2-A1BD-4FE8-A539-265288C28499}">
+                                    <File Id="filCFECA3625FFC798432684AADFBF41727" KeyPath="yes" Source="SourceDir\src\org\ringojs\jsgi\package.html" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dir264EAB4119E223745F20252A98AEAAD4" Name="repository">
+                                <Component Id="cmpFC21049CA52EEC36B85B29FF996357B3" Guid="{8A6FC5C6-089A-4A92-8354-11E0F82416C1}">
+                                    <File Id="fil42BC4DB20068938C462160D767154C15" KeyPath="yes" Source="SourceDir\src\org\ringojs\repository\AbstractRepository.java" />
+                                </Component>
+                                <Component Id="cmp0884EC34A8E2E2625FE1A7BD4C42B5D3" Guid="{3DE85655-1AB4-4A5A-8503-AAFC74256505}">
+                                    <File Id="fil688A359CFE527D3C262C93CB2DF1C10F" KeyPath="yes" Source="SourceDir\src\org\ringojs\repository\AbstractResource.java" />
+                                </Component>
+                                <Component Id="cmpC1F2565E70634225B01BC47F3FACEBA4" Guid="{8B0AC7D6-7F05-451B-824B-42713736C8B3}">
+                                    <File Id="fil1CF8C6E8B3C19B7BFB340EC3BC43A376" KeyPath="yes" Source="SourceDir\src\org\ringojs\repository\FileRepository.java" />
+                                </Component>
+                                <Component Id="cmp5E8F9812416B6981AF7667B29AFFE1C0" Guid="{5D1D5865-9ADE-4C4F-A3B6-CD54F99A5D34}">
+                                    <File Id="filA3C0F5518D2AB3DA4A621704A112A53D" KeyPath="yes" Source="SourceDir\src\org\ringojs\repository\FileResource.java" />
+                                </Component>
+                                <Component Id="cmp97F6FE0E76B51676353842CB1DE495D4" Guid="{B4B97BED-6D1F-4837-9266-7483A6E5048C}">
+                                    <File Id="filF63AEE4BF7496AF08F5FDEF189AC2D96" KeyPath="yes" Source="SourceDir\src\org\ringojs\repository\package.html" />
+                                </Component>
+                                <Component Id="cmpA804DDCB08BC9335D8FE83B3371BD766" Guid="{C8FCA2AE-C5D0-4C00-8DB0-34746C532B2C}">
+                                    <File Id="fil8227CBD7922A68065AA627FB4554493C" KeyPath="yes" Source="SourceDir\src\org\ringojs\repository\Repository.java" />
+                                </Component>
+                                <Component Id="cmpC16B953BCD5BFD491BB7305424086652" Guid="{2A2874CA-0932-494D-A9D8-6EED5BAAE5AB}">
+                                    <File Id="fil4E3CCECE2E660A22BE8913BC2F701BB8" KeyPath="yes" Source="SourceDir\src\org\ringojs\repository\Resource.java" />
+                                </Component>
+                                <Component Id="cmp9ABBECBE8617698EC1056BE00BC4F3FD" Guid="{5685188D-3FCA-452A-8BA2-42D44550FFD4}">
+                                    <File Id="fil016346AA35F843475BCF3FA298801ADE" KeyPath="yes" Source="SourceDir\src\org\ringojs\repository\StringResource.java" />
+                                </Component>
+                                <Component Id="cmpBAA994EAE01CACFAA5BC0C57DED99A78" Guid="{C47C5A6D-9A86-49B3-A937-3E111BF8CB07}">
+                                    <File Id="filDC3512E407AD49D9573BF7273DB05339" KeyPath="yes" Source="SourceDir\src\org\ringojs\repository\Trackable.java" />
+                                </Component>
+                                <Component Id="cmp4FC0F1E2B39ECDF66ABD7F6CFBCC41F8" Guid="{BCE9AB9C-EF51-4524-A0D8-34345F600FF4}">
+                                    <File Id="fil50F990E8A74CCD23B86E2ACFAFB602C0" KeyPath="yes" Source="SourceDir\src\org\ringojs\repository\Tracker.java" />
+                                </Component>
+                                <Component Id="cmp5C1625E6044E0946A81DEF48FF5A38B0" Guid="{C02CA2FA-14AE-43E7-AFA1-3E01EC8CF0CC}">
+                                    <File Id="fil7704122783446D4F58D3D2DBED574273" KeyPath="yes" Source="SourceDir\src\org\ringojs\repository\WebappRepository.java" />
+                                </Component>
+                                <Component Id="cmp6DA5B783D98B2463A95E64D3F900C639" Guid="{9600BA4A-5877-4424-9C6C-5884DC712B03}">
+                                    <File Id="fil71573A7F0EBA8ABE090D0F777D3E4ACF" KeyPath="yes" Source="SourceDir\src\org\ringojs\repository\WebappResource.java" />
+                                </Component>
+                                <Component Id="cmp4CA372B4AF3F0D8A7C5817F170EA5A8D" Guid="{9DE892B4-C0D9-4AAB-BBEA-42ED5DC2AF11}">
+                                    <File Id="fil416466C5707892BE02B47A8DF04359CE" KeyPath="yes" Source="SourceDir\src\org\ringojs\repository\ZipRepository.java" />
+                                </Component>
+                                <Component Id="cmpFCBDF24553E899DF94577D96858F6F67" Guid="{0666719B-30BC-441C-B6FF-9D0CC909D048}">
+                                    <File Id="fil8FC4D2885E90BD46E99003B6B1CC7398" KeyPath="yes" Source="SourceDir\src\org\ringojs\repository\ZipResource.java" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dir3AB81C418DF36BA0DD5B4A9C64E0B71D" Name="security">
+                                <Component Id="cmp89A4145091BD99F9477F4A52C78883CE" Guid="{7270C716-A0A7-48B0-9CFF-58289B0B8CC2}">
+                                    <File Id="fil1C359FCB6B295DCB1283B750BB82713E" KeyPath="yes" Source="SourceDir\src\org\ringojs\security\RingoRuntimePermission.java" />
+                                </Component>
+                                <Component Id="cmpF4A922AAE968AEB47C0FC94F3E9D703F" Guid="{198D6FC1-E8F4-4D04-9626-4AB2B324624B}">
+                                    <File Id="fil47C319F6F34D686B8BE5A153B5F00003" KeyPath="yes" Source="SourceDir\src\org\ringojs\security\RingoSecurityManager.java" />
+                                </Component>
+                                <Component Id="cmpC370A80DE4A13DC76552A90A2A3DDAA6" Guid="{33B8E192-209A-4D27-AFFE-7D41CFB07F56}">
+                                    <File Id="filA0D648322604E3658340220055A6DF45" KeyPath="yes" Source="SourceDir\src\org\ringojs\security\SecureWrapFactory.java" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dir8AC89C910B047F0408D81E2E8B5039EB" Name="test">
+                                <Component Id="cmp46B68671FAF671EB7EEE8492825A09F0" Guid="{34D4AB39-CAAC-4EF1-ADA6-653834A72550}">
+                                    <File Id="fil896892540AECF12387E92BFFD06583C1" KeyPath="yes" Source="SourceDir\src\org\ringojs\test\CaseInsensitiveMapTest.java" />
+                                </Component>
+                                <Component Id="cmpF5EF65B8DDC60E0B2FB25EEC9F2F17B1" Guid="{4EF8B31A-664D-42C8-B23D-25441B0E6FB5}">
+                                    <File Id="filCC395F568944DB53FE00E523095B4800" KeyPath="yes" Source="SourceDir\src\org\ringojs\test\EventAdapterTest.java" />
+                                </Component>
+                                <Component Id="cmp42227C0D6E9AD71745334CDFD3126373" Guid="{0060EBD1-266A-4B70-B04B-2B7032F0C4B4}">
+                                    <File Id="fil7CA991ABF0F3B72988CA00EA32D35D71" KeyPath="yes" Source="SourceDir\src\org\ringojs\test\NormalizePathTest.java" />
+                                </Component>
+                                <Component Id="cmp19FB9DCA130E1F7746CBE134BA22266B" Guid="{488017DA-5391-4477-9037-9B2D5E0B35A7}">
+                                    <File Id="fil2F1DA85E18FFE612CF4B41C7B87D944D" KeyPath="yes" Source="SourceDir\src\org\ringojs\test\StringUtilsTest.java" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dir7BAC60BE7EA7F459F23663A9E9E5CB0D" Name="tools">
+                                <Component Id="cmp10F4A722A99C954D991B45E4F94EAC3D" Guid="{D4314F5A-3077-4525-8869-8E9DB410CDF7}">
+                                    <File Id="fil9BA9D30D2B40CD037891BAF34DD7531C" KeyPath="yes" Source="SourceDir\src\org\ringojs\tools\RingoDebugger.java" />
+                                </Component>
+                                <Component Id="cmp3F491EC552D33FA05E7DE35C4DE78C3E" Guid="{756DDD26-0BA7-4850-A8F3-F1CBC623BCE7}">
+                                    <File Id="fil6ACF85A79637E2145712CBB23DE3686E" KeyPath="yes" Source="SourceDir\src\org\ringojs\tools\RingoRunner.java" />
+                                </Component>
+                                <Component Id="cmpEE026A4C5220120CC22B5A439EA80B1E" Guid="{0C56A893-9AE1-423C-8F7C-D3DFD2D9DED3}">
+                                    <File Id="fil93F3A33901CD8EE6F27EA49F99E4379E" KeyPath="yes" Source="SourceDir\src\org\ringojs\tools\RingoShell.java" />
+                                </Component>
+                                <Directory Id="dirC00B3C19862D8C005C247159F42510C7" Name="launcher">
+                                    <Component Id="cmp95AC62C7EA9F66BF25354061A988EA45" Guid="{A571920D-7F73-464C-8A6D-A5BD7D220EE0}">
+                                        <File Id="filA85113D67C0506305E5ECD0AADB01711" KeyPath="yes" Source="SourceDir\src\org\ringojs\tools\launcher\Main.java" />
+                                    </Component>
+                                    <Component Id="cmp84955E40A8FE7B226A17916436D54536" Guid="{D2F79BDD-BACE-4D55-A283-16493993F73D}">
+                                        <File Id="filB7B3014028FBFF948EB17BD9AC2785DC" KeyPath="yes" Source="SourceDir\src\org\ringojs\tools\launcher\manifest.txt" />
+                                    </Component>
+                                    <Component Id="cmp604FB900D37A1311D302633DCC4A4C59" Guid="{FB274DCA-C14A-4D03-A61B-D3EDBE361803}">
+                                        <File Id="filEB39F20B6A425711D29201C33BC4AA1A" KeyPath="yes" Source="SourceDir\src\org\ringojs\tools\launcher\RingoClassLoader.java" />
+                                    </Component>
+                                </Directory>
+                            </Directory>
+                            <Directory Id="dir2267DB35CFF3EC479BE375C9834BCEA3" Name="util">
+                                <Component Id="cmp9ED634AFAEDAC1DDCCB2D9026AF1D8BE" Guid="{71D5E017-AA4D-4369-8730-E56B16CC206A}">
+                                    <File Id="fil43FE0EB982B49A326C839253777E7066" KeyPath="yes" Source="SourceDir\src\org\ringojs\util\CaseInsensitiveMap.java" />
+                                </Component>
+                                <Component Id="cmp2DE26A084BC9F0D97CEE13BD6CB7DB29" Guid="{E5CF5E99-1E69-4E35-BE59-DB03A7F93EEF}">
+                                    <File Id="fil5038652C9A0F287862B278A7209A718C" KeyPath="yes" Source="SourceDir\src\org\ringojs\util\DebuggerBase.java" />
+                                </Component>
+                                <Component Id="cmp624793B965AFDEC956116545FDFFBAD2" Guid="{9C9B8AA1-ECEF-40B1-B5C7-0C0F7D246041}">
+                                    <File Id="fil46016CAB23BCECC099ED411CF620A4DA" KeyPath="yes" Source="SourceDir\src\org\ringojs\util\MarkdownProcessor.java" />
+                                </Component>
+                                <Component Id="cmp97DC93540C2E8C593DABF08D70DE62EC" Guid="{C3D53113-960C-4215-A7C4-9A3A20AD9520}">
+                                    <File Id="fil814AB528676173426041B425C01D6C22" KeyPath="yes" Source="SourceDir\src\org\ringojs\util\package.html" />
+                                </Component>
+                                <Component Id="cmp02511B37EEEB4C76E22D228572C9899E" Guid="{DC86EB18-F839-4E48-88BA-ADD4095A28C0}">
+                                    <File Id="fil281B30054276F3CE07B7964E3E2E5E86" KeyPath="yes" Source="SourceDir\src\org\ringojs\util\POSIXSupport.java" />
+                                </Component>
+                                <Component Id="cmpD091C5F68D8203E95C3F229C0077B532" Guid="{AC5B76D8-890A-4D6C-B5F1-F475D6BCC803}">
+                                    <File Id="fil226865325ACD2D5EEC0D4E796B7E4B2E" KeyPath="yes" Source="SourceDir\src\org\ringojs\util\ScriptUtils.java" />
+                                </Component>
+                                <Component Id="cmpF3446CBDA4CB9859513478DCDD4DAE16" Guid="{ED56C095-F4B0-4E7B-A7BA-6FCD40BA7806}">
+                                    <File Id="filBDC0A284C9B50FE0FE133C179AE8B922" KeyPath="yes" Source="SourceDir\src\org\ringojs\util\StackUtils.java" />
+                                </Component>
+                                <Component Id="cmp090B65B55D1BF59D81EE5AF33B0A66E7" Guid="{6F0F43AB-9567-4022-B8A7-094CE9927EFA}">
+                                    <File Id="fil2FEAC31F4F733644AF28611AF83B082B" KeyPath="yes" Source="SourceDir\src\org\ringojs\util\StringUtils.java" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dirBB928750660D97A87400F71DBC4CB299" Name="wrappers">
+                                <Component Id="cmp4F410B9579D993FD1FD669F65A4E316E" Guid="{D0E3A1B7-0E5F-4892-ABFF-4426D8C84DF3}">
+                                    <File Id="fil5357DEA0A71ED54560EE2AB7A8C84854" KeyPath="yes" Source="SourceDir\src\org\ringojs\wrappers\Binary.java" />
+                                </Component>
+                                <Component Id="cmpC542309466D6A3D4F85E8FA4187F739B" Guid="{ACE30F31-E944-4048-8535-EBE43DD941CB}">
+                                    <File Id="fil27682776E128FC25CBA91382ACBCB807" KeyPath="yes" Source="SourceDir\src\org\ringojs\wrappers\EventAdapter.java" />
+                                </Component>
+                                <Component Id="cmp97E561BF05679826A070A780ADEE2039" Guid="{8B4C8F92-A9D4-4274-900A-3EABBE2B688B}">
+                                    <File Id="fil5AE7D22FDA9DCF9D44E05042527BFD09" KeyPath="yes" Source="SourceDir\src\org\ringojs\wrappers\package.html" />
+                                </Component>
+                                <Component Id="cmp3E6EBB4AED3757627A1D37B09F6E3763" Guid="{467DE52D-2037-4319-A691-ED2EDD54BA57}">
+                                    <File Id="filC3B60016C3A0084A674A48655467C106" KeyPath="yes" Source="SourceDir\src\org\ringojs\wrappers\POSIX.java" />
+                                </Component>
+                                <Component Id="cmpE279250B77797DC3204E22991CB9801A" Guid="{49F2901A-DE2E-41DA-BB49-EA3C19D6CAE3}">
+                                    <File Id="fil56117C43E3474BA5DFD31AF8F5B1A869" KeyPath="yes" Source="SourceDir\src\org\ringojs\wrappers\ScriptableList.java" />
+                                </Component>
+                                <Component Id="cmp417C00D1418E88DE1BEF944D375E84FB" Guid="{6AF3FF9D-43EA-4821-99F6-6922F4BBA569}">
+                                    <File Id="fil3BE7948E09DE8DFCEBA827BC588CAB6C" KeyPath="yes" Source="SourceDir\src\org\ringojs\wrappers\ScriptableMap.java" />
+                                </Component>
+                                <Component Id="cmp6DB95BE4D5950D25109B0A5E6EB11D9A" Guid="{5A544D1B-5E10-4310-88A4-CF4028F22551}">
+                                    <File Id="fil15804F3412D97C6D531794BC567DE011" KeyPath="yes" Source="SourceDir\src\org\ringojs\wrappers\ScriptableWrapper.java" />
+                                </Component>
+                                <Component Id="cmp9F4D8B2536E079970CAAF4F6574A9866" Guid="{ACFB1DCF-9874-4B46-ABE3-DB9DACEEABAD}">
+                                    <File Id="fil83D7BE4A7CC68B9905CF4E3C103E8A83" KeyPath="yes" Source="SourceDir\src\org\ringojs\wrappers\Storable.java" />
+                                </Component>
+                                <Component Id="cmpFDBBFF2AAFE8E6B086C996999DD690FC" Guid="{05010478-B1CB-4CCE-AF62-F6EF715C9A02}">
+                                    <File Id="fil0E32F90DC69F2676399E1509C2375FB5" KeyPath="yes" Source="SourceDir\src\org\ringojs\wrappers\Stream.java" />
+                                </Component>
+                            </Directory>
+                        </Directory>
+                    </Directory>
+                </Directory>
+                <Directory Id="dir613B1CE0EC2CE8FCB72BC00E9D6B9A22" Name="test">
+                    <Component Id="cmp69C41742083C6249F9C90A9E00217A0E" Guid="{A4352059-C50E-4B50-BB8A-AA700A20F63A}">
+                        <File Id="fil5C754698511E2F446BB796D0E521E3BD" KeyPath="yes" Source="SourceDir\test\all.js" />
+                    </Component>
+                    <Component Id="cmp373F1FD615140BF037C5FC26F9189545" Guid="{29C2BA7F-808B-42A7-BB36-2EAA7A9CF1E1}">
+                        <File Id="filE82A42527786EB1272A5D8D9FE128266" KeyPath="yes" Source="SourceDir\test\assert.js" />
+                    </Component>
+                    <Component Id="cmp95BAF0B4BBE8047E065AEF0F35DBD61D" Guid="{899825C4-58BA-4549-9D6A-2CC0016A9405}">
+                        <File Id="filE54E19305482E9C9BC11183DF2070315" KeyPath="yes" Source="SourceDir\test\assert_commonjs.js" />
+                    </Component>
+                    <Component Id="cmp008610C6280E51D717782C67D06F3DAC" Guid="{82D70981-570D-49CE-A4FB-D0238506D17F}">
+                        <File Id="filD9715ABDDB5AA51734E50EC5236B06F8" KeyPath="yes" Source="SourceDir\test\io_test.js" />
+                    </Component>
+                    <Component Id="cmpF3EBB9B5558C164ABBA619E540766C37" Guid="{ACADA40D-5A9A-4649-8282-81ED274A1EE4}">
+                        <File Id="fil159B05C416E79BFC8096F3F2FC314A43" KeyPath="yes" Source="SourceDir\test\README" />
+                    </Component>
+                    <Directory Id="dirA867E4C7087B0376EB75497E332D94CB" Name="binary">
+                        <Component Id="cmpF18DF68325B7ADB2AFCBCA6306993399" Guid="{5DEC51E8-24D4-47B7-B8FD-F4CE55B06AF5}">
+                            <File Id="fil00CBE74011B35B6715CBEC6E83993341" KeyPath="yes" Source="SourceDir\test\binary\all.js" />
+                        </Component>
+                        <Component Id="cmp1004184BC8B7E89F4DA5EBB9EE6BC41D" Guid="{C1F936AF-F8A0-4499-9494-A9A5FB524DD3}">
+                            <File Id="filF7041AD74AF11020D959741210765466" KeyPath="yes" Source="SourceDir\test\binary\bytearray-encodings-tests.js" />
+                        </Component>
+                        <Component Id="cmpB85D7F28B338F6AA8D9A0F6B1F1EAF54" Guid="{36F06A48-433A-49D2-B445-7E082C539834}">
+                            <File Id="fil1605368F317CFD946A909A5C3ED49437" KeyPath="yes" Source="SourceDir\test\binary\bytearray-slice.js" />
+                        </Component>
+                        <Component Id="cmp1EDAFA046BF13F25EFE1EF31EA5923BF" Guid="{18F6B6BF-3497-456E-AF0E-361DD7A685C5}">
+                            <File Id="filCC684AC2A7492BA9E3C2440B70513A10" KeyPath="yes" Source="SourceDir\test\binary\bytearray-tests.js" />
+                        </Component>
+                        <Component Id="cmp94CDDF67B982241EBB595174B567D2A5" Guid="{3CCADC22-BC93-4A55-B068-87868A7B23A9}">
+                            <File Id="filA01AE844C9186B39053EF3BA142E4AC4" KeyPath="yes" Source="SourceDir\test\binary\bytestring-encodings-tests.js" />
+                        </Component>
+                        <Component Id="cmpE7B5165C6891DE75340B298E88E4450F" Guid="{36F3E5EE-8778-48DD-AA3D-8D9FC4481AC7}">
+                            <File Id="filF8EA68B460438AE2ABB1F8BF46CE903C" KeyPath="yes" Source="SourceDir\test\binary\bytestring-tests.js" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="dirA059A01794C06F7502015FCD5D7AE854" Name="file">
+                        <Component Id="cmp57C2F507649C3F47A9D83746BC887BFD" Guid="{E2A9766D-5E92-496C-9A3D-8114B3325582}">
+                            <File Id="filFC94C4356566C27791B8B287AC0EF327" KeyPath="yes" Source="SourceDir\test\file\all.js" />
+                        </Component>
+                        <Component Id="cmp8F299575A0805BD0D42744E6ADE49CF6" Guid="{510DA00A-FFEC-4422-91FD-E5AC21016EC3}">
+                            <File Id="fil73DD31EB8B72137211352B4197EA90A8" KeyPath="yes" Source="SourceDir\test\file\dirname.js" />
+                        </Component>
+                        <Component Id="cmp431F30052E7B791B7A042D19CA5EEEE7" Guid="{88484DAC-EE6C-4DDD-9618-5854FED32FEE}">
+                            <File Id="fil022A9A0E9D03F4930B496CA5DB08416F" KeyPath="yes" Source="SourceDir\test\file\extension.js" />
+                        </Component>
+                        <Component Id="cmpAF7312470837713DEF60D9CB52FA65EF" Guid="{00B5276F-5A4A-4CD9-A279-1F51C145F1DC}">
+                            <File Id="fil5F6A9C6F1ADF06A3C8FDA8822E4EFE88" KeyPath="yes" Source="SourceDir\test\file\is-absolute.js" />
+                        </Component>
+                        <Component Id="cmpD237E6AA4D2244586C44738D5490755A" Guid="{1B50039F-23BE-456E-9243-AB94025502F5}">
+                            <File Id="filAD428D261BC2D7843C573A2CB17649A1" KeyPath="yes" Source="SourceDir\test\file\iterator.js" />
+                        </Component>
+                        <Component Id="cmpC8126EBA214E4D14B5F1B26A2EDF4BF3" Guid="{885D2FEA-B8DB-482D-80BC-131104AA3D5D}">
+                            <File Id="filE51184760B502FEE187589F1C520FEB0" KeyPath="yes" Source="SourceDir\test\file\normal.js" />
+                        </Component>
+                        <Component Id="cmp86E7BF3BD4F27E7CB563D8A943C6B634" Guid="{8AE7ABA2-F650-4570-87D2-2319A3C35633}">
+                            <File Id="fil817F5F1E6F33E36044041191B3966210" KeyPath="yes" Source="SourceDir\test\file\relative.js" />
+                        </Component>
+                        <Component Id="cmp198AE1F59201158DF7133EC0429D6B39" Guid="{8E33A347-DF9C-4F62-9194-7702EC24F414}">
+                            <File Id="filCA8F24A79B6A4FCBEA4BAD49FFCFCE90" KeyPath="yes" Source="SourceDir\test\file\resolve.js" />
+                        </Component>
+                        <Component Id="cmpF6EB69C13BDB8B4C55B5F400FE579005" Guid="{C3D3D010-B214-45F7-B5E8-DC87A6058972}">
+                            <File Id="fil86A8FBB06DFE7CC34AA6C30B460068FA" KeyPath="yes" Source="SourceDir\test\file\touch.js" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="dir68B50422B64910C3F94DE9DCF092886C" Name="modules">
+                        <Component Id="cmp2BE5FAAF90071F1A80CAA5AFE7F25E04" Guid="{85CD72C3-749C-4154-B923-84FA825D9C24}">
+                            <File Id="fil0C1D4E34C14B8239BBB24A6F2122840A" KeyPath="yes" Source="SourceDir\test\modules\all.js" />
+                        </Component>
+                        <Component Id="cmpE6CF5918284C87A9691819FA94EB3C9A" Guid="{3A8C068C-FD90-4F04-B6F9-84ED60A4E465}">
+                            <File Id="filDDFCF9BCAADC8DAED6EDD2A40BE06166" KeyPath="yes" Source="SourceDir\test\modules\ORACLE" />
+                        </Component>
+                        <Directory Id="dir6B9A0007732E1DAB3D7F508E37C45FC8" Name="absolute">
+                            <Component Id="cmp8385110C10FABC7CC647561E1DC00377" Guid="{3CD55166-7F7F-42D7-8DB2-8836CB100BDB}">
+                                <File Id="fil99E0946377123C0902D31C0F50071A5A" KeyPath="yes" Source="SourceDir\test\modules\absolute\b.js" />
+                            </Component>
+                            <Component Id="cmp5F6776485D7E1559E55CADA7B17AFCA4" Guid="{198DA802-D676-4300-A01D-316ED9C7D17C}">
+                                <File Id="fil82F7EF68A7DC41B4D5C437EA175C8A28" KeyPath="yes" Source="SourceDir\test\modules\absolute\program.js" />
+                            </Component>
+                            <Component Id="cmpAB10A4BA4C12FC969BB82C315999278C" Guid="{CA88B26E-4267-441E-8281-5A7B9D78EC7F}">
+                                <File Id="filC8A3CB270422DDE0BEF80DF571E990BD" KeyPath="yes" Source="SourceDir\test\modules\absolute\test.js" />
+                            </Component>
+                            <Directory Id="dirDEF6F8ED0FBCB33CFC98E373B93C170C" Name="submodule">
+                                <Component Id="cmp6E9E49DBD3C3B23EC51EEEE608B2FB0C" Guid="{FC204268-70DA-44F6-A12C-1C594F4C0F0F}">
+                                    <File Id="fil1F114F901099B5FCB08B537EBC23B138" KeyPath="yes" Source="SourceDir\test\modules\absolute\submodule\a.js" />
+                                </Component>
+                            </Directory>
+                        </Directory>
+                        <Directory Id="dirCC027557577D2096AC8652E0F4B965AD" Name="cyclic">
+                            <Component Id="cmp297E4039297C5EC6FA44D4801C10025C" Guid="{A5FAF02E-0C4A-46DB-AE5D-A1FB9A8F3A8F}">
+                                <File Id="filD4E2D4609DA173FE85FD9314F5147924" KeyPath="yes" Source="SourceDir\test\modules\cyclic\a.js" />
+                            </Component>
+                            <Component Id="cmpD1A68E729D71166A0E271B570CC0BF2B" Guid="{BBB2F6EF-DB27-41D1-956A-617282FF949C}">
+                                <File Id="fil950A40F8F988140AA369911D8A56C867" KeyPath="yes" Source="SourceDir\test\modules\cyclic\b.js" />
+                            </Component>
+                            <Component Id="cmpB2B3D9105D6DB865B69A661BA1E3D479" Guid="{B6B1F52B-339B-4E79-B992-AE38DF653DB3}">
+                                <File Id="fil56B999C012EE01B6F0B9DFC6368D281E" KeyPath="yes" Source="SourceDir\test\modules\cyclic\program.js" />
+                            </Component>
+                            <Component Id="cmp578221914100D920CEA56CBFDA672182" Guid="{62BABF15-72F1-46A0-A291-C6AE9C282E2C}">
+                                <File Id="filC261A9F6B2107B7D548C21E0A9B5DE93" KeyPath="yes" Source="SourceDir\test\modules\cyclic\test.js" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir9493E1E07D0A3C687AE6E600885AF074" Name="determinism">
+                            <Component Id="cmpBC8F5FC9AB23C360A58B4196CEA7571A" Guid="{C64985E8-58FD-4DFC-A010-C07DF4C0E593}">
+                                <File Id="filC19E2B24DD137EDB855590DA09B1769F" KeyPath="yes" Source="SourceDir\test\modules\determinism\program.js" />
+                            </Component>
+                            <Component Id="cmp376C09D4C896B5B48A91FEB3E67D67B8" Guid="{1DD8B742-807E-4688-AEA6-AF229DEC9B76}">
+                                <File Id="filA5877C2B484AF284F6F79BAD12959FD7" KeyPath="yes" Source="SourceDir\test\modules\determinism\test.js" />
+                            </Component>
+                            <Directory Id="dirE8FCBA102F6C98A5CC63CE7608FEF36C" Name="submodule">
+                                <Component Id="cmp921B7A5E6C4CA4001884C82235DC89B7" Guid="{467D9D7B-4397-4370-A2AF-89BF958616EA}">
+                                    <File Id="filA45C318ABC5D1775BCB88C5F8F176E59" KeyPath="yes" Source="SourceDir\test\modules\determinism\submodule\a.js" />
+                                </Component>
+                                <Component Id="cmp8BBA723F228575EB70D31EF39742F2B2" Guid="{EB850760-B998-447E-9F63-7110FC04234B}">
+                                    <File Id="fil5E93FFBA34058C7BBADDB41B9D2CB460" KeyPath="yes" Source="SourceDir\test\modules\determinism\submodule\b.js" />
+                                </Component>
+                            </Directory>
+                        </Directory>
+                        <Directory Id="dirB784317A1C8BB246ABE249286376D16B" Name="exactExports">
+                            <Component Id="cmpE1B76B705F93F3EE9167FBB4CA57A579" Guid="{7E67896D-1CAC-4113-8821-83819AE82FD7}">
+                                <File Id="fil71B5613E0E71F3B85A756684A7085131" KeyPath="yes" Source="SourceDir\test\modules\exactExports\a.js" />
+                            </Component>
+                            <Component Id="cmpEAFD355AD32E51F91AD696618EC09CF6" Guid="{8536A703-306A-4887-8959-CEBE29A9D68A}">
+                                <File Id="filD5DCFFE83940F4DC47498F279D30C0A6" KeyPath="yes" Source="SourceDir\test\modules\exactExports\b.js" />
+                            </Component>
+                            <Component Id="cmpA7AE74B903B8A6BDB2477F20C5F8B80C" Guid="{0774DF59-576C-4418-B43B-0CC51859D3D9}">
+                                <File Id="fil199681F1DCC864C8E2535D550EB9FCB2" KeyPath="yes" Source="SourceDir\test\modules\exactExports\program.js" />
+                            </Component>
+                            <Component Id="cmp65D17723DBC5EDFF134EB48B7C7AE65C" Guid="{82D19D8C-88D6-4F6B-82A4-AE1A0E0AE00A}">
+                                <File Id="filB05F2B830E58E4B2DC63DB484055FC28" KeyPath="yes" Source="SourceDir\test\modules\exactExports\test.js" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir8EDF63C8392A8E5869567B89AFBCA20D" Name="hasOwnProperty">
+                            <Component Id="cmpFFB054C02BB58FA7CFA820E6BF950A38" Guid="{B70F9222-D825-4E0D-A8BC-D393302EC500}">
+                                <File Id="filE7A58F37749977B94549CA36DAB5D008" KeyPath="yes" Source="SourceDir\test\modules\hasOwnProperty\hasOwnProperty.js" />
+                            </Component>
+                            <Component Id="cmpD7B1A26872034BC94A2C2A93B07A5EB8" Guid="{31C29D6D-4583-4F13-9E27-A1A859619737}">
+                                <File Id="fil9B46FAF367254DD64EEDD9FD21138705" KeyPath="yes" Source="SourceDir\test\modules\hasOwnProperty\program.js" />
+                            </Component>
+                            <Component Id="cmpECC476DFB2C27D4B5F0ABEB6C469C473" Guid="{075FB3B1-74AB-4F6C-87BA-539A46FD3247}">
+                                <File Id="filAF9B151BDA9F9194E8F902FDFE8DC313" KeyPath="yes" Source="SourceDir\test\modules\hasOwnProperty\test.js" />
+                            </Component>
+                            <Component Id="cmpAEEDA533E3154D687D2DEBFFE070878C" Guid="{D6FA60DA-C743-48A2-B299-1F2058AE57B9}">
+                                <File Id="fil62DE62FFE709FB06007BAD9F562C94AD" KeyPath="yes" Source="SourceDir\test\modules\hasOwnProperty\toString.js" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir3CEFAFC135DFC79CE551C1DDA42BB473" Name="method">
+                            <Component Id="cmp8D2A487DC8CD6E7B50A8B284C4024E8D" Guid="{97F0813B-4807-4193-883B-C524C99678D5}">
+                                <File Id="fil7952AE76AE956CDCE947ABB773F158FC" KeyPath="yes" Source="SourceDir\test\modules\method\a.js" />
+                            </Component>
+                            <Component Id="cmp35710BFCAEA83D7C7832FE3023FEF88F" Guid="{01032EF5-665E-4AA6-91AB-8CD472AA36B2}">
+                                <File Id="fil299902281A464280B2BBBA9C994B2D2C" KeyPath="yes" Source="SourceDir\test\modules\method\program.js" />
+                            </Component>
+                            <Component Id="cmp813B60917338C960D1127A30DCA15549" Guid="{5B468A9F-80B8-4716-B0DF-3A98D229C1DD}">
+                                <File Id="fil68CAF7AB19C77A1449F96AE804BB0E12" KeyPath="yes" Source="SourceDir\test\modules\method\test.js" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir20E9B43266D78901F10A69FE4CC90BF7" Name="missing">
+                            <Component Id="cmpD27DCFD3973054403D1F4B272A7E04CC" Guid="{20A53FA4-7260-4A1F-A42D-4DA9855B5004}">
+                                <File Id="fil3335D8EF6A0E938A4623676D83AE903D" KeyPath="yes" Source="SourceDir\test\modules\missing\program.js" />
+                            </Component>
+                            <Component Id="cmp619B1A58944412733808DEB97E41CDDA" Guid="{7D3F8886-F002-4B6F-AD44-49A330E9FC46}">
+                                <File Id="filF909FB7B58F358A3FA9EE95EEFA153A5" KeyPath="yes" Source="SourceDir\test\modules\missing\test.js" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir7B8422BEA9256295429E33638D6F4891" Name="monkeys">
+                            <Component Id="cmpDD7EA78591EC568BAFA953F63B492ECE" Guid="{1BAA9FEB-9FDE-4EDE-BACD-941135CF630E}">
+                                <File Id="filA9D7FAD4A43F105782FA232F72FD5614" KeyPath="yes" Source="SourceDir\test\modules\monkeys\a.js" />
+                            </Component>
+                            <Component Id="cmpD27F0E75A6347EDF16C4E3F480DAC5AD" Guid="{5436A919-745D-4D13-9186-C78B12A9C295}">
+                                <File Id="fil6450DBEA969C381B55E65D8884A623D3" KeyPath="yes" Source="SourceDir\test\modules\monkeys\b.js" />
+                            </Component>
+                            <Component Id="cmpF3ACC8659D8FD3360350D6542716C788" Guid="{EF5A6198-B761-44D9-A012-97C56D9A35C8}">
+                                <File Id="fil1780A296C59225F251DD63B3DE77B7DC" KeyPath="yes" Source="SourceDir\test\modules\monkeys\program.js" />
+                            </Component>
+                            <Component Id="cmp0AC4E43530781F65B248486252DB3029" Guid="{4E5616B4-D51D-47B3-8D55-6F690DED7DD2}">
+                                <File Id="filCC87AC94BD583D9E4168D3956A90DA8C" KeyPath="yes" Source="SourceDir\test\modules\monkeys\test.js" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dirC3A681C915360764AA5930E3449A364E" Name="nested">
+                            <Component Id="cmp2F7DB504A2C07D0AF0B44E6D7E022A48" Guid="{B42FA67E-64E1-48B3-A757-5421A1BF56AE}">
+                                <File Id="filB412E62138C2C308645255D0BC37BB0F" KeyPath="yes" Source="SourceDir\test\modules\nested\program.js" />
+                            </Component>
+                            <Component Id="cmpCA09A5DEFF31CD5C933BFB748169BF17" Guid="{5B66B091-EF32-4095-AD1E-2DCEDA5F3877}">
+                                <File Id="fil9D2DC5B60E0AC2531B1B4ECAF757E86F" KeyPath="yes" Source="SourceDir\test\modules\nested\test.js" />
+                            </Component>
+                            <Directory Id="dir691561595310EFD44DC484A01D2651B4" Name="a">
+                                <Directory Id="dir12413D0244C8F066C37FBB27D87A1231" Name="b">
+                                    <Directory Id="dir39ECF12F0666980BB400BDACBFAAF360" Name="c">
+                                        <Component Id="cmp4731E547A71D6688D03F55E902675807" Guid="{3C07ADCE-9E13-42A4-9A73-6D70E8B8CE5C}">
+                                            <File Id="fil60CF10425BBEC11EF4E748A2AB645CBC" KeyPath="yes" Source="SourceDir\test\modules\nested\a\b\c\d.js" />
+                                        </Component>
+                                    </Directory>
+                                </Directory>
+                            </Directory>
+                        </Directory>
+                        <Directory Id="dir3CE3862AE74E337985EE9AE370804AB2" Name="reflexive">
+                            <Component Id="cmpA0525C2D42E4976EFB44D7BB2EE8DB49" Guid="{5D38825A-BC9F-485A-9F17-DDACE620F1FF}">
+                                <File Id="fil9D07970F299471B537512A4B9D17F4A1" KeyPath="yes" Source="SourceDir\test\modules\reflexive\a.js" />
+                            </Component>
+                            <Component Id="cmpCA823387D26402DECE408CA27E69D4E2" Guid="{9442930F-45EE-49C5-B2F2-082C67990BE5}">
+                                <File Id="fil7E49CB6AB8B7352FBD6EEB3128C26CF9" KeyPath="yes" Source="SourceDir\test\modules\reflexive\program.js" />
+                            </Component>
+                            <Component Id="cmp61623A648FDB04CFCA077CAF3443B982" Guid="{B1154B74-AC55-474D-AFD0-53315734DFEF}">
+                                <File Id="fil302AEFBA9077BC9B9364B953AE515D22" KeyPath="yes" Source="SourceDir\test\modules\reflexive\test.js" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir54716F5D3036B316FBE1D170A076AB3B" Name="relative">
+                            <Component Id="cmpD87DBE959D68D5A43190F447C294C71C" Guid="{670CBC3F-59A4-4312-BD23-452ECA4443A8}">
+                                <File Id="fil5D2134628EC41608D96E9F267DAEB51E" KeyPath="yes" Source="SourceDir\test\modules\relative\program.js" />
+                            </Component>
+                            <Component Id="cmp49CB95AC110D4586F9294E7B028474EC" Guid="{D1540E77-4051-4C7F-9DEF-4180AF067F0E}">
+                                <File Id="fil73AD8D9264E0B3B5D90BDCF78D1FA781" KeyPath="yes" Source="SourceDir\test\modules\relative\test.js" />
+                            </Component>
+                            <Directory Id="dir5DA010E550B2D82D108425F0417102F4" Name="submodule">
+                                <Component Id="cmp504ADF68B0155D207E9A0A2E22A12324" Guid="{B064F571-318F-4F29-B49A-6E54EB874EA9}">
+                                    <File Id="fil1C5EE3937F271738B77C8D66F244A31F" KeyPath="yes" Source="SourceDir\test\modules\relative\submodule\a.js" />
+                                </Component>
+                                <Component Id="cmp12E100FFB2A88DFE26324F607C5A7DFB" Guid="{E7C1092E-DF5C-479A-9723-47566F4D781E}">
+                                    <File Id="fil6A84B1617D1442B56BB1160ACE530779" KeyPath="yes" Source="SourceDir\test\modules\relative\submodule\b.js" />
+                                </Component>
+                            </Directory>
+                        </Directory>
+                        <Directory Id="dirBB4D7084998DFE6861F69586612D2E70" Name="transitive">
+                            <Component Id="cmpF716B6C7DAC3E5EED764B8BD543703BF" Guid="{EDB3822D-581E-4D82-8AF4-E99743E5C2B6}">
+                                <File Id="fil8B750BFB3E3868CE4EFBD916C548C2E9" KeyPath="yes" Source="SourceDir\test\modules\transitive\a.js" />
+                            </Component>
+                            <Component Id="cmp2E01A9504DD23645ADCED43F99B2F157" Guid="{99D35258-7254-452B-A379-5538A1F6DDE4}">
+                                <File Id="fil8FE9159CBE4C8579A51F956C1084FA56" KeyPath="yes" Source="SourceDir\test\modules\transitive\b.js" />
+                            </Component>
+                            <Component Id="cmp80D291ED98489F7985146B642593805B" Guid="{5124319C-0055-4B88-AF6A-434D6674DC95}">
+                                <File Id="fil72724323A8C078A1C88D34B4A9E29629" KeyPath="yes" Source="SourceDir\test\modules\transitive\c.js" />
+                            </Component>
+                            <Component Id="cmp3977C0E99CF804360847D23FDAAB124F" Guid="{83E09E2F-5D78-498D-859A-6A9B79C708B1}">
+                                <File Id="fil895CBA6F2B5BE08813DA65FC2E4C2969" KeyPath="yes" Source="SourceDir\test\modules\transitive\program.js" />
+                            </Component>
+                            <Component Id="cmp88D5FEC36264E245F2ADC5ACCC723E50" Guid="{FE53717A-6C89-4A8C-99DB-AFEE3E4104BB}">
+                                <File Id="filDF1F52275167B6A29AE2F9F7743BDA3F" KeyPath="yes" Source="SourceDir\test\modules\transitive\test.js" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                    <Directory Id="dirED2CF55E9699EBCE2280821AAD76AE73" Name="repository">
+                        <Component Id="cmp7D4FC64C68577A19B7ADF1495B82A90D" Guid="{62091400-14F7-41F3-9025-0E4032D908C5}">
+                            <File Id="fil4E4FB5CFD312A8EA966B57900311F6B0" KeyPath="yes" Source="SourceDir\test\repository\all.js" />
+                        </Component>
+                        <Component Id="cmpBD54307CF9C6A578883524D713044CC7" Guid="{27767A05-42BA-4409-8920-A94E5BE86F0C}">
+                            <File Id="fil6839CA4E7A54F028E611AFA840E2F9E6" KeyPath="yes" Source="SourceDir\test\repository\common.js" />
+                        </Component>
+                        <Component Id="cmp69AD28670EA71CD71DBBA70EF41B59F2" Guid="{18BE82F2-EAA9-4C48-9C6F-D87335E9633E}">
+                            <File Id="filCF84F94CD8907354D1CD9E64674877BC" KeyPath="yes" Source="SourceDir\test\repository\data.zip" />
+                        </Component>
+                        <Component Id="cmpF2A89A0F3AC5E516BDF508AE3FB3C926" Guid="{30553BF0-78E1-4EE0-9A72-DE2EE36CB9EF}">
+                            <File Id="filBC4EAB8D6D8E942A01777CC02B35D1B1" KeyPath="yes" Source="SourceDir\test\repository\file.js" />
+                        </Component>
+                        <Component Id="cmp0E4B6CDC28EAA3EF08270155145764C3" Guid="{07DA1039-3923-463B-AFDA-0F401787E7AC}">
+                            <File Id="fil7179DA0ABFA01BE319A343DD1CD8361D" KeyPath="yes" Source="SourceDir\test\repository\zip.js" />
+                        </Component>
+                        <Directory Id="dir6717B1D706E3A4FDD77ACB398AD42F19" Name="data">
+                            <Component Id="cmpBD49BEBF9DD17F6D7E1F6465E758F584" Guid="{F2975B65-3791-41B8-8E7A-02D25A315B73}">
+                                <File Id="fil6396DB6CCB0B8797804074936B18EAAF" KeyPath="yes" Source="SourceDir\test\repository\data\test.txt" />
+                            </Component>
+                            <Directory Id="dir014814A8B9753040FF9CE1FE1CF1599E" Name="nested">
+                                <Component Id="cmp8D78A81D3E3B2E873C17D85CABE15FFA" Guid="{5F876929-1570-42BD-88D3-B746D5026611}">
+                                    <File Id="filA8511A43C1966FE9E71499F90A4C1C3A" KeyPath="yes" Source="SourceDir\test\repository\data\nested\nested.txt" />
+                                </Component>
+                            </Directory>
+                        </Directory>
+                    </Directory>
+                    <Directory Id="dir4A4B792DB65EA83E5EE7A73DFF5DA966" Name="ringo">
+                        <Component Id="cmp1BF2A5FB50A0407253EF71FB4216082E" Guid="{6E8CBC59-1103-4078-B085-D8C1035F0600}">
+                            <File Id="fil5315DDBEA1126405CEBE28528EC8B675" KeyPath="yes" Source="SourceDir\test\ringo\args_test.js" />
+                        </Component>
+                        <Component Id="cmp953B4395E474710593002D59EF890CB8" Guid="{2A276A6A-D05A-44C3-B536-57F94863F019}">
+                            <File Id="filB651431252B7988934868B5E0A756C90" KeyPath="yes" Source="SourceDir\test\ringo\base64_test.js" />
+                        </Component>
+                        <Component Id="cmpA53E02FAE8C6D585DB5C819BA641C060" Guid="{EC6A962C-4EEE-460E-B700-300ECF2020FD}">
+                            <File Id="fil7BE31E65EFF1A737B1DDB9760D307A32" KeyPath="yes" Source="SourceDir\test\ringo\buffer_test.js" />
+                        </Component>
+                        <Component Id="cmpB0E914E9F0DE4DF274A1C0C8A15ED073" Guid="{7D04693F-AAA4-4317-9745-E19D0BDCE429}">
+                            <File Id="fil453F838A65F4A5F14F75F14D3572E60A" KeyPath="yes" Source="SourceDir\test\ringo\encoding_test.js" />
+                        </Component>
+                        <Component Id="cmp2AA19605679D247CDD41ED6A7887EF35" Guid="{4FB67F22-CDCF-42BE-A051-09B0992959B9}">
+                            <File Id="filBD763074D8D654F5E46A73AD4822ACE7" KeyPath="yes" Source="SourceDir\test\ringo\events_test.js" />
+                        </Component>
+                        <Component Id="cmp8571165229EB83FAC79BB140CE0E2116" Guid="{878FC47F-9ED5-4CE5-A1E2-06BD4455BF57}">
+                            <File Id="fil189468BFADD3F2FB6FBD0DEBE36915C4" KeyPath="yes" Source="SourceDir\test\ringo\httpclient_test.js" />
+                        </Component>
+                        <Component Id="cmp89192DEC346A5511752D555925F79F07" Guid="{7DFD9FC9-4DBD-4A91-A248-782EA9C966E8}">
+                            <File Id="filE912CB31CD49BFEC2729F1F2B1CBD1B1" KeyPath="yes" Source="SourceDir\test\ringo\httpserver_test.js" />
+                        </Component>
+                        <Component Id="cmp50606B63C864DCD55F30DDE08B33FF33" Guid="{76440E81-E155-4C6D-B03F-618C824903D6}">
+                            <File Id="fil2EFA3943E056A806C2EAD48813ECC068" KeyPath="yes" Source="SourceDir\test\ringo\httptest_log4j.properties" />
+                        </Component>
+                        <Component Id="cmpB02550E3F224886EC6C3E457CFA24862" Guid="{5ACCCD1E-7FDE-4EE4-99B7-D252816FAF63}">
+                            <File Id="fil87D7AEDF709025D8A599FB4B49B51A8B" KeyPath="yes" Source="SourceDir\test\ringo\promise_test.js" />
+                        </Component>
+                        <Component Id="cmp226799BA1642DAE43DE81137C69599B9" Guid="{8AA698E2-4872-4EE7-B349-7D027EB84672}">
+                            <File Id="fil1E9E9942775B33EC5381BD6341E03C26" KeyPath="yes" Source="SourceDir\test\ringo\promise_worker.js" />
+                        </Component>
+                        <Component Id="cmpA7DA82FD6B5A9818F8374A20028BFF50" Guid="{B4B7E912-DDB3-4B19-900D-5BF340DC82F3}">
+                            <File Id="filBF57A48C84B1E4246DB4E5B4268F5FCB" KeyPath="yes" Source="SourceDir\test\ringo\scheduler_test.js" />
+                        </Component>
+                        <Component Id="cmpE0D6EC3212DF95EF7E6F7BA88A2FB83E" Guid="{D3A2ABAF-C5E3-485A-8629-AC40A90025C4}">
+                            <File Id="fil029A0690A59CFAC797B805E1806DACBE" KeyPath="yes" Source="SourceDir\test\ringo\scheduler_worker.js" />
+                        </Component>
+                        <Component Id="cmp408651CE58F30D0F722D584781844938" Guid="{43E92D66-4A5F-4D64-9F59-54002E08135C}">
+                            <File Id="fil71AE010A21D9E6338A5952088C776526" KeyPath="yes" Source="SourceDir\test\ringo\subprocess_test.js" />
+                        </Component>
+                        <Component Id="cmp2725145D1AF4ABAAEF858C91A3C97A5F" Guid="{A7D825AE-654C-479C-B218-822C008D3BCF}">
+                            <File Id="filF3440549CDA04256FADB20C3C5D62FFB" KeyPath="yes" Source="SourceDir\test\ringo\text_test.txt" />
+                        </Component>
+                        <Component Id="cmpC381639AE92F3E3AD02E25FF33A8987A" Guid="{44DFCA3A-A65B-444F-9E5A-34F0FDDB5C0A}">
+                            <File Id="fil52154492736707213F59AF65D2ABC3C3" KeyPath="yes" Source="SourceDir\test\ringo\upload_test.png" />
+                        </Component>
+                        <Directory Id="dirF776CE4101BB218F2747CAB592242CE4" Name="jsgi">
+                            <Component Id="cmpDFB92ABFF76AA2AD45B55DED177A7DC8" Guid="{F27356F5-3116-4BEE-9AF2-7BE908227305}">
+                                <File Id="fil2659A83E2C2F1311B7520045E7C12122" KeyPath="yes" Source="SourceDir\test\ringo\jsgi\response_test.js" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir89E2E2CBC030CBE363CB719B034DABCB" Name="utils">
+                            <Component Id="cmp952D216B36E0A66D46A45B239E7800DB" Guid="{38793D71-8E63-4AD6-8581-AF08B449FB7A}">
+                                <File Id="fil2B49CB76708FD7BFDD5B0068BA2B8602" KeyPath="yes" Source="SourceDir\test\ringo\utils\arrays_test.js" />
+                            </Component>
+                            <Component Id="cmp3AA8EC418788A4D793019A0804C87172" Guid="{4A3BFBE7-07AA-45CE-A55E-6D13DD2F870B}">
+                                <File Id="filE3C309EB51B66BBFB212BCC1C0603579" KeyPath="yes" Source="SourceDir\test\ringo\utils\dates_test.js" />
+                            </Component>
+                            <Component Id="cmp47BE2C2062FC1B21DE5ED06C10D3BBBC" Guid="{14975FE6-C8CB-4069-AB43-9359BD110B2C}">
+                                <File Id="fil7659499B72E6531E570F1131D9F4DC3C" KeyPath="yes" Source="SourceDir\test\ringo\utils\files_test.js" />
+                            </Component>
+                            <Component Id="cmpC91371D4FB60E0D9C45F8368615BA7E2" Guid="{BB2028CE-84B6-4277-AC74-690DD4AF1400}">
+                                <File Id="fil3144FC1F3B4990881E35C6732DB589D0" KeyPath="yes" Source="SourceDir\test\ringo\utils\http_test.js" />
+                            </Component>
+                            <Component Id="cmp546FB9FD46A358EE91F1AFC9A4584582" Guid="{1D273FAB-51BD-4D8C-BE92-E7AF1383F5CB}">
+                                <File Id="filBEB21E1FEE5668B824F0EF8ABBCAA761" KeyPath="yes" Source="SourceDir\test\ringo\utils\objects_test.js" />
+                            </Component>
+                            <Component Id="cmpBCD7C99004694DA6EFE9C039C883B26A" Guid="{A8224708-C02C-49DF-B741-79DB8C40809B}">
+                                <File Id="filE891FCE522ACC43802AE97158B0E2F64" KeyPath="yes" Source="SourceDir\test\ringo\utils\strings_test.js" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                </Directory>
+                <Directory Id="dirCC09363FD5388A4435A5E7D268DD66E4" Name="tools">
+                    <Directory Id="dirFE6C12F7D08B80636B17323322155F83" Name="admin">
+                        <Component Id="cmpCBBCF563396EAA9CB28FDA6CBA2C547E" Guid="{C1E24923-F472-4750-A2A9-BA6C91A9AFC2}">
+                            <File Id="filBD4AF5CF9E5E158E7879CC867E6C848C" KeyPath="yes" Source="SourceDir\tools\admin\create.js" />
+                        </Component>
+                        <Component Id="cmp2562AF2F89F9F9866C9831A33411060D" Guid="{B6D0F4A7-E93E-471A-8F66-74DD8E4E03EF}">
+                            <File Id="fil5B20549D0988F3725F3AC5D2986D5E32" KeyPath="yes" Source="SourceDir\tools\admin\install.js" />
+                        </Component>
+                        <Component Id="cmp8B5D4B784AE3D1778427DBF17CDC1D30" Guid="{381CE0D5-25D5-45C7-BDC0-9467D710FBDE}">
+                            <File Id="fil1F1EE4C5CCDFB4C8C6C3BEABA3210F3C" KeyPath="yes" Source="SourceDir\tools\admin\main.js" />
+                        </Component>
+                        <Directory Id="dirA115CADCAB90A6273523063935ECF130" Name="skeletons">
+                            <Directory Id="dir4B726A3E243F10A4FDF79CB7F8DC6F13" Name="app">
+                                <Component Id="cmp3B68501865C09752F10016AEEAE338C6" Guid="{F2A5E89E-D73A-429B-B50D-B52FEFCC5C7D}">
+                                    <File Id="fil13C778423C99D0397A8AD4A190D354D7" KeyPath="yes" Source="SourceDir\tools\admin\skeletons\app\actions.js" />
+                                </Component>
+                                <Component Id="cmp9C61658B01D05B9C7D17A866963AFC8D" Guid="{A8CAAE12-2A5A-470F-B892-F3EACCC84078}">
+                                    <File Id="fil628EDA669765C10F8F9267A4A296051E" KeyPath="yes" Source="SourceDir\tools\admin\skeletons\app\main.js" />
+                                </Component>
+                                <Component Id="cmpFB3BF928553CC9242A7253E877808EC2" Guid="{AF0403C5-47CF-468C-9710-948BBB33E2A3}">
+                                    <File Id="fil78F708707D91884988BD4293A2C26214" KeyPath="yes" Source="SourceDir\tools\admin\skeletons\app\README.txt" />
+                                </Component>
+                                <Directory Id="dir59291C99405313CBE060E33E52C194E5" Name="config">
+                                    <Component Id="cmp3497E4ECEC8BC16B1EA38D866FC3A836" Guid="{05CF22BE-1103-49D7-89D2-62D3E910FFFE}">
+                                        <File Id="fil017943033B8D22DECE3320928D55E114" KeyPath="yes" Source="SourceDir\tools\admin\skeletons\app\config\jetty.xml" />
+                                    </Component>
+                                    <Component Id="cmp77D2F7F8E09400E53A9CB5FDBE12BA68" Guid="{6C7BDE54-7505-4CDA-9CD6-CFE9E9450962}">
+                                        <File Id="fil5A7CBB5BABC018E954E7B1D7950F1D00" KeyPath="yes" Source="SourceDir\tools\admin\skeletons\app\config\log4j.properties" />
+                                    </Component>
+                                </Directory>
+                                <Directory Id="dirD9D8A675D5E07BB400B3D39097D6B07A" Name="public">
+                                    <Directory Id="dir6770D89FB1C3A99C1FE2D3A152BAC7EC" Name="stylesheets">
+                                        <Component Id="cmp43233BD2D437579189C2B039AEA2720C" Guid="{11C4B615-57E5-455E-A243-453BB4E55ACC}">
+                                            <File Id="fil5045C215337E7DA48D9890179328A465" KeyPath="yes" Source="SourceDir\tools\admin\skeletons\app\public\stylesheets\page.css" />
+                                        </Component>
+                                    </Directory>
+                                </Directory>
+                                <Directory Id="dir38E40F9FC6F600F774427EF4BF3D84DC" Name="templates">
+                                    <Component Id="cmp2FFF82512D7C12E72DAA197FE31CC6D7" Guid="{68195A94-B1FA-495F-8C05-D7934BADFA2A}">
+                                        <File Id="fil5782D8594BA54FE4E71C3B0739AFBCA9" KeyPath="yes" Source="SourceDir\tools\admin\skeletons\app\templates\index.html" />
+                                    </Component>
+                                </Directory>
+                            </Directory>
+                            <Directory Id="dirF703A9BD0E9C5C0C773D8176CE250379" Name="appengine">
+                                <Component Id="cmp9C21ADE4DA62E36E922A4EAB523B8DE9" Guid="{CB54A414-EC6A-4FF3-B0A8-18CFBB0D2772}">
+                                    <File Id="fil738FB7BD395D32180A5CE8F2C3C545F8" KeyPath="yes" Source="SourceDir\tools\admin\skeletons\appengine\README.txt" />
+                                </Component>
+                                <Directory Id="dir6E8317458E832528803C83BC3DB0C08C" Name="WEB-INF">
+                                    <Component Id="cmp899D6F9B84B1AFF90ABD19928C2468B2" Guid="{775BFEF6-8FF8-4F01-B2C9-7A5C8B041208}">
+                                        <File Id="fil266EBAEEE35171F4563E365DE121CCF8" KeyPath="yes" Source="SourceDir\tools\admin\skeletons\appengine\WEB-INF\appengine-web.xml" />
+                                    </Component>
+                                    <Component Id="cmp6FCE15C4ACD0CEA41D4CE87B51EB30E4" Guid="{69DACABB-ADDC-449F-93E2-4FE5C32B321D}">
+                                        <File Id="fil87031A0570F15BA3CBE7DC05F7DC5BA4" KeyPath="yes" Source="SourceDir\tools\admin\skeletons\appengine\WEB-INF\logging.properties" />
+                                    </Component>
+                                    <Component Id="cmpCD22634242C8623A0CF62A1082B9B048" Guid="{7643E2AC-0DD2-474E-9E54-0203B5FFC068}">
+                                        <File Id="fil57F61C70B132476F11ABCC531CCB1424" KeyPath="yes" Source="SourceDir\tools\admin\skeletons\appengine\WEB-INF\web.xml" />
+                                    </Component>
+                                </Directory>
+                            </Directory>
+                            <Directory Id="dir3EEA69D7107B5E9A8844B34C6BA78A44" Name="package">
+                                <Component Id="cmp736F70E37833F2CD69C3DB87BD5B456D" Guid="{B1B12EBD-31F0-401D-8A51-6357E6CA7371}">
+                                    <File Id="filA95D69E8E87CDA0245B1AECCA68B1607" KeyPath="yes" Source="SourceDir\tools\admin\skeletons\package\package.json" />
+                                </Component>
+                                <Component Id="cmpC293765F58341DED7870449EE411470B" Guid="{17BBEFFE-D793-49AD-A5C3-36DCF077075E}">
+                                    <File Id="fil46FBD401741044F9BFAA2A4C458A1430" KeyPath="yes" Source="SourceDir\tools\admin\skeletons\package\README.md" />
+                                </Component>
+                                <Directory Id="dir671642EF478ED5A1313EC7DAEBF8194D" Name="lib">
+                                    <Component Id="cmp1B0D3FEAA55F6DAF273E4C0E1129F0A9" Guid="{538E34D0-A23E-4883-A70D-6D1D153BC92D}">
+                                        <File Id="fil167E87E15E2E03C5E2905690441D6E32" KeyPath="yes" Source="SourceDir\tools\admin\skeletons\package\lib\skeleton.js" />
+                                    </Component>
+                                </Directory>
+                                <Directory Id="dir84B2DB7866E5B5C652F4936E28E2D93D" Name="test">
+                                    <Component Id="cmp0015A65F00153F52DF996F7CDBC503D6" Guid="{9255DDB0-EDC1-42B2-9AFC-F4AC7159DE74}">
+                                        <File Id="fil2F71497127E66A1C54725BF8EA61D283" KeyPath="yes" Source="SourceDir\tools\admin\skeletons\package\test\all.js" />
+                                    </Component>
+                                </Directory>
+                            </Directory>
+                            <Directory Id="dir8E08A64CB1481C3124D4DB2245D7F97C" Name="webapp">
+                                <Component Id="cmp8C8071DBD09E383711C94F8EFC4968EE" Guid="{B1FDF26C-C4FA-49B3-A6D8-50A6A1D7F4A0}">
+                                    <File Id="filFF7388727C854C96FE8200CE2D43230A" KeyPath="yes" Source="SourceDir\tools\admin\skeletons\webapp\README.txt" />
+                                </Component>
+                                <Directory Id="dirD06BAC492A12FA30E340041F62C54528" Name="WEB-INF">
+                                    <Component Id="cmp8636604D6FD00FB43F684E00D6C2FC9B" Guid="{6DD29E69-CFB9-40CE-ABB9-1881F42BA24C}">
+                                        <File Id="filEC2CDAFDA8AFEB3BA52926FE7B75C770" KeyPath="yes" Source="SourceDir\tools\admin\skeletons\webapp\WEB-INF\web.xml" />
+                                    </Component>
+                                </Directory>
+                            </Directory>
+                        </Directory>
+                    </Directory>
+                    <Directory Id="dir2629D68CCFA8C5B12C7156D729267D9E" Name="jsdoc">
+                        <Component Id="cmpEE96502038A0F92885D9D336383BA4E7" Guid="{69821DDD-72B5-4592-A56D-78404F6E30E3}">
+                            <File Id="fil0E0AB4E97A3E2DE2A27506360043903E" KeyPath="yes" Source="SourceDir\tools\jsdoc\jsdocserializer.js" />
+                        </Component>
+                        <Component Id="cmp976AC534B1A5E8C54E232A89244AC613" Guid="{5A0D8DFD-3D26-457C-B2FA-A6B271C18EDC}">
+                            <File Id="fil495F00FDA68AFF213B8E816297A8F478" KeyPath="yes" Source="SourceDir\tools\jsdoc\main.js" />
+                        </Component>
+                        <Component Id="cmpD29D05186AC237CAB3FB74FCDBE5BFBA" Guid="{82F97EB2-9B82-4825-876A-0A15DA96736D}">
+                            <File Id="filAEA10B5773B1E13F6079C88689CC9FAC" KeyPath="yes" Source="SourceDir\tools\jsdoc\README.txt" />
+                        </Component>
+                        <Directory Id="dir82D794EB292CA36A69BD8239FA4051CF" Name="static">
+                            <Component Id="cmp7222170208D562F73203E673AA5BC3CB" Guid="{CB0BF499-B65D-4696-AEB7-9C29A42BBB5B}">
+                                <File Id="filF469BEB042FBFD0B1F941A915A5436EC" KeyPath="yes" Source="SourceDir\tools\jsdoc\static\enterkey.png" />
+                            </Component>
+                            <Component Id="cmp7EB8B83F8285A1349E9474E5CFC71E5B" Guid="{48268793-DEBC-4819-8DB0-CC56C8D267A2}">
+                                <File Id="filF00FABB18CBD258AC2276FE668CCE039" KeyPath="yes" Source="SourceDir\tools\jsdoc\static\jquery.min.js" />
+                            </Component>
+                            <Component Id="cmp47D77B2155BAAC9EF2DAD87382CF0382" Guid="{0DB9F6C9-4BEC-43E9-A2D7-84D3634880B4}">
+                                <File Id="fil0CAB7C06BD8E22F74DE2456C4B333422" KeyPath="yes" Source="SourceDir\tools\jsdoc\static\jsdoc.css" />
+                            </Component>
+                            <Component Id="cmpE6757EF354C91123EA7E1FD61B058CC8" Guid="{1B2444FA-7E86-462B-8EE6-43A3B1671ECF}">
+                                <File Id="filC8A4B4AF1C4ECF5C542F7DD9554BCFB6" KeyPath="yes" Source="SourceDir\tools\jsdoc\static\jsdoc.js" />
+                            </Component>
+                            <Component Id="cmp87FF3057B753BA8531EBB4D37D9303FA" Guid="{A57795B1-BAF7-47DC-BF42-580775CD7CB1}">
+                                <File Id="filF88F3F4C9A8D1E38CF20E77CB79CC340" KeyPath="yes" Source="SourceDir\tools\jsdoc\static\style.css" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dirA00F3E1A35204C8B5DE6D8AC81BEDCBF" Name="templates">
+                            <Component Id="cmpEDF60E4855B6FD32D006BA5C9B72DB65" Guid="{F5E702F8-CA07-4E64-A25D-0288B517A7F0}">
+                                <File Id="filAD7757263195ECC78657B4CF35FA1D48" KeyPath="yes" Source="SourceDir\tools\jsdoc\templates\head.html" />
+                            </Component>
+                            <Component Id="cmpD3365CDFC4DBDBADC418FF3AE92A6F39" Guid="{C821A17C-7BEE-45FA-9182-50BA8A43FC9D}">
+                                <File Id="fil1E77FB63589D8E49E389B910CC1F4459" KeyPath="yes" Source="SourceDir\tools\jsdoc\templates\index_all.html" />
+                            </Component>
+                            <Component Id="cmp8AF649C2C87788F0965705048E9ABE99" Guid="{DC117B49-4439-43C8-B09B-E72181560DBA}">
+                                <File Id="fil39352CB5407764E38EDA9BC593AF3159" KeyPath="yes" Source="SourceDir\tools\jsdoc\templates\menu.html" />
+                            </Component>
+                            <Component Id="cmp78EE04E6426EC7359010C4FC66235700" Guid="{42853C9F-90AB-437C-ADCC-11A2FCEE4E4F}">
+                                <File Id="filF2F089A25059B15178F4A0548D00EF9D" KeyPath="yes" Source="SourceDir\tools\jsdoc\templates\module.html" />
+                            </Component>
+                            <Component Id="cmp1439E9ED6C8999ACDC876FA77C80960A" Guid="{E76C287A-C3BF-4CA2-AAC9-EED4405EB1AE}">
+                                <File Id="filC32BA433589C7436E2A10926FAAF5050" KeyPath="yes" Source="SourceDir\tools\jsdoc\templates\page.html" />
+                            </Component>
+                            <Component Id="cmpECD1D47EE459CE34AA32FF97C668204B" Guid="{526B27D4-E703-4207-B9B5-6CC40406107D}">
+                                <File Id="fil63F00E9BEDD3BA46C70C3A262AB4477D" KeyPath="yes" Source="SourceDir\tools\jsdoc\templates\repository.html" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dirEAA1E5BFE0397034035EA19CCD5DBFA2" Name="test">
+                            <Component Id="cmp21EABF7AD6E4671198D6FFF56DCF01FC" Guid="{92FF5056-BE24-4A90-90A9-2004D2D59765}">
+                                <File Id="fil3ED6D7ACB6A407751896B77F104E413E" KeyPath="yes" Source="SourceDir\tools\jsdoc\test\foobarRepository.zip" />
+                            </Component>
+                            <Component Id="cmp4D1E4080D37086041C07388B99480C12" Guid="{D73DC3B2-14DF-435C-9DED-4DAC8547FED3}">
+                                <File Id="fil9975CC036D7F58A7C64BAA6F6571C232" KeyPath="yes" Source="SourceDir\tools\jsdoc\test\serializer.js" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                </Directory>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="RingoApplicationFiles">
+            <ComponentRef Id="cmp7162E8AE93C537790DF01CA22153CE26" />
+            <ComponentRef Id="cmp1314FA7CC11F98A8E4C97CADA7286C9A" />
+            <ComponentRef Id="cmpB4462F3AE002B72294E3EED9D251C58C" />
+            <ComponentRef Id="cmp92CA91C828005B155020BFE179EF6F01" />
+            <ComponentRef Id="cmp7687DA7A900502D37096D49DB916ED66" />
+            <ComponentRef Id="cmp3F017CE24437C74CDD4736BA5CC539C4" />
+            <ComponentRef Id="cmpBFA31D981E7F36AAEE5A07A468CFD5E5" />
+            <ComponentRef Id="cmp805220E4C6F6ECF86903532DCE33C264" />
+            <ComponentRef Id="cmpFB9527945BB48C4D7A2F85A58EAA3283" />
+            <ComponentRef Id="cmp19F7B46C9DFB427571C805E664EF9DFC" />
+            <ComponentRef Id="cmp073F047AB7A5A71B873791EAB5C7B30B" />
+            <ComponentRef Id="cmpBA6E71ACFD99822067D0E2995B2843AB" />
+            <ComponentRef Id="cmpE2F5510DCDB8539269D8694DBC6F5868" />
+            <ComponentRef Id="cmp35540F61C7AD18A86A3D28319C4BFE8D" />
+            <ComponentRef Id="cmp8976F308CCFA913E226706B41CC34D8B" />
+            <ComponentRef Id="cmp54C7E269E33F36A31590CF080B922314" />
+            <ComponentRef Id="cmp9944E51ADC57DCFAC7DA33A51F047C9B" />
+            <ComponentRef Id="cmp6093AEE93CB5CF80A8A8E92D5B91EEE3" />
+            <ComponentRef Id="cmp791FC28E1475A3B46A3D736B92B3B60F" />
+            <ComponentRef Id="cmp9F0847A4370398D56D148EC4FADFB704" />
+            <ComponentRef Id="cmpE05AEA4A4357320286DC7BC39870ED53" />
+            <ComponentRef Id="cmp16AE1F5607B5E7708437C79F99043BF6" />
+            <ComponentRef Id="cmp1311F7CC02FE1358FC374CA8EE8B1349" />
+            <ComponentRef Id="cmp7AB04FBDF4171A4BB7C434C17218F9F0" />
+            <ComponentRef Id="cmp74E55482E0986E855E954765AC15F5FE" />
+            <ComponentRef Id="cmpFE052DAAEE30411B949D8F70B8D9ED9D" />
+            <ComponentRef Id="cmpAD36F1322A34BB4F59FEBF621EEDAB39" />
+            <ComponentRef Id="cmp8B9511EBBB685D13B411C44A38B95CDC" />
+            <ComponentRef Id="cmpBB572DF7651BAC10A36B3599DFE70F3B" />
+            <ComponentRef Id="cmpFA2FAC2F12484AC7A970DB12B944EC1B" />
+            <ComponentRef Id="cmp9841B398A69922DFE46A26ACB94B5BDB" />
+            <ComponentRef Id="cmp482C10C414DA2020F67C73596CC203E3" />
+            <ComponentRef Id="cmp1D1D193776AF620886C7A806DBCD2C03" />
+            <ComponentRef Id="cmp24472844CDAE27A1709E1CA603458386" />
+            <ComponentRef Id="cmpB9F295B54F432A68A96B6593109956F1" />
+            <ComponentRef Id="cmp91673C77E913168DDB6A4027BDAA9150" />
+            <ComponentRef Id="cmpA26DB9BF42B8E10BF82BAFA83F5EEB84" />
+            <ComponentRef Id="cmp13D7788875E1ACA5B8D81E3683DBDBCB" />
+            <ComponentRef Id="cmp36B810037779CB5B4142F982DBFD8BA6" />
+            <ComponentRef Id="cmpE18249D0734C6FCCDC1F039521264D1D" />
+            <ComponentRef Id="cmpBB9B7BE20DA2821D4B67070FD9C95DC2" />
+            <ComponentRef Id="cmpC553987203B4CED1DDBFFF0519CA16E3" />
+            <ComponentRef Id="cmpCC61A7A6C24DAE596E2186A04BE1DA23" />
+            <ComponentRef Id="cmp5C1406D044D8880B2EE22E23FD468203" />
+            <ComponentRef Id="cmp45831B8545F035840BA661907178EF56" />
+            <ComponentRef Id="cmp9AACCAC97D1E17F95BBB0B7579629A0A" />
+            <ComponentRef Id="cmp9A92813E7CB873D7030018FF93600B42" />
+            <ComponentRef Id="cmpF2791DE0ED10C7C24830234B6E094DB9" />
+            <ComponentRef Id="cmp5AEF8A66E2CC038C821BCFD2F759676B" />
+            <ComponentRef Id="cmp42ECDDE6DB3761620DBFBE92A114B9AD" />
+            <ComponentRef Id="cmpFBD3F6544DD7D67CE750D18C422B371B" />
+            <ComponentRef Id="cmpACE8A4BB6BC874FB44803B94042F3299" />
+            <ComponentRef Id="cmp2857D4EC6E6407D1495856B5BB9EE988" />
+            <ComponentRef Id="cmp2B52A7A5EC02216C1DD4B094BEC9B41B" />
+            <ComponentRef Id="cmp46A38A0C8EA6AF78BE8676494532CE55" />
+            <ComponentRef Id="cmp63C10E1DF3CE276DCAE37633FC0657F3" />
+            <ComponentRef Id="cmpE0FD1FC657FED82C1A65B445EC73AA3E" />
+            <ComponentRef Id="cmpF198FC23DE5E444F8924CBA105C3D27F" />
+            <ComponentRef Id="cmp0867798D4761091E1D76F787AF2BA31F" />
+            <ComponentRef Id="cmpC29B99DF52DA7E22393F615B16D4B7C3" />
+            <ComponentRef Id="cmpF0C4B081B0B8A28319EE2CF23DE2738F" />
+            <ComponentRef Id="cmpDD3C3C9EF518D5D14C34D580242A2C41" />
+            <ComponentRef Id="cmp4775B6406E930A3DBE1A15EE1C108884" />
+            <ComponentRef Id="cmp7448A331C3115D076FD1F00D32D3539E" />
+            <ComponentRef Id="cmp33A3F411A550EE7FCF0A75DC54319781" />
+            <ComponentRef Id="cmpED1FD61B0477FB8044F78AA91C18C0BF" />
+            <ComponentRef Id="cmp1BCCF90532CA8672E3D8B0DFC7D39EFC" />
+            <ComponentRef Id="cmp24A0B99D0F5BFB5515E279BEDB0C4873" />
+            <ComponentRef Id="cmp20D1C6EB42A76F62E7DEC11E846CA9A0" />
+            <ComponentRef Id="cmpD70D3D3081812D924FC2AA7BEBC318CB" />
+            <ComponentRef Id="cmp9C48EC4C67E4EBF07876691B2A0D6968" />
+            <ComponentRef Id="cmp30E6406E0508E0C72DF59041D0795811" />
+            <ComponentRef Id="cmp8A1B1F1FDA6A74D5E4DC350E29A9441A" />
+            <ComponentRef Id="cmp2A607D20358F21EF5004CD3581AFC7DC" />
+            <ComponentRef Id="cmpDA75399078107B986B6A4444B88972B7" />
+            <ComponentRef Id="cmp9B13DC0B060E4909D4D3196D3091EC8A" />
+            <ComponentRef Id="cmp391E90B44E1C95B79CDFD77B78670602" />
+            <ComponentRef Id="cmpF6E71151757A894C580E262BEC613421" />
+            <ComponentRef Id="cmp87CA94037EF2C8CD35AA73200D613B09" />
+            <ComponentRef Id="cmpDE64F439DEC0C7B100492282969F38DD" />
+            <ComponentRef Id="cmp101B254396C045520E48357FB0430617" />
+            <ComponentRef Id="cmp41E45E88E0389D60DCA83F9F637025A8" />
+            <ComponentRef Id="cmpAD0DECBF588416EFA20505808043D6C9" />
+            <ComponentRef Id="cmp0D473BA8F3C833DF5F96483EF874864C" />
+            <ComponentRef Id="cmp84B1795A69E094533F4597DC41D5B09B" />
+            <ComponentRef Id="cmp1A3D56E0D2CCAA1C57594794B29A8644" />
+            <ComponentRef Id="cmp4F4A6A109827A918B071AABBBBCFFCFD" />
+            <ComponentRef Id="cmp889E44DA6841250C5E58F7AD4175D27F" />
+            <ComponentRef Id="cmp548278BA2C57755579359C41B4F12108" />
+            <ComponentRef Id="cmpEDED6246BA7A03AFFD6414AA966EFD5A" />
+            <ComponentRef Id="cmpBFB82DED42E44022D46078D7652BCA5D" />
+            <ComponentRef Id="cmpB9648A4D51A11CC9F1D4A1F7A3D051E6" />
+            <ComponentRef Id="cmpF0DF7AC90E242D16294480436A3F60AB" />
+            <ComponentRef Id="cmpA6598C8071F36D382D25AF27B7DB629C" />
+            <ComponentRef Id="cmpE1318B2FF2AE6A29934EF9DE30AD81AB" />
+            <ComponentRef Id="cmpAD0E85994BC45CD4E315605C19388A4C" />
+            <ComponentRef Id="cmpD6E04053DBAF3455B3B8EBA1C6B15B4B" />
+            <ComponentRef Id="cmp6B8A5865510F188B556E4DC94E7738C7" />
+            <ComponentRef Id="cmpBC40ECB4ACF0A473C8B2C8656DB709EB" />
+            <ComponentRef Id="cmp4DAEE238CC086C058055E3D6ED961466" />
+            <ComponentRef Id="cmp6A59EC0EE52DE6B3D871D6D9D7862619" />
+            <ComponentRef Id="cmp682AE9B183A17B1348829D5180C8A213" />
+            <ComponentRef Id="cmp31FDB9B574459D42B6F6457DC19638E9" />
+            <ComponentRef Id="cmpA44A9B23CD93D18F3D86BE77AB499E71" />
+            <ComponentRef Id="cmp54316778C368B29985FB9D37A14E8B8F" />
+            <ComponentRef Id="cmpE4CFCDAC1AB280BAAB917CC8419C90FE" />
+            <ComponentRef Id="cmpA8F6A3523C1F7B59176190045A6C663C" />
+            <ComponentRef Id="cmp0ED892FF432557174BC034FA1764AAE1" />
+            <ComponentRef Id="cmp2589D46B269D01A23FEEE41E20C96C3E" />
+            <ComponentRef Id="cmp91E2E1D988D109DE0C8B54773BA4DE57" />
+            <ComponentRef Id="cmp43189A40A65B5FD54C0CB7BE966B3DE0" />
+            <ComponentRef Id="cmpEDC388466F1DE2721CB529E4D662A786" />
+            <ComponentRef Id="cmpD0EDF7A617B0A1266307F4A5102CE23F" />
+            <ComponentRef Id="cmp8CF68DA8B8637BE89FF4B9FE253FFB91" />
+            <ComponentRef Id="cmp5A78EFA5959B914E33E19D1A80FA38CC" />
+            <ComponentRef Id="cmpAD3B37A363B8531EE9BED18964F65D3F" />
+            <ComponentRef Id="cmp7ADC9BC2EED3F6EC6D081AA4645093BA" />
+            <ComponentRef Id="cmp1CFE42CDDED4F56E07C27EB6956EFA04" />
+            <ComponentRef Id="cmp8BB4BE16511B6A180914D1EE1DD71905" />
+            <ComponentRef Id="cmpF40BB459406B9FA5072AF58162CF6183" />
+            <ComponentRef Id="cmp162B16E0AD9030B1479BE59BEFA223EA" />
+            <ComponentRef Id="cmp0A32658C44FD13B49DAC0B58EA74AD9D" />
+            <ComponentRef Id="cmp1B15C366C7F7D5FC5E71672E28551CDF" />
+            <ComponentRef Id="cmp70FAE367C994D03482A4DB561F5E0916" />
+            <ComponentRef Id="cmp9B2CAACA15890C962D6CA3E03E12CA87" />
+            <ComponentRef Id="cmp27D0F1E72ED8DF3A6DB655A9C9ACBF4B" />
+            <ComponentRef Id="cmp8AAB6E093FC4EA8408B8DCFDAB0C278F" />
+            <ComponentRef Id="cmpE57C464E869BBF54AAF0CA18C53BFC7A" />
+            <ComponentRef Id="cmpD7E04614EB510EC115AD6E73A9F8F729" />
+            <ComponentRef Id="cmp81630DE504BF6C58C509E0C6608513CA" />
+            <ComponentRef Id="cmp9F9561CF34D825CEA791AEE81517F4A0" />
+            <ComponentRef Id="cmpCB2FC3BF27A782C5D565AB9E9237DABB" />
+            <ComponentRef Id="cmpD00A5DD24EC6445820B1791AE19D6F4B" />
+            <ComponentRef Id="cmp093EB5837C1602C76FD797BABBD18E38" />
+            <ComponentRef Id="cmp2CB4A96047505E8117CA790B4A305E6B" />
+            <ComponentRef Id="cmpDAA35B5338F57989FEAC2A769FC2151A" />
+            <ComponentRef Id="cmp54ACF9E17B3DA22BDA5A75A88115ED47" />
+            <ComponentRef Id="cmp59EC4D7E253187A4F8E9DDF9B398D540" />
+            <ComponentRef Id="cmp7B137994B490E36670F25ED02D95BD31" />
+            <ComponentRef Id="cmp70FD6766A965919532CE0203A5DB6826" />
+            <ComponentRef Id="cmpEF5C208B2E3188A1C5CB14D4F81A99F3" />
+            <ComponentRef Id="cmp56749FCD5B19DF65ABF94AC704090777" />
+            <ComponentRef Id="cmpD821E61C818DB6F73315278ED47C94FA" />
+            <ComponentRef Id="cmp9CB1F5B4B546F5C00ED72077FB1BF301" />
+            <ComponentRef Id="cmpEB1AE2B483B64F8BA8D30B7E2CDF1203" />
+            <ComponentRef Id="cmp14CB63A4A576240EA7D8C6790F23BAE9" />
+            <ComponentRef Id="cmpB15DB14C14C164211BFA7022D8BA9D7F" />
+            <ComponentRef Id="cmpCEA5BF22D45E52FB503994AAA3D683B9" />
+            <ComponentRef Id="cmp0E3B77B2D25AF744C45CC445EEE976AD" />
+            <ComponentRef Id="cmp684A9901D144A1D8F3E60BBDED909AD0" />
+            <ComponentRef Id="cmp522BD7DF6D3169D2D5F48659C11FA5A3" />
+            <ComponentRef Id="cmp1FF153FF36F9E904D7E2D3C4D9504DB1" />
+            <ComponentRef Id="cmp9EB663A2B7330618949C2512F2B7FD05" />
+            <ComponentRef Id="cmp95261FC41AAA0453F8DAABFCCCB53A63" />
+            <ComponentRef Id="cmpC25AF4AFEE890ABE15015B7D0A68DE10" />
+            <ComponentRef Id="cmp64A5B8D8BF15F2055045931DEE306D97" />
+            <ComponentRef Id="cmp9D580DD449DF507E050022DC801401DB" />
+            <ComponentRef Id="cmp0F049299FC1F2E40B953455F01F19D40" />
+            <ComponentRef Id="cmp7B43C58E09AA23FBB8DD8171818FBE46" />
+            <ComponentRef Id="cmpF2D5D772842BE9FC982989F71B35DE68" />
+            <ComponentRef Id="cmp205010917D33B8B44920FC79DF046D3A" />
+            <ComponentRef Id="cmpB3536AAB8C21891A2B0A5D3F33A73212" />
+            <ComponentRef Id="cmp8AF5B73AC3190BC18824F18CACFF649E" />
+            <ComponentRef Id="cmpA1532A37BA6767041226E095D2A31618" />
+            <ComponentRef Id="cmpB75EFFACB9D01ABDA56990F0D3986E89" />
+            <ComponentRef Id="cmp9E9BAE8B76F45050B9F5FFF6F0644ECC" />
+            <ComponentRef Id="cmpDE3E8BADDD1919457714771C17091931" />
+            <ComponentRef Id="cmpD1A0345FBBA27A3442D68C5F7D84A71C" />
+            <ComponentRef Id="cmpC8FB648B5E977D6D491621C7E8A44A4F" />
+            <ComponentRef Id="cmpE7CE0FA0D6811662FB309685F84CF9A0" />
+            <ComponentRef Id="cmp02CFEFD32E71316F4F270C91DC2587C6" />
+            <ComponentRef Id="cmp5C625729C3E2A2A1B050C432D62F8AD2" />
+            <ComponentRef Id="cmp28AEEBC12DD13BCAB3D55A5F4FD8A6A6" />
+            <ComponentRef Id="cmp12B85499391836F8C3E5CEFB0B571336" />
+            <ComponentRef Id="cmp549856506D6D930355E5E0EC7E489B00" />
+            <ComponentRef Id="cmp0D293D73D5FC087F16D053E94794942F" />
+            <ComponentRef Id="cmp4AA1D87E4F2BAF0EC8503F95D7A10A51" />
+            <ComponentRef Id="cmp386002F13B930B1E2D473F0777DD7350" />
+            <ComponentRef Id="cmp17DCD805B946E5CC04FEED65DE1C57E8" />
+            <ComponentRef Id="cmp3C93090C0901B7EC343492101A6A0171" />
+            <ComponentRef Id="cmpBCE3B79056E5F353E45BC61E99BB25A1" />
+            <ComponentRef Id="cmpEEAB25D02B30894FFD29102598025F4D" />
+            <ComponentRef Id="cmp668B783A20842E869F549F6D6124A774" />
+            <ComponentRef Id="cmpB555A07C0953A4BAF774C9783B5784E0" />
+            <ComponentRef Id="cmp4F8432CA30FE1307D5C7464C75E26986" />
+            <ComponentRef Id="cmp97F69FD5050BBDC4CC01828126F32208" />
+            <ComponentRef Id="cmp909CD2BDEE1C02D38AA585F83D268077" />
+            <ComponentRef Id="cmp9DC129A242C2EAAF8127E3D81415BE49" />
+            <ComponentRef Id="cmp6094FDA157ADCF776E8DB553E5F45555" />
+            <ComponentRef Id="cmpA61F555E8BF9E3E84BCEFB5879D25F84" />
+            <ComponentRef Id="cmpA4CEE22E8BB1FF7C2292FDF9029998D4" />
+            <ComponentRef Id="cmpEACFFF7BC70DD093FE0947CB2866D07B" />
+            <ComponentRef Id="cmp2C262E4491ECCF3B92F6871B91B77A3C" />
+            <ComponentRef Id="cmp168A53605EB831F1025AFD2100E043D2" />
+            <ComponentRef Id="cmpF07274ED915DEC0B490519272149CD1D" />
+            <ComponentRef Id="cmp95970D6171B6486F90249F7218316F2A" />
+            <ComponentRef Id="cmpDFAEC31C23E595671B236F76D28C35FE" />
+            <ComponentRef Id="cmp6C54FF227830F5C21CCB90DAD35C5595" />
+            <ComponentRef Id="cmp967756ADB39C04AB37450E27B7ED312F" />
+            <ComponentRef Id="cmp4EDBADFE511C28B144C40916628B5795" />
+            <ComponentRef Id="cmpCB9FEB7EB1E9A7C233E32F8F46C1265A" />
+            <ComponentRef Id="cmp9B1656BA419F6F09132C8540C4161EA8" />
+            <ComponentRef Id="cmp6599D3174D18E59C4E9CF55ED225FE24" />
+            <ComponentRef Id="cmp2DAFA01B14266FFEE8830CED311E541F" />
+            <ComponentRef Id="cmp6E8B3E7F8C3CBB03FA672F9B543CB5D4" />
+            <ComponentRef Id="cmp704A4EECBC0E65BBA616481C87392B8E" />
+            <ComponentRef Id="cmpB69FD3C8587665E9C8FF10D3698C0CE4" />
+            <ComponentRef Id="cmp7431314DC59D25F3F562F0E23A855AB9" />
+            <ComponentRef Id="cmp242E93AB8489D9C3E0CCCF8A6D5C9D6E" />
+            <ComponentRef Id="cmp61EDBF1F790129B2609C9863B4FA6D3E" />
+            <ComponentRef Id="cmp5A5A42C048F3F2BA26F9B0C55FAF202A" />
+            <ComponentRef Id="cmp611FD3BDC41DF5E5B697F21E4F0610FB" />
+            <ComponentRef Id="cmp68FB70C80978EF0505D93A90FED20181" />
+            <ComponentRef Id="cmp8AB1B10440DF7017DC45AB98D0884159" />
+            <ComponentRef Id="cmpF62D4AA47B2DE48EE6F7F681BBDD5E5A" />
+            <ComponentRef Id="cmp3B85F54DC41A468515A5E26294368C7A" />
+            <ComponentRef Id="cmpACCB26DD355B5EA7E4ED82EC0F625487" />
+            <ComponentRef Id="cmpA705A376072C89B5C281894C4A2A691A" />
+            <ComponentRef Id="cmpEB6C02B054897612C56D2B8130DE55C9" />
+            <ComponentRef Id="cmp066F7FAF3FA6EDE15992F1C33D9CCD83" />
+            <ComponentRef Id="cmp18E59DF1BC47AA7CE90547685FB24F3D" />
+            <ComponentRef Id="cmpF7396C5FFE2F841FBA0B33D5D5D15150" />
+            <ComponentRef Id="cmpC06425033787DB6E48C1FE8CDFB7696D" />
+            <ComponentRef Id="cmpC5A937CFA38AA9F963FC9305E1417588" />
+            <ComponentRef Id="cmpA753443DED243A5B61788EEDED481CE2" />
+            <ComponentRef Id="cmp18BDD916570B397C72CE321428D8AB0F" />
+            <ComponentRef Id="cmpD5F5213605CA68A8B3AB777DA70D356E" />
+            <ComponentRef Id="cmpB98EE7492CFDFD88EE9D597A70E2EE97" />
+            <ComponentRef Id="cmp23444619D4D8A71350E6A9E8A18F8213" />
+            <ComponentRef Id="cmp21AE5693C161B141FE9F7A1EB7C7F582" />
+            <ComponentRef Id="cmpCAD49B9CCF34930B741504EC306313EF" />
+            <ComponentRef Id="cmp070A2A2DEB654D00C818E94C0691CD2C" />
+            <ComponentRef Id="cmp1C9A1CE01A76F500D7CFA42CBE918F4A" />
+            <ComponentRef Id="cmpEC0622A31BA954A5646225D04E181D8E" />
+            <ComponentRef Id="cmp7957987AD68ADBEF943A11E6CE00B48F" />
+            <ComponentRef Id="cmp7258745243907B59D9CF8A00CBBEB1A9" />
+            <ComponentRef Id="cmpFB6DDC9BFEB4AE2E9FE1170FAA654654" />
+            <ComponentRef Id="cmpF6EC19E1D02D5C06C0EE0BE6B6F2CCDB" />
+            <ComponentRef Id="cmp2F8BC51AE30AE4F5A765FBF79073A54F" />
+            <ComponentRef Id="cmp63FF492F878951894289450163EF5C6F" />
+            <ComponentRef Id="cmpEC1E43ADC2DCB453518EA2A9A18BC0CA" />
+            <ComponentRef Id="cmp42F15C8DD07C9BD9CD7E1B2EE0E92E82" />
+            <ComponentRef Id="cmp2E99325F5735E0FD1EAC111A8B3D64FB" />
+            <ComponentRef Id="cmpB9E7C85B2434C305ED209A11AE1641BC" />
+            <ComponentRef Id="cmp8ABDCC2E161C01B5CFA19F021F64D5A7" />
+            <ComponentRef Id="cmpD8C8805F4FD9D8F0B52EBE90E7161322" />
+            <ComponentRef Id="cmpFC2B73ACCD6F8F23DCAEE04A541B20D9" />
+            <ComponentRef Id="cmp99147A6F4AF6853851C85C7B9B52C4D1" />
+            <ComponentRef Id="cmpFB253DDAFF2401C2429C77B6E87297B4" />
+            <ComponentRef Id="cmpD77C599CE7406568A699D4BA1AC31D24" />
+            <ComponentRef Id="cmp3C59EDB92EC5F00D7761E8F578696203" />
+            <ComponentRef Id="cmpEF9C396BE98D5D94B8A3A19A7930623B" />
+            <ComponentRef Id="cmp6C8A7E992B84A4BEC0BE4CD550441802" />
+            <ComponentRef Id="cmp1965CC1B92BD8836D825FD478B9FEB6B" />
+            <ComponentRef Id="cmpE10D93806D08A9AE3CF6BFA9B5C88522" />
+            <ComponentRef Id="cmpC8CE6C520F593200E68B8717BA23989C" />
+            <ComponentRef Id="cmp96CD10879923F455E576C0139DAA7288" />
+            <ComponentRef Id="cmp2DEDF37AA20634387795DBCF5E1A111E" />
+            <ComponentRef Id="cmp4FBE777F2A3FA2E884B754002780BD83" />
+            <ComponentRef Id="cmpB30171EFAC9185BD35FFEBAD59D084EF" />
+            <ComponentRef Id="cmp3E353729D87FD49A3E45156C877A2C79" />
+            <ComponentRef Id="cmp1B7BCE4ED0D0353265F37E61297506B9" />
+            <ComponentRef Id="cmpDD37D111BCDEB06CF0D46529FE4929CF" />
+            <ComponentRef Id="cmp98F7BA41D923F17A730E425B9C422AD6" />
+            <ComponentRef Id="cmp6791434645804C5136EBE0CC67706CF8" />
+            <ComponentRef Id="cmpD76EFB8064962B8A329551B862CCEE9D" />
+            <ComponentRef Id="cmp7909D670F7960A521933405F29C4E664" />
+            <ComponentRef Id="cmpCBACEAE0A425B16D93D4F311FA55017B" />
+            <ComponentRef Id="cmp1076600D4FEFFDC7D09631FCAB4C720C" />
+            <ComponentRef Id="cmp8D02C2DAF1B7AA87F5798CAB3E2CF3BB" />
+            <ComponentRef Id="cmp32CBE6B324DB1F2150146623ED984E6B" />
+            <ComponentRef Id="cmp2A066FCEDAAD3500381AC33F9028B632" />
+            <ComponentRef Id="cmp4D0EEC12519B5120CB44DDEFA15E3F91" />
+            <ComponentRef Id="cmp48BB96C11F40FA77B911E41D6D7A5170" />
+            <ComponentRef Id="cmpCB02816DCEC70AA8E8C19A5A57253634" />
+            <ComponentRef Id="cmpB96BF1C19A2902E4599E7E4B9AC8A92E" />
+            <ComponentRef Id="cmpEC287A7ECB1C8A3F844F757F8F7E3237" />
+            <ComponentRef Id="cmp1AAEAA81C0262CC0C6820C411CF22AB6" />
+            <ComponentRef Id="cmpB5D3CFC181B567CBE51B9A2BB9BCC03D" />
+            <ComponentRef Id="cmp1BE1405DD104F32AB2F853A4BF00B19B" />
+            <ComponentRef Id="cmp77DDDA19CA3B9026C20F3A6115188E07" />
+            <ComponentRef Id="cmpE7BA0957A99B7D08A9F3B2B78B91DF6A" />
+            <ComponentRef Id="cmp26336F5164782D501A35B20D49B9EFA7" />
+            <ComponentRef Id="cmp51A47EAB4F81BB03976DFF53B21D192B" />
+            <ComponentRef Id="cmp7000C137C4FCC99C21E82397A59AD27B" />
+            <ComponentRef Id="cmp70424328DE04B0B009124E7ADF18E498" />
+            <ComponentRef Id="cmpFC21049CA52EEC36B85B29FF996357B3" />
+            <ComponentRef Id="cmp0884EC34A8E2E2625FE1A7BD4C42B5D3" />
+            <ComponentRef Id="cmpC1F2565E70634225B01BC47F3FACEBA4" />
+            <ComponentRef Id="cmp5E8F9812416B6981AF7667B29AFFE1C0" />
+            <ComponentRef Id="cmp97F6FE0E76B51676353842CB1DE495D4" />
+            <ComponentRef Id="cmpA804DDCB08BC9335D8FE83B3371BD766" />
+            <ComponentRef Id="cmpC16B953BCD5BFD491BB7305424086652" />
+            <ComponentRef Id="cmp9ABBECBE8617698EC1056BE00BC4F3FD" />
+            <ComponentRef Id="cmpBAA994EAE01CACFAA5BC0C57DED99A78" />
+            <ComponentRef Id="cmp4FC0F1E2B39ECDF66ABD7F6CFBCC41F8" />
+            <ComponentRef Id="cmp5C1625E6044E0946A81DEF48FF5A38B0" />
+            <ComponentRef Id="cmp6DA5B783D98B2463A95E64D3F900C639" />
+            <ComponentRef Id="cmp4CA372B4AF3F0D8A7C5817F170EA5A8D" />
+            <ComponentRef Id="cmpFCBDF24553E899DF94577D96858F6F67" />
+            <ComponentRef Id="cmp89A4145091BD99F9477F4A52C78883CE" />
+            <ComponentRef Id="cmpF4A922AAE968AEB47C0FC94F3E9D703F" />
+            <ComponentRef Id="cmpC370A80DE4A13DC76552A90A2A3DDAA6" />
+            <ComponentRef Id="cmp46B68671FAF671EB7EEE8492825A09F0" />
+            <ComponentRef Id="cmpF5EF65B8DDC60E0B2FB25EEC9F2F17B1" />
+            <ComponentRef Id="cmp42227C0D6E9AD71745334CDFD3126373" />
+            <ComponentRef Id="cmp19FB9DCA130E1F7746CBE134BA22266B" />
+            <ComponentRef Id="cmp10F4A722A99C954D991B45E4F94EAC3D" />
+            <ComponentRef Id="cmp3F491EC552D33FA05E7DE35C4DE78C3E" />
+            <ComponentRef Id="cmpEE026A4C5220120CC22B5A439EA80B1E" />
+            <ComponentRef Id="cmp95AC62C7EA9F66BF25354061A988EA45" />
+            <ComponentRef Id="cmp84955E40A8FE7B226A17916436D54536" />
+            <ComponentRef Id="cmp604FB900D37A1311D302633DCC4A4C59" />
+            <ComponentRef Id="cmp9ED634AFAEDAC1DDCCB2D9026AF1D8BE" />
+            <ComponentRef Id="cmp2DE26A084BC9F0D97CEE13BD6CB7DB29" />
+            <ComponentRef Id="cmp624793B965AFDEC956116545FDFFBAD2" />
+            <ComponentRef Id="cmp97DC93540C2E8C593DABF08D70DE62EC" />
+            <ComponentRef Id="cmp02511B37EEEB4C76E22D228572C9899E" />
+            <ComponentRef Id="cmpD091C5F68D8203E95C3F229C0077B532" />
+            <ComponentRef Id="cmpF3446CBDA4CB9859513478DCDD4DAE16" />
+            <ComponentRef Id="cmp090B65B55D1BF59D81EE5AF33B0A66E7" />
+            <ComponentRef Id="cmp4F410B9579D993FD1FD669F65A4E316E" />
+            <ComponentRef Id="cmpC542309466D6A3D4F85E8FA4187F739B" />
+            <ComponentRef Id="cmp97E561BF05679826A070A780ADEE2039" />
+            <ComponentRef Id="cmp3E6EBB4AED3757627A1D37B09F6E3763" />
+            <ComponentRef Id="cmpE279250B77797DC3204E22991CB9801A" />
+            <ComponentRef Id="cmp417C00D1418E88DE1BEF944D375E84FB" />
+            <ComponentRef Id="cmp6DB95BE4D5950D25109B0A5E6EB11D9A" />
+            <ComponentRef Id="cmp9F4D8B2536E079970CAAF4F6574A9866" />
+            <ComponentRef Id="cmpFDBBFF2AAFE8E6B086C996999DD690FC" />
+            <ComponentRef Id="cmp69C41742083C6249F9C90A9E00217A0E" />
+            <ComponentRef Id="cmp373F1FD615140BF037C5FC26F9189545" />
+            <ComponentRef Id="cmp95BAF0B4BBE8047E065AEF0F35DBD61D" />
+            <ComponentRef Id="cmp008610C6280E51D717782C67D06F3DAC" />
+            <ComponentRef Id="cmpF3EBB9B5558C164ABBA619E540766C37" />
+            <ComponentRef Id="cmpF18DF68325B7ADB2AFCBCA6306993399" />
+            <ComponentRef Id="cmp1004184BC8B7E89F4DA5EBB9EE6BC41D" />
+            <ComponentRef Id="cmpB85D7F28B338F6AA8D9A0F6B1F1EAF54" />
+            <ComponentRef Id="cmp1EDAFA046BF13F25EFE1EF31EA5923BF" />
+            <ComponentRef Id="cmp94CDDF67B982241EBB595174B567D2A5" />
+            <ComponentRef Id="cmpE7B5165C6891DE75340B298E88E4450F" />
+            <ComponentRef Id="cmp57C2F507649C3F47A9D83746BC887BFD" />
+            <ComponentRef Id="cmp8F299575A0805BD0D42744E6ADE49CF6" />
+            <ComponentRef Id="cmp431F30052E7B791B7A042D19CA5EEEE7" />
+            <ComponentRef Id="cmpAF7312470837713DEF60D9CB52FA65EF" />
+            <ComponentRef Id="cmpD237E6AA4D2244586C44738D5490755A" />
+            <ComponentRef Id="cmpC8126EBA214E4D14B5F1B26A2EDF4BF3" />
+            <ComponentRef Id="cmp86E7BF3BD4F27E7CB563D8A943C6B634" />
+            <ComponentRef Id="cmp198AE1F59201158DF7133EC0429D6B39" />
+            <ComponentRef Id="cmpF6EB69C13BDB8B4C55B5F400FE579005" />
+            <ComponentRef Id="cmp2BE5FAAF90071F1A80CAA5AFE7F25E04" />
+            <ComponentRef Id="cmpE6CF5918284C87A9691819FA94EB3C9A" />
+            <ComponentRef Id="cmp8385110C10FABC7CC647561E1DC00377" />
+            <ComponentRef Id="cmp5F6776485D7E1559E55CADA7B17AFCA4" />
+            <ComponentRef Id="cmpAB10A4BA4C12FC969BB82C315999278C" />
+            <ComponentRef Id="cmp6E9E49DBD3C3B23EC51EEEE608B2FB0C" />
+            <ComponentRef Id="cmp297E4039297C5EC6FA44D4801C10025C" />
+            <ComponentRef Id="cmpD1A68E729D71166A0E271B570CC0BF2B" />
+            <ComponentRef Id="cmpB2B3D9105D6DB865B69A661BA1E3D479" />
+            <ComponentRef Id="cmp578221914100D920CEA56CBFDA672182" />
+            <ComponentRef Id="cmpBC8F5FC9AB23C360A58B4196CEA7571A" />
+            <ComponentRef Id="cmp376C09D4C896B5B48A91FEB3E67D67B8" />
+            <ComponentRef Id="cmp921B7A5E6C4CA4001884C82235DC89B7" />
+            <ComponentRef Id="cmp8BBA723F228575EB70D31EF39742F2B2" />
+            <ComponentRef Id="cmpE1B76B705F93F3EE9167FBB4CA57A579" />
+            <ComponentRef Id="cmpEAFD355AD32E51F91AD696618EC09CF6" />
+            <ComponentRef Id="cmpA7AE74B903B8A6BDB2477F20C5F8B80C" />
+            <ComponentRef Id="cmp65D17723DBC5EDFF134EB48B7C7AE65C" />
+            <ComponentRef Id="cmpFFB054C02BB58FA7CFA820E6BF950A38" />
+            <ComponentRef Id="cmpD7B1A26872034BC94A2C2A93B07A5EB8" />
+            <ComponentRef Id="cmpECC476DFB2C27D4B5F0ABEB6C469C473" />
+            <ComponentRef Id="cmpAEEDA533E3154D687D2DEBFFE070878C" />
+            <ComponentRef Id="cmp8D2A487DC8CD6E7B50A8B284C4024E8D" />
+            <ComponentRef Id="cmp35710BFCAEA83D7C7832FE3023FEF88F" />
+            <ComponentRef Id="cmp813B60917338C960D1127A30DCA15549" />
+            <ComponentRef Id="cmpD27DCFD3973054403D1F4B272A7E04CC" />
+            <ComponentRef Id="cmp619B1A58944412733808DEB97E41CDDA" />
+            <ComponentRef Id="cmpDD7EA78591EC568BAFA953F63B492ECE" />
+            <ComponentRef Id="cmpD27F0E75A6347EDF16C4E3F480DAC5AD" />
+            <ComponentRef Id="cmpF3ACC8659D8FD3360350D6542716C788" />
+            <ComponentRef Id="cmp0AC4E43530781F65B248486252DB3029" />
+            <ComponentRef Id="cmp2F7DB504A2C07D0AF0B44E6D7E022A48" />
+            <ComponentRef Id="cmpCA09A5DEFF31CD5C933BFB748169BF17" />
+            <ComponentRef Id="cmp4731E547A71D6688D03F55E902675807" />
+            <ComponentRef Id="cmpA0525C2D42E4976EFB44D7BB2EE8DB49" />
+            <ComponentRef Id="cmpCA823387D26402DECE408CA27E69D4E2" />
+            <ComponentRef Id="cmp61623A648FDB04CFCA077CAF3443B982" />
+            <ComponentRef Id="cmpD87DBE959D68D5A43190F447C294C71C" />
+            <ComponentRef Id="cmp49CB95AC110D4586F9294E7B028474EC" />
+            <ComponentRef Id="cmp504ADF68B0155D207E9A0A2E22A12324" />
+            <ComponentRef Id="cmp12E100FFB2A88DFE26324F607C5A7DFB" />
+            <ComponentRef Id="cmpF716B6C7DAC3E5EED764B8BD543703BF" />
+            <ComponentRef Id="cmp2E01A9504DD23645ADCED43F99B2F157" />
+            <ComponentRef Id="cmp80D291ED98489F7985146B642593805B" />
+            <ComponentRef Id="cmp3977C0E99CF804360847D23FDAAB124F" />
+            <ComponentRef Id="cmp88D5FEC36264E245F2ADC5ACCC723E50" />
+            <ComponentRef Id="cmp7D4FC64C68577A19B7ADF1495B82A90D" />
+            <ComponentRef Id="cmpBD54307CF9C6A578883524D713044CC7" />
+            <ComponentRef Id="cmp69AD28670EA71CD71DBBA70EF41B59F2" />
+            <ComponentRef Id="cmpF2A89A0F3AC5E516BDF508AE3FB3C926" />
+            <ComponentRef Id="cmp0E4B6CDC28EAA3EF08270155145764C3" />
+            <ComponentRef Id="cmpBD49BEBF9DD17F6D7E1F6465E758F584" />
+            <ComponentRef Id="cmp8D78A81D3E3B2E873C17D85CABE15FFA" />
+            <ComponentRef Id="cmp1BF2A5FB50A0407253EF71FB4216082E" />
+            <ComponentRef Id="cmp953B4395E474710593002D59EF890CB8" />
+            <ComponentRef Id="cmpA53E02FAE8C6D585DB5C819BA641C060" />
+            <ComponentRef Id="cmpB0E914E9F0DE4DF274A1C0C8A15ED073" />
+            <ComponentRef Id="cmp2AA19605679D247CDD41ED6A7887EF35" />
+            <ComponentRef Id="cmp8571165229EB83FAC79BB140CE0E2116" />
+            <ComponentRef Id="cmp89192DEC346A5511752D555925F79F07" />
+            <ComponentRef Id="cmp50606B63C864DCD55F30DDE08B33FF33" />
+            <ComponentRef Id="cmpB02550E3F224886EC6C3E457CFA24862" />
+            <ComponentRef Id="cmp226799BA1642DAE43DE81137C69599B9" />
+            <ComponentRef Id="cmpA7DA82FD6B5A9818F8374A20028BFF50" />
+            <ComponentRef Id="cmpE0D6EC3212DF95EF7E6F7BA88A2FB83E" />
+            <ComponentRef Id="cmp408651CE58F30D0F722D584781844938" />
+            <ComponentRef Id="cmp2725145D1AF4ABAAEF858C91A3C97A5F" />
+            <ComponentRef Id="cmpC381639AE92F3E3AD02E25FF33A8987A" />
+            <ComponentRef Id="cmpDFB92ABFF76AA2AD45B55DED177A7DC8" />
+            <ComponentRef Id="cmp952D216B36E0A66D46A45B239E7800DB" />
+            <ComponentRef Id="cmp3AA8EC418788A4D793019A0804C87172" />
+            <ComponentRef Id="cmp47BE2C2062FC1B21DE5ED06C10D3BBBC" />
+            <ComponentRef Id="cmpC91371D4FB60E0D9C45F8368615BA7E2" />
+            <ComponentRef Id="cmp546FB9FD46A358EE91F1AFC9A4584582" />
+            <ComponentRef Id="cmpBCD7C99004694DA6EFE9C039C883B26A" />
+            <ComponentRef Id="cmpCBBCF563396EAA9CB28FDA6CBA2C547E" />
+            <ComponentRef Id="cmp2562AF2F89F9F9866C9831A33411060D" />
+            <ComponentRef Id="cmp8B5D4B784AE3D1778427DBF17CDC1D30" />
+            <ComponentRef Id="cmp3B68501865C09752F10016AEEAE338C6" />
+            <ComponentRef Id="cmp9C61658B01D05B9C7D17A866963AFC8D" />
+            <ComponentRef Id="cmpFB3BF928553CC9242A7253E877808EC2" />
+            <ComponentRef Id="cmp3497E4ECEC8BC16B1EA38D866FC3A836" />
+            <ComponentRef Id="cmp77D2F7F8E09400E53A9CB5FDBE12BA68" />
+            <ComponentRef Id="cmp43233BD2D437579189C2B039AEA2720C" />
+            <ComponentRef Id="cmp2FFF82512D7C12E72DAA197FE31CC6D7" />
+            <ComponentRef Id="cmp9C21ADE4DA62E36E922A4EAB523B8DE9" />
+            <ComponentRef Id="cmp899D6F9B84B1AFF90ABD19928C2468B2" />
+            <ComponentRef Id="cmp6FCE15C4ACD0CEA41D4CE87B51EB30E4" />
+            <ComponentRef Id="cmpCD22634242C8623A0CF62A1082B9B048" />
+            <ComponentRef Id="cmp736F70E37833F2CD69C3DB87BD5B456D" />
+            <ComponentRef Id="cmpC293765F58341DED7870449EE411470B" />
+            <ComponentRef Id="cmp1B0D3FEAA55F6DAF273E4C0E1129F0A9" />
+            <ComponentRef Id="cmp0015A65F00153F52DF996F7CDBC503D6" />
+            <ComponentRef Id="cmp8C8071DBD09E383711C94F8EFC4968EE" />
+            <ComponentRef Id="cmp8636604D6FD00FB43F684E00D6C2FC9B" />
+            <ComponentRef Id="cmpEE96502038A0F92885D9D336383BA4E7" />
+            <ComponentRef Id="cmp976AC534B1A5E8C54E232A89244AC613" />
+            <ComponentRef Id="cmpD29D05186AC237CAB3FB74FCDBE5BFBA" />
+            <ComponentRef Id="cmp7222170208D562F73203E673AA5BC3CB" />
+            <ComponentRef Id="cmp7EB8B83F8285A1349E9474E5CFC71E5B" />
+            <ComponentRef Id="cmp47D77B2155BAAC9EF2DAD87382CF0382" />
+            <ComponentRef Id="cmpE6757EF354C91123EA7E1FD61B058CC8" />
+            <ComponentRef Id="cmp87FF3057B753BA8531EBB4D37D9303FA" />
+            <ComponentRef Id="cmpEDF60E4855B6FD32D006BA5C9B72DB65" />
+            <ComponentRef Id="cmpD3365CDFC4DBDBADC418FF3AE92A6F39" />
+            <ComponentRef Id="cmp8AF649C2C87788F0965705048E9ABE99" />
+            <ComponentRef Id="cmp78EE04E6426EC7359010C4FC66235700" />
+            <ComponentRef Id="cmp1439E9ED6C8999ACDC876FA77C80960A" />
+            <ComponentRef Id="cmpECD1D47EE459CE34AA32FF97C668204B" />
+            <ComponentRef Id="cmp21EABF7AD6E4671198D6FFF56DCF01FC" />
+            <ComponentRef Id="cmp4D1E4080D37086041C07388B99480C12" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>

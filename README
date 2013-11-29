@@ -1,0 +1,25 @@
+my first attempt at creating a .msi
+
+ringojs-frag.wxs was created with heat.exe - sadly i didn't record the exact command i used.
+
+what this does is:
+
+  * copy ringojs-0.10 files
+  * ringo-admin install rp
+  * rp install --global ringo-virtue
+  * adds RINGO_HOME\bin to %PATH% environment variable
+
+ringo-virtue is a meta package
+
+compile
+=========
+
+requires wixtoolset
+
+    candle ringo-frag.wxs ringo.wxs
+    light wix.wsx.wixobj ringojs.wixobj -ext WixUtilExtension -out ringojs.msi
+ 
+
+test:
+
+    ringojs.msi /l* ringo-install.log
