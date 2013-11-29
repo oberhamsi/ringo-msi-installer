@@ -17,9 +17,9 @@ compile
 requires wixtoolset
 
     candle ringo-frag.wxs ringo.wxs
-    light wix.wsx.wixobj ringojs.wixobj -ext WixUtilExtension -out ringojs.msi
+    light ringo.wixobj ringo-frag.wixobj -ext WixUtilExtension -out ringojs-0.10.msi
  
 
 test:
 
-    ringojs.msi /l* ringo-install.log
+    ringojs-0.10.msi /l* ringo-install.log
