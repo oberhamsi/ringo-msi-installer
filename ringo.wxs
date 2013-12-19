@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <?define ProductVersion = "0.10.0"?>
-<?define ProductUpgradeCode = "6cb9e338-07ea-4d50-b6b5-b164e25ff29b
-"?>
+<?define ProductUpgradeCode = "bea6a1ea-d0be-4d40-a396-d5f34685fc68"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
    <Product Id="*" UpgradeCode="$(var.ProductUpgradeCode)"
             Name="RingoJs" Version="$(var.ProductVersion)" Manufacturer="Simon Oberhammer" Language="1033">
@@ -37,7 +36,7 @@
           Execute="deferred"
           Return="check"/>
 
-    <CustomAction Id="SetInstallVirtueCmd" Property="InstallVirtueCmd" Value='"Cmd.exe" /c [INSTALLDIR]\bin\ringo.cmd rp/lib/rp install --global ringo-virtue'/>
+    <CustomAction Id="SetInstallVirtueCmd" Property="InstallVirtueCmd" Value='"Cmd.exe" /c [INSTALLDIR]\bin\ringo.cmd rp/lib/rp install --global --force-yes ringo-virtue'/>
 
      <CustomAction Id="InstallVirtueCmd"
           BinaryKey="WixCA"
